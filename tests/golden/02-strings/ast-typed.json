@@ -1,0 +1,2914 @@
+[
+ {
+  "$node": "ScriptFile",
+  "source": {
+   "name": "aa_commands.rs2",
+   "line": 1,
+   "column": 1,
+   "endLine": 11,
+   "endColumn": 6
+  },
+  "scripts": [
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 1,
+     "column": 1,
+     "endLine": 1,
+     "endColumn": 28
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 1,
+      "column": 2,
+      "endLine": 1,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 1,
+      "column": 10,
+      "endLine": 1,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "mes",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 1,
+       "column": 15,
+       "endLine": 1,
+       "endColumn": 27
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 1,
+        "column": 15,
+        "endLine": 1,
+        "endColumn": 21
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 1,
+        "column": 23,
+        "endLine": 1,
+        "endColumn": 27
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "text",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "text",
+       "type": "string"
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "mes",
+     "parameters": "string",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "string"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 2,
+     "column": 1,
+     "endLine": 2,
+     "endColumn": 39
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 2,
+      "column": 2,
+      "endLine": 2,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 2,
+      "column": 10,
+      "endLine": 2,
+      "endColumn": 18
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "tostring",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 2,
+       "column": 20,
+       "endLine": 2,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 2,
+        "column": 20,
+        "endLine": 2,
+        "endColumn": 23
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 2,
+        "column": 25,
+        "endLine": 2,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "value",
+       "type": "int"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 2,
+       "column": 32,
+       "endLine": 2,
+       "endColumn": 38
+      },
+      "text": "string"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "tostring",
+     "parameters": "int",
+     "returns": "string"
+    },
+    "returnType": {
+     "$type": "string"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "int"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 3,
+     "column": 1,
+     "endLine": 3,
+     "endColumn": 39
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 3,
+      "column": 2,
+      "endLine": 3,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 3,
+      "column": 10,
+      "endLine": 3,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "escape",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 3,
+       "column": 18,
+       "endLine": 3,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 3,
+        "column": 18,
+        "endLine": 3,
+        "endColumn": 24
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 3,
+        "column": 26,
+        "endLine": 3,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "text",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "text",
+       "type": "string"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 3,
+       "column": 32,
+       "endLine": 3,
+       "endColumn": 38
+      },
+      "text": "string"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "escape",
+     "parameters": "string",
+     "returns": "string"
+    },
+    "returnType": {
+     "$type": "string"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "string"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 4,
+     "column": 1,
+     "endLine": 4,
+     "endColumn": 32
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 4,
+      "column": 2,
+      "endLine": 4,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 4,
+      "column": 10,
+      "endLine": 4,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "random",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 4,
+       "column": 18,
+       "endLine": 4,
+       "endColumn": 26
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 4,
+        "column": 18,
+        "endLine": 4,
+        "endColumn": 21
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 4,
+        "column": 23,
+        "endLine": 4,
+        "endColumn": 26
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "max",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "max",
+       "type": "int"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 4,
+       "column": 28,
+       "endLine": 4,
+       "endColumn": 31
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "random",
+     "parameters": "int",
+     "returns": "int"
+    },
+    "returnType": {
+     "$type": "int"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "int"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 5,
+     "column": 1,
+     "endLine": 5,
+     "endColumn": 52
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 5,
+      "column": 2,
+      "endLine": 5,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 5,
+      "column": 10,
+      "endLine": 5,
+      "endColumn": 18
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "npc_find",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 20,
+       "endLine": 5,
+       "endColumn": 32
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 20,
+        "endLine": 5,
+        "endColumn": 25
+       },
+       "text": "coord"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 27,
+        "endLine": 5,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "coord",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "coord",
+       "type": "coord"
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 34,
+       "endLine": 5,
+       "endColumn": 42
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 34,
+        "endLine": 5,
+        "endColumn": 37
+       },
+       "text": "npc"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 39,
+        "endLine": 5,
+        "endColumn": 42
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "npc",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "npc",
+       "type": "npc"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 44,
+       "endLine": 5,
+       "endColumn": 51
+      },
+      "text": "boolean"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "npc_find",
+     "parameters": "coord,npc",
+     "returns": "boolean"
+    },
+    "returnType": {
+     "$type": "boolean"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "coord,npc"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 6,
+     "column": 1,
+     "endLine": 6,
+     "endColumn": 30
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 6,
+      "column": 2,
+      "endLine": 6,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 6,
+      "column": 10,
+      "endLine": 6,
+      "endColumn": 17
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "p_delay",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 6,
+       "column": 19,
+       "endLine": 6,
+       "endColumn": 29
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 6,
+        "column": 19,
+        "endLine": 6,
+        "endColumn": 22
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 6,
+        "column": 24,
+        "endLine": 6,
+        "endColumn": 29
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "ticks",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "ticks",
+       "type": "int"
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "p_delay",
+     "parameters": "int",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "int"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 7,
+     "column": 1,
+     "endLine": 7,
+     "endColumn": 33
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 7,
+      "column": 2,
+      "endLine": 7,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 7,
+      "column": 10,
+      "endLine": 7,
+      "endColumn": 20
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "npc_setvar",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 7,
+       "column": 22,
+       "endLine": 7,
+       "endColumn": 32
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 7,
+        "column": 22,
+        "endLine": 7,
+        "endColumn": 25
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 7,
+        "column": 27,
+        "endLine": 7,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "value",
+       "type": "int"
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "npc_setvar",
+     "parameters": "int",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "int"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 8,
+     "column": 1,
+     "endLine": 8,
+     "endColumn": 45
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 8,
+      "column": 2,
+      "endLine": 8,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 8,
+      "column": 10,
+      "endLine": 8,
+      "endColumn": 19
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "inv_total",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 21,
+       "endLine": 8,
+       "endColumn": 29
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 21,
+        "endLine": 8,
+        "endColumn": 24
+       },
+       "text": "inv"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 26,
+        "endLine": 8,
+        "endColumn": 29
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "inv",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "inv",
+       "type": "inv"
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 31,
+       "endLine": 8,
+       "endColumn": 39
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 31,
+        "endLine": 8,
+        "endColumn": 34
+       },
+       "text": "obj"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 36,
+        "endLine": 8,
+        "endColumn": 39
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "obj",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "obj",
+       "type": "obj"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 41,
+       "endLine": 8,
+       "endColumn": 44
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "inv_total",
+     "parameters": "inv,obj",
+     "returns": "int"
+    },
+    "returnType": {
+     "$type": "int"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "inv,obj"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 9,
+     "column": 1,
+     "endLine": 9,
+     "endColumn": 32
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 9,
+      "column": 2,
+      "endLine": 9,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 9,
+      "column": 10,
+      "endLine": 9,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "coordx",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 9,
+       "column": 18,
+       "endLine": 9,
+       "endColumn": 26
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 9,
+        "column": 18,
+        "endLine": 9,
+        "endColumn": 23
+       },
+       "text": "coord"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 9,
+        "column": 25,
+        "endLine": 9,
+        "endColumn": 26
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "c",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "c",
+       "type": "coord"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 9,
+       "column": 28,
+       "endLine": 9,
+       "endColumn": 31
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "coordx",
+     "parameters": "coord",
+     "returns": "int"
+    },
+    "returnType": {
+     "$type": "int"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "coord"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 10,
+     "column": 1,
+     "endLine": 10,
+     "endColumn": 15
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 10,
+      "column": 2,
+      "endLine": 10,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 10,
+      "column": 10,
+      "endLine": 10,
+      "endColumn": 14
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "dump",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "dump",
+     "parameters": "unit",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "unit"
+    }
+   }
+  ]
+ },
+ {
+  "$node": "ScriptFile",
+  "source": {
+   "name": "strings.rs2",
+   "line": 1,
+   "column": 1,
+   "endLine": 18,
+   "endColumn": 6
+  },
+  "scripts": [
+   {
+    "$node": "Script",
+    "source": {
+     "name": "strings.rs2",
+     "line": 1,
+     "column": 1,
+     "endLine": 17,
+     "endColumn": 10
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "strings.rs2",
+      "line": 1,
+      "column": 2,
+      "endLine": 1,
+      "endColumn": 6
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "proc",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "strings.rs2",
+      "line": 1,
+      "column": 7,
+      "endLine": 1,
+      "endColumn": 14
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "strings",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 2,
+       "column": 1,
+       "endLine": 2,
+       "endColumn": 16
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 2,
+        "column": 10,
+        "endLine": 2,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "n",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "IntegerLiteral",
+       "source": {
+        "name": "strings.rs2",
+        "line": 2,
+        "column": 14,
+        "endLine": 2,
+        "endColumn": 15
+       },
+       "type": {
+        "$type": "int"
+       },
+       "typeHint": {
+        "$type": "int"
+       },
+       "value": "7",
+       "reference": null,
+       "radix": 10,
+       "kind": "IntegerLiteral",
+       "numberValue": 7
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "int"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 3,
+       "column": 1,
+       "endLine": 3,
+       "endColumn": 26
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 3,
+        "column": 13,
+        "endLine": 3,
+        "endColumn": 17
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "name",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "StringLiteral",
+       "source": {
+        "name": "strings.rs2",
+        "line": 3,
+        "column": 20,
+        "endLine": 3,
+        "endColumn": 25
+       },
+       "type": {
+        "$type": "string"
+       },
+       "typeHint": {
+        "$type": "string"
+       },
+       "value": "Bob",
+       "reference": null,
+       "kind": "StringLiteral",
+       "subExpression": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "name",
+       "type": "string"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 4,
+       "column": 1,
+       "endLine": 4,
+       "endColumn": 65
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 4,
+        "column": 13,
+        "endLine": 4,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "t1",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "JoinedStringExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 4,
+        "column": 18,
+        "endLine": 4,
+        "endColumn": 64
+       },
+       "type": {
+        "$type": "string"
+       },
+       "typeHint": {
+        "$type": "string"
+       },
+       "kind": "JoinedStringExpression",
+       "parts": [
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 4,
+          "column": 19,
+          "endLine": 4,
+          "endColumn": 25
+         },
+         "kind": "BasicStringPart",
+         "value": "Hello "
+        },
+        {
+         "$node": "ExpressionStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 4,
+          "column": 25,
+          "endLine": 4,
+          "endColumn": 32
+         },
+         "kind": "ExpressionStringPart",
+         "expression": {
+          "$node": "LocalVariableExpression",
+          "source": {
+           "name": "strings.rs2",
+           "line": 4,
+           "column": 26,
+           "endLine": 4,
+           "endColumn": 31
+          },
+          "type": {
+           "$type": "string"
+          },
+          "typeHint": {
+           "$type": "string"
+          },
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "strings.rs2",
+            "line": 4,
+            "column": 27,
+            "endLine": 4,
+            "endColumn": 31
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "name",
+           "reference": null
+          },
+          "reference": {
+           "$sym": "LocalVariableSymbol",
+           "name": "name",
+           "type": "string"
+          },
+          "kind": "LocalVariableExpression",
+          "index": null
+         }
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 4,
+          "column": 32,
+          "endLine": 4,
+          "endColumn": 43
+         },
+         "kind": "BasicStringPart",
+         "value": ", you have "
+        },
+        {
+         "$node": "ExpressionStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 4,
+          "column": 43,
+          "endLine": 4,
+          "endColumn": 57
+         },
+         "kind": "ExpressionStringPart",
+         "expression": {
+          "$node": "CommandCallExpression",
+          "source": {
+           "name": "strings.rs2",
+           "line": 4,
+           "column": 44,
+           "endLine": 4,
+           "endColumn": 56
+          },
+          "type": {
+           "$type": "string"
+          },
+          "typeHint": {
+           "$type": "string"
+          },
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "strings.rs2",
+            "line": 4,
+            "column": 44,
+            "endLine": 4,
+            "endColumn": 52
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "tostring",
+           "reference": null
+          },
+          "arguments": [
+           {
+            "$node": "LocalVariableExpression",
+            "source": {
+             "name": "strings.rs2",
+             "line": 4,
+             "column": 53,
+             "endLine": 4,
+             "endColumn": 55
+            },
+            "type": {
+             "$type": "int"
+            },
+            "typeHint": {
+             "$type": "int"
+            },
+            "name": {
+             "$node": "Identifier",
+             "source": {
+              "name": "strings.rs2",
+              "line": 4,
+              "column": 54,
+              "endLine": 4,
+              "endColumn": 55
+             },
+             "type": null,
+             "typeHint": null,
+             "kind": "Identifier",
+             "text": "n",
+             "reference": null
+            },
+            "reference": {
+             "$sym": "LocalVariableSymbol",
+             "name": "n",
+             "type": "int"
+            },
+            "kind": "LocalVariableExpression",
+            "index": null
+           }
+          ],
+          "symbol": {
+           "$sym": "ServerScriptSymbol",
+           "trigger": "command",
+           "name": "tostring",
+           "parameters": "int",
+           "returns": "string"
+          },
+          "kind": "CommandCallExpression",
+          "arguments2": null
+         }
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 4,
+          "column": 57,
+          "endLine": 4,
+          "endColumn": 63
+         },
+         "kind": "BasicStringPart",
+         "value": " coins"
+        }
+       ]
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t1",
+       "type": "string"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 5,
+       "column": 1,
+       "endLine": 5,
+       "endColumn": 66
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 5,
+        "column": 1,
+        "endLine": 5,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 5,
+        "column": 13,
+        "endLine": 5,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "t2",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "JoinedStringExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 5,
+        "column": 18,
+        "endLine": 5,
+        "endColumn": 65
+       },
+       "type": {
+        "$type": "string"
+       },
+       "typeHint": {
+        "$type": "string"
+       },
+       "kind": "JoinedStringExpression",
+       "parts": [
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 19,
+          "endLine": 5,
+          "endColumn": 31
+         },
+         "kind": "BasicStringPart",
+         "value": "<col=ff0000>"
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 31,
+          "endLine": 5,
+          "endColumn": 34
+         },
+         "kind": "BasicStringPart",
+         "value": "red"
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 34,
+          "endLine": 5,
+          "endColumn": 40
+         },
+         "kind": "BasicStringPart",
+         "value": "</col>"
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 40,
+          "endLine": 5,
+          "endColumn": 45
+         },
+         "kind": "BasicStringPart",
+         "value": " and "
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 45,
+          "endLine": 5,
+          "endColumn": 49
+         },
+         "kind": "BasicStringPart",
+         "value": "<br>"
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 49,
+          "endLine": 5,
+          "endColumn": 56
+         },
+         "kind": "BasicStringPart",
+         "value": " break "
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 56,
+          "endLine": 5,
+          "endColumn": 59
+         },
+         "kind": "BasicStringPart",
+         "value": "<u>"
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 59,
+          "endLine": 5,
+          "endColumn": 60
+         },
+         "kind": "BasicStringPart",
+         "value": "u"
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 5,
+          "column": 60,
+          "endLine": 5,
+          "endColumn": 64
+         },
+         "kind": "BasicStringPart",
+         "value": "</u>"
+        }
+       ]
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t2",
+       "type": "string"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 6,
+       "column": 1,
+       "endLine": 6,
+       "endColumn": 36
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 6,
+        "column": 1,
+        "endLine": 6,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 6,
+        "column": 13,
+        "endLine": 6,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "t3",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "JoinedStringExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 6,
+        "column": 18,
+        "endLine": 6,
+        "endColumn": 35
+       },
+       "type": {
+        "$type": "string"
+       },
+       "typeHint": {
+        "$type": "string"
+       },
+       "kind": "JoinedStringExpression",
+       "parts": [
+        {
+         "$node": "PTagStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 6,
+          "column": 19,
+          "endLine": 6,
+          "endColumn": 27
+         },
+         "kind": "PTagStringPart",
+         "value": "<p,quiz>"
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 6,
+          "column": 27,
+          "endLine": 6,
+          "endColumn": 34
+         },
+         "kind": "BasicStringPart",
+         "value": "Choose:"
+        }
+       ]
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t3",
+       "type": "string"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 7,
+       "column": 1,
+       "endLine": 7,
+       "endColumn": 64
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 7,
+        "column": 1,
+        "endLine": 7,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 7,
+        "column": 13,
+        "endLine": 7,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "t4",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "StringLiteral",
+       "source": {
+        "name": "strings.rs2",
+        "line": 7,
+        "column": 18,
+        "endLine": 7,
+        "endColumn": 63
+       },
+       "type": {
+        "$type": "string"
+       },
+       "typeHint": {
+        "$type": "string"
+       },
+       "value": "escaped \" quote and \\ backslash and < lt",
+       "reference": null,
+       "kind": "StringLiteral",
+       "subExpression": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t4",
+       "type": "string"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 8,
+       "column": 1,
+       "endLine": 8,
+       "endColumn": 57
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 8,
+        "column": 1,
+        "endLine": 8,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 8,
+        "column": 13,
+        "endLine": 8,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "t5",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "StringLiteral",
+       "source": {
+        "name": "strings.rs2",
+        "line": 8,
+        "column": 18,
+        "endLine": 8,
+        "endColumn": 56
+       },
+       "type": {
+        "$type": "string"
+       },
+       "typeHint": {
+        "$type": "string"
+       },
+       "value": "euro € sign and latin ñ and astral 😀",
+       "reference": null,
+       "kind": "StringLiteral",
+       "subExpression": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t5",
+       "type": "string"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 9,
+       "column": 1,
+       "endLine": 9,
+       "endColumn": 45
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 9,
+        "column": 1,
+        "endLine": 9,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 9,
+        "column": 13,
+        "endLine": 9,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "t6",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "JoinedStringExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 9,
+        "column": 18,
+        "endLine": 9,
+        "endColumn": 44
+       },
+       "type": {
+        "$type": "string"
+       },
+       "typeHint": {
+        "$type": "string"
+       },
+       "kind": "JoinedStringExpression",
+       "parts": [
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 9,
+          "column": 19,
+          "endLine": 9,
+          "endColumn": 26
+         },
+         "kind": "BasicStringPart",
+         "value": "nested "
+        },
+        {
+         "$node": "ExpressionStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 9,
+          "column": 26,
+          "endLine": 9,
+          "endColumn": 43
+         },
+         "kind": "ExpressionStringPart",
+         "expression": {
+          "$node": "JoinedStringExpression",
+          "source": {
+           "name": "strings.rs2",
+           "line": 9,
+           "column": 27,
+           "endLine": 9,
+           "endColumn": 42
+          },
+          "type": {
+           "$type": "string"
+          },
+          "typeHint": {
+           "$type": "string"
+          },
+          "kind": "JoinedStringExpression",
+          "parts": [
+           {
+            "$node": "BasicStringPart",
+            "source": {
+             "name": "strings.rs2",
+             "line": 9,
+             "column": 28,
+             "endLine": 9,
+             "endColumn": 34
+            },
+            "kind": "BasicStringPart",
+            "value": "inner "
+           },
+           {
+            "$node": "ExpressionStringPart",
+            "source": {
+             "name": "strings.rs2",
+             "line": 9,
+             "column": 34,
+             "endLine": 9,
+             "endColumn": 41
+            },
+            "kind": "ExpressionStringPart",
+            "expression": {
+             "$node": "LocalVariableExpression",
+             "source": {
+              "name": "strings.rs2",
+              "line": 9,
+              "column": 35,
+              "endLine": 9,
+              "endColumn": 40
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "name": {
+              "$node": "Identifier",
+              "source": {
+               "name": "strings.rs2",
+               "line": 9,
+               "column": 36,
+               "endLine": 9,
+               "endColumn": 40
+              },
+              "type": null,
+              "typeHint": null,
+              "kind": "Identifier",
+              "text": "name",
+              "reference": null
+             },
+             "reference": {
+              "$sym": "LocalVariableSymbol",
+              "name": "name",
+              "type": "string"
+             },
+             "kind": "LocalVariableExpression",
+             "index": null
+            }
+           }
+          ]
+         }
+        }
+       ]
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t6",
+       "type": "string"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 10,
+       "column": 1,
+       "endLine": 10,
+       "endColumn": 58
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "strings.rs2",
+        "line": 10,
+        "column": 1,
+        "endLine": 10,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "strings.rs2",
+        "line": 10,
+        "column": 13,
+        "endLine": 10,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "t7",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "JoinedStringExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 10,
+        "column": 18,
+        "endLine": 10,
+        "endColumn": 57
+       },
+       "type": {
+        "$type": "string"
+       },
+       "typeHint": {
+        "$type": "string"
+       },
+       "kind": "JoinedStringExpression",
+       "parts": [
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 10,
+          "column": 19,
+          "endLine": 10,
+          "endColumn": 33
+         },
+         "kind": "BasicStringPart",
+         "value": "tag then expr "
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 10,
+          "column": 33,
+          "endLine": 10,
+          "endColumn": 45
+         },
+         "kind": "BasicStringPart",
+         "value": "<col=00ff00>"
+        },
+        {
+         "$node": "ExpressionStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 10,
+          "column": 45,
+          "endLine": 10,
+          "endColumn": 50
+         },
+         "kind": "ExpressionStringPart",
+         "expression": {
+          "$node": "LocalVariableExpression",
+          "source": {
+           "name": "strings.rs2",
+           "line": 10,
+           "column": 46,
+           "endLine": 10,
+           "endColumn": 49
+          },
+          "type": {
+           "$type": "string"
+          },
+          "typeHint": {
+           "$type": "string"
+          },
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "strings.rs2",
+            "line": 10,
+            "column": 47,
+            "endLine": 10,
+            "endColumn": 49
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "t1",
+           "reference": null
+          },
+          "reference": {
+           "$sym": "LocalVariableSymbol",
+           "name": "t1",
+           "type": "string"
+          },
+          "kind": "LocalVariableExpression",
+          "index": null
+         }
+        },
+        {
+         "$node": "BasicStringPart",
+         "source": {
+          "name": "strings.rs2",
+          "line": 10,
+          "column": 50,
+          "endLine": 10,
+          "endColumn": 56
+         },
+         "kind": "BasicStringPart",
+         "value": "</col>"
+        }
+       ]
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t7",
+       "type": "string"
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 11,
+       "column": 1,
+       "endLine": 11,
+       "endColumn": 10
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 11,
+        "column": 1,
+        "endLine": 11,
+        "endColumn": 9
+       },
+       "type": {
+        "$type": "unit"
+       },
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "strings.rs2",
+         "line": 11,
+         "column": 1,
+         "endLine": 11,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "strings.rs2",
+          "line": 11,
+          "column": 5,
+          "endLine": 11,
+          "endColumn": 8
+         },
+         "type": {
+          "$type": "string"
+         },
+         "typeHint": {
+          "$type": "string"
+         },
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "strings.rs2",
+           "line": 11,
+           "column": 6,
+           "endLine": 11,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "t1",
+          "reference": null
+         },
+         "reference": {
+          "$sym": "LocalVariableSymbol",
+          "name": "t1",
+          "type": "string"
+         },
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "symbol": {
+        "$sym": "ServerScriptSymbol",
+        "trigger": "command",
+        "name": "mes",
+        "parameters": "string",
+        "returns": "unit"
+       },
+       "kind": "CommandCallExpression",
+       "arguments2": null
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 12,
+       "column": 1,
+       "endLine": 12,
+       "endColumn": 10
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 12,
+        "column": 1,
+        "endLine": 12,
+        "endColumn": 9
+       },
+       "type": {
+        "$type": "unit"
+       },
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "strings.rs2",
+         "line": 12,
+         "column": 1,
+         "endLine": 12,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "strings.rs2",
+          "line": 12,
+          "column": 5,
+          "endLine": 12,
+          "endColumn": 8
+         },
+         "type": {
+          "$type": "string"
+         },
+         "typeHint": {
+          "$type": "string"
+         },
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "strings.rs2",
+           "line": 12,
+           "column": 6,
+           "endLine": 12,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "t2",
+          "reference": null
+         },
+         "reference": {
+          "$sym": "LocalVariableSymbol",
+          "name": "t2",
+          "type": "string"
+         },
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "symbol": {
+        "$sym": "ServerScriptSymbol",
+        "trigger": "command",
+        "name": "mes",
+        "parameters": "string",
+        "returns": "unit"
+       },
+       "kind": "CommandCallExpression",
+       "arguments2": null
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 13,
+       "column": 1,
+       "endLine": 13,
+       "endColumn": 10
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 13,
+        "column": 1,
+        "endLine": 13,
+        "endColumn": 9
+       },
+       "type": {
+        "$type": "unit"
+       },
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "strings.rs2",
+         "line": 13,
+         "column": 1,
+         "endLine": 13,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "strings.rs2",
+          "line": 13,
+          "column": 5,
+          "endLine": 13,
+          "endColumn": 8
+         },
+         "type": {
+          "$type": "string"
+         },
+         "typeHint": {
+          "$type": "string"
+         },
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "strings.rs2",
+           "line": 13,
+           "column": 6,
+           "endLine": 13,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "t3",
+          "reference": null
+         },
+         "reference": {
+          "$sym": "LocalVariableSymbol",
+          "name": "t3",
+          "type": "string"
+         },
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "symbol": {
+        "$sym": "ServerScriptSymbol",
+        "trigger": "command",
+        "name": "mes",
+        "parameters": "string",
+        "returns": "unit"
+       },
+       "kind": "CommandCallExpression",
+       "arguments2": null
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 14,
+       "column": 1,
+       "endLine": 14,
+       "endColumn": 10
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 14,
+        "column": 1,
+        "endLine": 14,
+        "endColumn": 9
+       },
+       "type": {
+        "$type": "unit"
+       },
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "strings.rs2",
+         "line": 14,
+         "column": 1,
+         "endLine": 14,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "strings.rs2",
+          "line": 14,
+          "column": 5,
+          "endLine": 14,
+          "endColumn": 8
+         },
+         "type": {
+          "$type": "string"
+         },
+         "typeHint": {
+          "$type": "string"
+         },
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "strings.rs2",
+           "line": 14,
+           "column": 6,
+           "endLine": 14,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "t4",
+          "reference": null
+         },
+         "reference": {
+          "$sym": "LocalVariableSymbol",
+          "name": "t4",
+          "type": "string"
+         },
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "symbol": {
+        "$sym": "ServerScriptSymbol",
+        "trigger": "command",
+        "name": "mes",
+        "parameters": "string",
+        "returns": "unit"
+       },
+       "kind": "CommandCallExpression",
+       "arguments2": null
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 15,
+       "column": 1,
+       "endLine": 15,
+       "endColumn": 10
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 15,
+        "column": 1,
+        "endLine": 15,
+        "endColumn": 9
+       },
+       "type": {
+        "$type": "unit"
+       },
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "strings.rs2",
+         "line": 15,
+         "column": 1,
+         "endLine": 15,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "strings.rs2",
+          "line": 15,
+          "column": 5,
+          "endLine": 15,
+          "endColumn": 8
+         },
+         "type": {
+          "$type": "string"
+         },
+         "typeHint": {
+          "$type": "string"
+         },
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "strings.rs2",
+           "line": 15,
+           "column": 6,
+           "endLine": 15,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "t5",
+          "reference": null
+         },
+         "reference": {
+          "$sym": "LocalVariableSymbol",
+          "name": "t5",
+          "type": "string"
+         },
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "symbol": {
+        "$sym": "ServerScriptSymbol",
+        "trigger": "command",
+        "name": "mes",
+        "parameters": "string",
+        "returns": "unit"
+       },
+       "kind": "CommandCallExpression",
+       "arguments2": null
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 16,
+       "column": 1,
+       "endLine": 16,
+       "endColumn": 10
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 16,
+        "column": 1,
+        "endLine": 16,
+        "endColumn": 9
+       },
+       "type": {
+        "$type": "unit"
+       },
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "strings.rs2",
+         "line": 16,
+         "column": 1,
+         "endLine": 16,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "strings.rs2",
+          "line": 16,
+          "column": 5,
+          "endLine": 16,
+          "endColumn": 8
+         },
+         "type": {
+          "$type": "string"
+         },
+         "typeHint": {
+          "$type": "string"
+         },
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "strings.rs2",
+           "line": 16,
+           "column": 6,
+           "endLine": 16,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "t6",
+          "reference": null
+         },
+         "reference": {
+          "$sym": "LocalVariableSymbol",
+          "name": "t6",
+          "type": "string"
+         },
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "symbol": {
+        "$sym": "ServerScriptSymbol",
+        "trigger": "command",
+        "name": "mes",
+        "parameters": "string",
+        "returns": "unit"
+       },
+       "kind": "CommandCallExpression",
+       "arguments2": null
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "strings.rs2",
+       "line": 17,
+       "column": 1,
+       "endLine": 17,
+       "endColumn": 10
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "strings.rs2",
+        "line": 17,
+        "column": 1,
+        "endLine": 17,
+        "endColumn": 9
+       },
+       "type": {
+        "$type": "unit"
+       },
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "strings.rs2",
+         "line": 17,
+         "column": 1,
+         "endLine": 17,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "strings.rs2",
+          "line": 17,
+          "column": 5,
+          "endLine": 17,
+          "endColumn": 8
+         },
+         "type": {
+          "$type": "string"
+         },
+         "typeHint": {
+          "$type": "string"
+         },
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "strings.rs2",
+           "line": 17,
+           "column": 6,
+           "endLine": 17,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "t7",
+          "reference": null
+         },
+         "reference": {
+          "$sym": "LocalVariableSymbol",
+          "name": "t7",
+          "type": "string"
+         },
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "symbol": {
+        "$sym": "ServerScriptSymbol",
+        "trigger": "command",
+        "name": "mes",
+        "parameters": "string",
+        "returns": "unit"
+       },
+       "kind": "CommandCallExpression",
+       "arguments2": null
+      }
+     }
+    ],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "proc",
+     "name": "strings",
+     "parameters": "unit",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "proc"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "unit"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,2 @@
+[proc,p0] .npc_say("y");
+[ai_spawn,man] ~p0; ~p0;

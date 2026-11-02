@@ -1,0 +1,31 @@
+error: mismatched types: expected `int`, found `string`
+ --> script.rs2:2:14
+  |
+2 | def_int $a = "not an int";
+  |              ^^^^^^^^^^^^
+
+error: mismatched types: expected `string`, found `int`
+ --> script.rs2:4:5
+  |
+4 | mes($a);
+  |     ^^
+  |
+note: command `[command,mes]` defined here
+ --> aa_commands.rs2:1:1
+  |
+1 | [command,mes](string $text)
+  | ^^^^^^^^^^^^^
+
+error: mismatched types: expected `int`, found `string`
+ --> script.rs2:5:12
+  |
+5 | ~takes_int("text");
+  |            ^^^^^^
+  |
+note: proc `[proc,takes_int]` defined here
+ --> script.rs2:7:1
+  |
+7 | [proc,takes_int](int $value)
+  | ^^^^^^^^^^^^^^^^
+
+error: could not compile due to 3 previous errors

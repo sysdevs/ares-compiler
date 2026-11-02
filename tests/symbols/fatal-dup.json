@@ -1,0 +1,18 @@
+{
+ "npc": {
+  "max": 100,
+  "map": {
+   "0": "Rat",
+   "1": "rat"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ }
+}

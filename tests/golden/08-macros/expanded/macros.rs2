@@ -1,0 +1,4 @@
+[proc,macros]
+def_int $a = 42;
+mes("hi"); mes("hi");
+mes(tostring($a));

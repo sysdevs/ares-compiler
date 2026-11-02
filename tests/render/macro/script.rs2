@@ -1,0 +1,6 @@
+[proc,macros]
+#SAY(1); def_int $x = "after the macro";
+#SAY(
+  "two lines"); def_int $y = "same line";
+def_int $z = "next line";
+#SAY($missing);

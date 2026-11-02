@@ -1,0 +1,587 @@
+[
+ {
+  "fullName": "[proc,vars]",
+  "sourceName": "vars.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "i",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "s",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "j",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "t",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "k",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 2
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "i",
+       "type": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "s",
+      "line": 3
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 3
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": null
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "j",
+       "type": "int"
+      },
+      "line": 4
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "",
+      "line": null
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t",
+       "type": "string"
+      },
+      "line": 5
+     },
+     {
+      "op": "PushVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      "line": 6
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 6
+     },
+     {
+      "op": "Add",
+      "operand": null,
+      "line": null
+     },
+     {
+      "op": "PopVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      "line": 6
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "x",
+      "line": 7
+     },
+     {
+      "op": "PopVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      "line": 7
+     },
+     {
+      "op": "PushVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      "line": 8
+     },
+     {
+      "op": "PopVar2",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      "line": 8
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 9
+     },
+     {
+      "op": "PopVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      "line": 9
+     },
+     {
+      "op": "PushVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 10
+     },
+     {
+      "op": "Add",
+      "operand": null,
+      "line": null
+     },
+     {
+      "op": "PopVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 11
+     },
+     {
+      "op": "PopVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      "line": 11
+     },
+     {
+      "op": "PushVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      "line": 12
+     },
+     {
+      "op": "PopVar2",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      "line": 12
+     },
+     {
+      "op": "PushVar",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      "line": 13
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "k",
+       "type": "int"
+      },
+      "line": 13
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 2,
+      "line": 14
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "two",
+      "line": 14
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 14
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "i",
+       "type": "int"
+      },
+      "line": 14
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "i",
+       "type": "int"
+      },
+      "line": 15
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "j",
+       "type": "int"
+      },
+      "line": 15
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 16
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t",
+       "type": "string"
+      },
+      "line": 16
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 17
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 17
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[proc,arrays]",
+  "sourceName": "vars.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "arr",
+     "type": "intarray"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "n",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "x",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "other",
+     "type": "intarray"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 10,
+      "line": 20
+     },
+     {
+      "op": "DefineArray",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "arr",
+       "type": "intarray"
+      },
+      "line": 20
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 5,
+      "line": 21
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "int"
+      },
+      "line": 21
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": 22
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 7,
+      "line": 22
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "arr",
+       "type": "intarray"
+      },
+      "line": 22
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "int"
+      },
+      "line": 23
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": 23
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "arr",
+       "type": "intarray"
+      },
+      "line": 23
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 23
+     },
+     {
+      "op": "Add",
+      "operand": null,
+      "line": null
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "arr",
+       "type": "intarray"
+      },
+      "line": 23
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 3,
+      "line": 24
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "arr",
+       "type": "intarray"
+      },
+      "line": 24
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 24
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 3,
+      "line": 25
+     },
+     {
+      "op": "DefineArray",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "other",
+       "type": "intarray"
+      },
+      "line": 25
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 26
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 26
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "arr",
+       "type": "intarray"
+      },
+      "line": 26
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "other",
+       "type": "intarray"
+      },
+      "line": 26
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": 27
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "arr",
+       "type": "intarray"
+      },
+      "line": 27
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "tostring",
+       "parameters": "int",
+       "returns": "string"
+      },
+      "line": 27
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 27
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ }
+]

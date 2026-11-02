@@ -1,0 +1,10 @@
+[proc,caller]
+~give_item;
+mes(tostrin(1));
+def_int $count = 1;
+mes(tostring($cuont));
+
+[proc,give_items]
+
+[proc,unknown_with_args]
+~not_a_proc(1, "x");

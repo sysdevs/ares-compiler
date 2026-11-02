@@ -1,0 +1,7 @@
+error: expected expression, found `;`
+ --> script.rs2:2:14
+  |
+2 | def_int $a = ;
+  |              ^
+
+error: could not compile due to 1 previous error

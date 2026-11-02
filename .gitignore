@@ -1,0 +1,18 @@
+/target
+
+# local environment and logs
+.env
+.env.*
+*.log
+
+# rustfmt backups
+**/*.rs.bk
+
+# editors and OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini

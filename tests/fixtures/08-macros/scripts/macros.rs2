@@ -1,0 +1,4 @@
+[proc,macros]
+#ANSWER;
+#SAY_TWICE("hi");
+mes(tostring($a));

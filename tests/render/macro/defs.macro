@@ -1,0 +1,3 @@
+#define SAY, text
+mes(text);
+#enddef

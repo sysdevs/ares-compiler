@@ -1,0 +1,16 @@
+[package]
+name = "ares-compiler"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+annotate-snippets = "0.12"
+ares-shared = { path = "../ares-shared" }
+chumsky = { version = "0.13.0", features = ["pratt"] }
+crc32fast = "1.5.2"
+flate2 = { version = "1.1.10", default-features = false, features = ["zlib"] }
+indexmap = { version = "2.14.2", features = ["serde"] }
+logos = "0.16.1"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.154", features = ["preserve_order"] }
+

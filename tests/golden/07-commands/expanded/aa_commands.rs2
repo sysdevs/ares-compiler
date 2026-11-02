@@ -1,0 +1,10 @@
+[command,mes](string $text)
+[command,tostring](int $value)(string)
+[command,escape](string $text)(string)
+[command,random](int $max)(int)
+[command,npc_find](coord $coord, npc $npc)(boolean)
+[command,p_delay](int $ticks)
+[command,npc_setvar](int $value)
+[command,inv_total](inv $inv, obj $obj)(int)
+[command,coordx](coord $c)(int)
+[command,dump]

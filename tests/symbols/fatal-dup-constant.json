@@ -1,0 +1,32 @@
+{
+ "constant": {
+  "max": 100,
+  "map": {
+   "a": "1"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "npc": {
+  "max": 100,
+  "map": {
+   "0": "a"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ }
+}

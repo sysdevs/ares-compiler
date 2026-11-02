@@ -1,0 +1,13 @@
+[proc,commands]
+def_int $x = 5;
+def_string $s = "str";
+def_coord $c = 0_50_50_20_20;
+def_npc $n = man;
+if (npc_find($c, $n) = true) {
+    npc_setvar(10);
+    .npc_setvar(11);
+}
+def_int $total = inv_total(inv, coins);
+dump($x, $s, coordx($c));
+dump($total);
+mes(escape($s));

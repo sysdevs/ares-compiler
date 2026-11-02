@@ -1,0 +1,12 @@
+[proc,arith]
+def_int $a = 7;
+def_int $b = 3;
+def_int $c = calc($a + $b * 2 - 10 / 5 % 3);
+def_int $d = calc(($a + $b) * (2 - $a));
+def_int $e = calc($a & $b | 8);
+def_int $f = calc(-5 + $a);
+def_int $g = calc($a - 2147483647 - 2);
+def_int $h = calc(0x7fffffff + 1);
+def_int $i = calc(7 / -2);
+def_int $j = calc(-7 % 3);
+mes(tostring($c));

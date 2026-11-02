@@ -1,0 +1,1083 @@
+[
+ {
+  "fullName": "[proc,control]",
+  "sourceName": "control.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "x",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "flag",
+     "type": "boolean"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "inner",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 10,
+      "line": 2
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "random",
+       "parameters": "int",
+       "returns": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 3
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "flag",
+       "type": "boolean"
+      },
+      "line": 3
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 4
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 4
+     },
+     {
+      "op": "BranchEquals",
+      "operand": {
+       "$label": "if_true_0"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_else_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_0",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "one",
+      "line": 5
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 5
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_else_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 6
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 2,
+      "line": 6
+     },
+     {
+      "op": "BranchNot",
+      "operand": {
+       "$label": "condition_and_0"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_else_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "condition_and_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "flag",
+       "type": "boolean"
+      },
+      "line": 6
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 6
+     },
+     {
+      "op": "BranchEquals",
+      "operand": {
+       "$label": "if_true_1"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_else_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_1",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "not two and flag",
+      "line": 7
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 7
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_else_1",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 8
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 5,
+      "line": 8
+     },
+     {
+      "op": "BranchLessThan",
+      "operand": {
+       "$label": "if_true_2"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "condition_or_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "condition_or_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 8
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 8,
+      "line": 8
+     },
+     {
+      "op": "BranchGreaterThan",
+      "operand": {
+       "$label": "if_true_2"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_else_2"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_2",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "outside",
+      "line": 9
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 9
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_2"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_else_2",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 6,
+      "line": 10
+     },
+     {
+      "op": "BranchLessThanOrEquals",
+      "operand": {
+       "$label": "condition_and_1"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "condition_or_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "condition_or_1",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 7,
+      "line": 10
+     },
+     {
+      "op": "BranchGreaterThanOrEquals",
+      "operand": {
+       "$label": "condition_and_1"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_else_3"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "condition_and_1",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "flag",
+       "type": "boolean"
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 10
+     },
+     {
+      "op": "BranchEquals",
+      "operand": {
+       "$label": "if_true_3"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_else_3"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_3",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "parens",
+      "line": 11
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 11
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_3"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_else_3",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "else",
+      "line": 13
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 13
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_3"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_3",
+    "instructions": [
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_2"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_2",
+    "instructions": [
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_1",
+    "instructions": [
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_0",
+    "instructions": []
+   },
+   {
+    "label": "while_start_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 15
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": 15
+     },
+     {
+      "op": "BranchGreaterThan",
+      "operand": {
+       "$label": "while_body_0"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "while_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "while_body_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 16
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 16
+     },
+     {
+      "op": "Sub",
+      "operand": null,
+      "line": null
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 16
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 17
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 3,
+      "line": 17
+     },
+     {
+      "op": "BranchEquals",
+      "operand": {
+       "$label": "if_true_4"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_4"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_4",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "three",
+      "line": 18
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 18
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_4"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_4",
+    "instructions": [
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "while_start_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "while_end_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 21
+     },
+     {
+      "op": "Switch",
+      "operand": {
+       "$switch": 0
+      },
+      "line": 21
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_default_case_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_0_case_0",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "1",
+      "line": 22
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 22
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_0_case_1",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "2 or 3",
+      "line": 23
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 23
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_0_case_2",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "max",
+      "line": 24
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 24
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_default_case_0",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "default",
+      "line": 25
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 25
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_end_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "flag",
+       "type": "boolean"
+      },
+      "line": 27
+     },
+     {
+      "op": "Switch",
+      "operand": {
+       "$switch": 1
+      },
+      "line": 27
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_1_case_0",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "t",
+      "line": 28
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 28
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_1_case_1",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "f",
+      "line": 29
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 29
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_end_1",
+    "instructions": [
+     {
+      "op": "PushConstantSymbol",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      "line": 31
+     },
+     {
+      "op": "Switch",
+      "operand": {
+       "$switch": 2
+      },
+      "line": 31
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_default_case_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_2_case_0",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "human",
+      "line": 32
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 32
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_2"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_default_case_1",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "other",
+      "line": 33
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 33
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "switch_end_2"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "switch_end_2",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 37
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "inner",
+       "type": "int"
+      },
+      "line": 37
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "inner",
+       "type": "int"
+      },
+      "line": 38
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "tostring",
+       "parameters": "int",
+       "returns": "string"
+      },
+      "line": 38
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 38
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": [
+   {
+    "id": 0,
+    "cases": [
+     {
+      "label": "switch_0_case_0",
+      "keys": [
+       1
+      ]
+     },
+     {
+      "label": "switch_0_case_1",
+      "keys": [
+       2,
+       3
+      ]
+     },
+     {
+      "label": "switch_0_case_2",
+      "keys": [
+       99
+      ]
+     },
+     {
+      "label": "switch_default_case_0",
+      "keys": []
+     }
+    ]
+   },
+   {
+    "id": 1,
+    "cases": [
+     {
+      "label": "switch_1_case_0",
+      "keys": [
+       true
+      ]
+     },
+     {
+      "label": "switch_1_case_1",
+      "keys": [
+       false
+      ]
+     }
+    ]
+   },
+   {
+    "id": 2,
+    "cases": [
+     {
+      "label": "switch_2_case_0",
+      "keys": [
+       {
+        "$sym": "BasicSymbol",
+        "name": "man",
+        "type": "npc",
+        "isProtected": false
+       },
+       {
+        "$sym": "BasicSymbol",
+        "name": "woman",
+        "type": "npc",
+        "isProtected": false
+       }
+      ]
+     },
+     {
+      "label": "switch_default_case_1",
+      "keys": []
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,7 @@
+error: unterminated string
+ --> script.rs2:2:5
+  |
+2 | mes("no end);
+  |     ^^^
+
+error: could not compile due to 1 previous error

@@ -1,0 +1,27 @@
+[proc,vars]
+def_int $i = 1;
+def_string $s = "s";
+def_int $j;
+def_string $t;
+%playtime = calc(%playtime + 1);
+%name_var = "x";
+.%playtime = %playtime;
+%flag_bit = 1;
+%world_counter = calc(%world_counter + 1);
+%obj_charges = 1;
+.%obj_charges = %obj_charges;
+def_int $k = %flag_bit;
+$i, $s = 2, "two";
+$j = $i;
+$t = $s;
+mes($s);
+
+[proc,arrays]
+def_int $arr(10);
+def_int $n = 5;
+$arr(0) = 7;
+$arr($n) = calc($arr(0) + 1);
+def_int $x = $arr(3);
+def_int $other(3);
+$other(1) = $arr(1);
+mes(tostring($arr(0)));

@@ -1,0 +1,387 @@
+[
+ {
+  "fullName": "[proc,commands]",
+  "sourceName": "commands.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "x",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "s",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "c",
+     "type": "coord"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "n",
+     "type": "npc"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "total",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 5,
+      "line": 2
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "str",
+      "line": 3
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 3
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 52759700,
+      "line": 4
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "c",
+       "type": "coord"
+      },
+      "line": 4
+     },
+     {
+      "op": "PushConstantSymbol",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      "line": 5
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "npc"
+      },
+      "line": 5
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "c",
+       "type": "coord"
+      },
+      "line": 6
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "npc"
+      },
+      "line": 6
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "npc_find",
+       "parameters": "coord,npc",
+       "returns": "boolean"
+      },
+      "line": 6
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 6
+     },
+     {
+      "op": "BranchEquals",
+      "operand": {
+       "$label": "if_true_0"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_0",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 10,
+      "line": 7
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "npc_setvar",
+       "parameters": "int",
+       "returns": "unit"
+      },
+      "line": 7
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 11,
+      "line": 8
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": ".npc_setvar",
+       "parameters": "int",
+       "returns": "unit"
+      },
+      "line": 8
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_0",
+    "instructions": [
+     {
+      "op": "PushConstantSymbol",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantSymbol",
+      "operand": {
+       "$sym": "BasicSymbol",
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      "line": 10
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "inv_total",
+       "parameters": "inv,obj",
+       "returns": "int"
+      },
+      "line": 10
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "total",
+       "type": "int"
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "$undefined=",
+      "line": null
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      },
+      "line": 11
+     },
+     {
+      "op": "PushConstantString",
+      "operand": ", ",
+      "line": null
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "$undefined=",
+      "line": null
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 11
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "escape",
+       "parameters": "string",
+       "returns": "string"
+      },
+      "line": null
+     },
+     {
+      "op": "PushConstantString",
+      "operand": ", ",
+      "line": null
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "~undefined()=",
+      "line": null
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "c",
+       "type": "coord"
+      },
+      "line": 11
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "coordx",
+       "parameters": "coord",
+       "returns": "int"
+      },
+      "line": 11
+     },
+     {
+      "op": "JoinString",
+      "operand": 5,
+      "line": null
+     },
+     {
+      "op": "Discard",
+      "operand": 2,
+      "line": null
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "$undefined=",
+      "line": null
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "total",
+       "type": "int"
+      },
+      "line": 12
+     },
+     {
+      "op": "JoinString",
+      "operand": 1,
+      "line": null
+     },
+     {
+      "op": "Discard",
+      "operand": 2,
+      "line": null
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 13
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "escape",
+       "parameters": "string",
+       "returns": "string"
+      },
+      "line": 13
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 13
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ }
+]

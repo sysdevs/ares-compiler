@@ -1,0 +1,15 @@
+[command,mes](string $s)
+[command,npc_find](coord $c, npc $n, int $r)(boolean)
+[command,npc_findnext]()(boolean)
+[command,npc_del]
+[command,p_delay](int $n)
+[command,loc_find]
+[command,loc_del]
+[command,p_teleport]
+[command,huntall]
+[command,npc_huntnext]()(boolean)
+[command,jump](label $l)
+[command,npc_say](string $s)
+[command,obj_add]
+[command,p_opnpc]
+[command,tostring](int $n)(string)

@@ -1,0 +1,8 @@
+[proc,twice]
+def_int $a = 1;
+def_int $a = 2;
+
+[proc,twice]
+mes("again");
+
+[proc,params](int $p, string $p)

@@ -1,0 +1,145 @@
+[
+ {
+  "fullName": "[proc,macros]",
+  "sourceName": "macros.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "a",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 42,
+      "line": 2
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "a",
+       "type": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "hi",
+      "line": 3
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 3
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "hi",
+      "line": 3
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 3
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "a",
+       "type": "int"
+      },
+      "line": 4
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "tostring",
+       "parameters": "int",
+       "returns": "string"
+      },
+      "line": 4
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 4
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[proc,crlf_kept]",
+  "sourceName": "zz_crlf.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": []
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "no hash in this file so CRLF stays",
+      "line": 2
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 2
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ }
+]

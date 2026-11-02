@@ -1,0 +1,175 @@
+{
+ "command": {
+  "max": 100,
+  "map": {
+   "1000": "mes",
+   "1001": "npc_find",
+   "1002": "npc_findnext",
+   "1003": "npc_del",
+   "1004": "p_delay",
+   "1005": "loc_find",
+   "1006": "loc_del",
+   "1007": "p_teleport",
+   "1008": "huntall",
+   "1009": "npc_huntnext",
+   "1010": "jump",
+   "1011": "npc_say",
+   "1012": "obj_add",
+   "1013": "p_opnpc",
+   "1014": "tostring"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {
+   "1003": "active_npc",
+   "1004": "p_active_player",
+   "1006": "active_loc",
+   "1007": "p_active_player",
+   "1011": "active_npc",
+   "1013": "active_player,active_npc",
+   "1012": "active_player",
+   "1001": "none"
+  },
+  "require2": {
+   "1003": "active_npc2",
+   "1011": "active_npc2"
+  },
+  "conditional": {
+   "1001": true,
+   "1002": true,
+   "1009": true
+  },
+  "set": {
+   "1001": "active_npc",
+   "1002": "active_npc",
+   "1005": "active_loc",
+   "1009": "active_npc"
+  },
+  "set2": {
+   "1001": "active_npc2"
+  },
+  "corrupt": {
+   "1008": "active_npc",
+   "1004": "active_loc"
+  },
+  "corrupt2": {
+   "1008": "active_npc2"
+  }
+ },
+ "runescript": {
+  "max": 100,
+  "map": {
+   "0": "[proc,dummy]"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "npc": {
+  "max": 100,
+  "map": {
+   "0": "man"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "component": {
+  "max": 100,
+  "map": {
+   "0": "bank:close",
+   "1": "overlay:x",
+   "2": "Over Lay:y"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "interface": {
+  "max": 100,
+  "map": {
+   "0": "bank"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "overlayinterface": {
+  "max": 100,
+  "map": {
+   "0": "overlay",
+   "1": "Over Lay"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varp": {
+  "max": 100,
+  "map": {
+   "0": "vp",
+   "1": "vp_prot"
+  },
+  "vartype": {
+   "0": "int",
+   "1": "int"
+  },
+  "protect": {
+   "1": true
+  },
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varn": {
+  "max": 100,
+  "map": {
+   "0": "vn"
+  },
+  "vartype": {
+   "0": "int"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ }
+}

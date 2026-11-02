@@ -1,0 +1,244 @@
+{
+ "command": {
+  "max": 20,
+  "map": {
+   "1000": "mes",
+   "1001": "tostring",
+   "1002": "escape",
+   "1003": "random",
+   "1004": "npc_find",
+   "1005": "p_delay",
+   "1006": "npc_setvar",
+   "1007": "inv_total",
+   "1008": "coordx"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {
+   "1005": "active_player",
+   "1006": "active_npc"
+  },
+  "require2": {
+   "1006": "active_npc2"
+  },
+  "conditional": {
+   "1004": true
+  },
+  "set": {
+   "1004": "active_npc"
+  },
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "runescript": {
+  "max": 100,
+  "map": {
+   "0": "[proc,literals]",
+   "1": "[proc,strings]",
+   "2": "[proc,control]",
+   "3": "[proc,arith]",
+   "4": "[proc,vars]",
+   "5": "[proc,minmax]",
+   "6": "[proc,swap]",
+   "7": "[label,done]",
+   "8": "[proc,caller]",
+   "9": "[proc,commands]",
+   "10": "[proc,macros]",
+   "11": "[opnpc1,man]",
+   "12": "[opnpc1,_]",
+   "13": "[debugproc,dbg]",
+   "14": "[proc,errors]",
+   "15": "[proc,arrays]",
+   "16": "[proc,tuples]",
+   "17": "[label,loop]",
+   "18": "[proc,crlf_kept]",
+   "19": "[proc,broken]",
+   "20": "[label,start]"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "constant": {
+  "max": 0,
+  "map": {
+   "max_level": "99",
+   "greeting": "hello",
+   "spawn": "0_50_50_20_20"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "npc": {
+  "max": 3,
+  "map": {
+   "0": "man",
+   "1": "woman",
+   "2": "hans"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "obj": {
+  "max": 2,
+  "map": {
+   "0": "coins",
+   "1": "bronze_sword"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "inv": {
+  "max": 1,
+  "map": {
+   "0": "inv"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "category": {
+  "max": 1,
+  "map": {
+   "0": "humans"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varp": {
+  "max": 3,
+  "map": {
+   "0": "playtime",
+   "1": "name_var",
+   "2": "secret"
+  },
+  "vartype": {
+   "0": "int",
+   "1": "string",
+   "2": "int"
+  },
+  "protect": {
+   "0": false,
+   "1": false,
+   "2": true
+  },
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varn": {
+  "max": 1,
+  "map": {
+   "0": "npc_hp"
+  },
+  "vartype": {
+   "0": "int"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varo": {
+  "max": 1,
+  "map": {
+   "0": "obj_charges"
+  },
+  "vartype": {
+   "0": "int"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "vars": {
+  "max": 1,
+  "map": {
+   "0": "world_counter"
+  },
+  "vartype": {
+   "0": "int"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varbit": {
+  "max": 1,
+  "map": {
+   "0": "flag_bit"
+  },
+  "vartype": {
+   "0": "int"
+  },
+  "protect": {
+   "0": false
+  },
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ }
+}

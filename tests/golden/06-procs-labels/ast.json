@@ -1,0 +1,3194 @@
+[
+ {
+  "$node": "ScriptFile",
+  "source": {
+   "name": "aa_commands.rs2",
+   "line": 1,
+   "column": 1,
+   "endLine": 11,
+   "endColumn": 6
+  },
+  "scripts": [
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 1,
+     "column": 1,
+     "endLine": 1,
+     "endColumn": 28
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 1,
+      "column": 2,
+      "endLine": 1,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 1,
+      "column": 10,
+      "endLine": 1,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "mes",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 1,
+       "column": 15,
+       "endLine": 1,
+       "endColumn": 27
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 1,
+        "column": 15,
+        "endLine": 1,
+        "endColumn": 21
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 1,
+        "column": 23,
+        "endLine": 1,
+        "endColumn": 27
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "text",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 2,
+     "column": 1,
+     "endLine": 2,
+     "endColumn": 39
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 2,
+      "column": 2,
+      "endLine": 2,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 2,
+      "column": 10,
+      "endLine": 2,
+      "endColumn": 18
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "tostring",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 2,
+       "column": 20,
+       "endLine": 2,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 2,
+        "column": 20,
+        "endLine": 2,
+        "endColumn": 23
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 2,
+        "column": 25,
+        "endLine": 2,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 2,
+       "column": 32,
+       "endLine": 2,
+       "endColumn": 38
+      },
+      "text": "string"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 3,
+     "column": 1,
+     "endLine": 3,
+     "endColumn": 39
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 3,
+      "column": 2,
+      "endLine": 3,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 3,
+      "column": 10,
+      "endLine": 3,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "escape",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 3,
+       "column": 18,
+       "endLine": 3,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 3,
+        "column": 18,
+        "endLine": 3,
+        "endColumn": 24
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 3,
+        "column": 26,
+        "endLine": 3,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "text",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 3,
+       "column": 32,
+       "endLine": 3,
+       "endColumn": 38
+      },
+      "text": "string"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 4,
+     "column": 1,
+     "endLine": 4,
+     "endColumn": 32
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 4,
+      "column": 2,
+      "endLine": 4,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 4,
+      "column": 10,
+      "endLine": 4,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "random",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 4,
+       "column": 18,
+       "endLine": 4,
+       "endColumn": 26
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 4,
+        "column": 18,
+        "endLine": 4,
+        "endColumn": 21
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 4,
+        "column": 23,
+        "endLine": 4,
+        "endColumn": 26
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "max",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 4,
+       "column": 28,
+       "endLine": 4,
+       "endColumn": 31
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 5,
+     "column": 1,
+     "endLine": 5,
+     "endColumn": 52
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 5,
+      "column": 2,
+      "endLine": 5,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 5,
+      "column": 10,
+      "endLine": 5,
+      "endColumn": 18
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "npc_find",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 20,
+       "endLine": 5,
+       "endColumn": 32
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 20,
+        "endLine": 5,
+        "endColumn": 25
+       },
+       "text": "coord"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 27,
+        "endLine": 5,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "coord",
+       "reference": null
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 34,
+       "endLine": 5,
+       "endColumn": 42
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 34,
+        "endLine": 5,
+        "endColumn": 37
+       },
+       "text": "npc"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 39,
+        "endLine": 5,
+        "endColumn": 42
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "npc",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 44,
+       "endLine": 5,
+       "endColumn": 51
+      },
+      "text": "boolean"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 6,
+     "column": 1,
+     "endLine": 6,
+     "endColumn": 30
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 6,
+      "column": 2,
+      "endLine": 6,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 6,
+      "column": 10,
+      "endLine": 6,
+      "endColumn": 17
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "p_delay",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 6,
+       "column": 19,
+       "endLine": 6,
+       "endColumn": 29
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 6,
+        "column": 19,
+        "endLine": 6,
+        "endColumn": 22
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 6,
+        "column": 24,
+        "endLine": 6,
+        "endColumn": 29
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "ticks",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 7,
+     "column": 1,
+     "endLine": 7,
+     "endColumn": 33
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 7,
+      "column": 2,
+      "endLine": 7,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 7,
+      "column": 10,
+      "endLine": 7,
+      "endColumn": 20
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "npc_setvar",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 7,
+       "column": 22,
+       "endLine": 7,
+       "endColumn": 32
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 7,
+        "column": 22,
+        "endLine": 7,
+        "endColumn": 25
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 7,
+        "column": 27,
+        "endLine": 7,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 8,
+     "column": 1,
+     "endLine": 8,
+     "endColumn": 45
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 8,
+      "column": 2,
+      "endLine": 8,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 8,
+      "column": 10,
+      "endLine": 8,
+      "endColumn": 19
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "inv_total",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 21,
+       "endLine": 8,
+       "endColumn": 29
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 21,
+        "endLine": 8,
+        "endColumn": 24
+       },
+       "text": "inv"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 26,
+        "endLine": 8,
+        "endColumn": 29
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "inv",
+       "reference": null
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 31,
+       "endLine": 8,
+       "endColumn": 39
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 31,
+        "endLine": 8,
+        "endColumn": 34
+       },
+       "text": "obj"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 36,
+        "endLine": 8,
+        "endColumn": 39
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "obj",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 41,
+       "endLine": 8,
+       "endColumn": 44
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 9,
+     "column": 1,
+     "endLine": 9,
+     "endColumn": 32
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 9,
+      "column": 2,
+      "endLine": 9,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 9,
+      "column": 10,
+      "endLine": 9,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "coordx",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 9,
+       "column": 18,
+       "endLine": 9,
+       "endColumn": 26
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 9,
+        "column": 18,
+        "endLine": 9,
+        "endColumn": 23
+       },
+       "text": "coord"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 9,
+        "column": 25,
+        "endLine": 9,
+        "endColumn": 26
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "c",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 9,
+       "column": 28,
+       "endLine": 9,
+       "endColumn": 31
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 10,
+     "column": 1,
+     "endLine": 10,
+     "endColumn": 15
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 10,
+      "column": 2,
+      "endLine": 10,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 10,
+      "column": 10,
+      "endLine": 10,
+      "endColumn": 14
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "dump",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [],
+    "subjectReference": null
+   }
+  ]
+ },
+ {
+  "$node": "ScriptFile",
+  "source": {
+   "name": "procs.rs2",
+   "line": 1,
+   "column": 1,
+   "endLine": 38,
+   "endColumn": 6
+  },
+  "scripts": [
+   {
+    "$node": "Script",
+    "source": {
+     "name": "procs.rs2",
+     "line": 1,
+     "column": 1,
+     "endLine": 11,
+     "endColumn": 16
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 1,
+      "column": 2,
+      "endLine": 1,
+      "endColumn": 6
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "proc",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 1,
+      "column": 7,
+      "endLine": 1,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "minmax",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "procs.rs2",
+       "line": 1,
+       "column": 15,
+       "endLine": 1,
+       "endColumn": 23
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 1,
+        "column": 15,
+        "endLine": 1,
+        "endColumn": 18
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 1,
+        "column": 20,
+        "endLine": 1,
+        "endColumn": 23
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "min",
+       "reference": null
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "procs.rs2",
+       "line": 1,
+       "column": 25,
+       "endLine": 1,
+       "endColumn": 33
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 1,
+        "column": 25,
+        "endLine": 1,
+        "endColumn": 28
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 1,
+        "column": 30,
+        "endLine": 1,
+        "endColumn": 33
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "max",
+       "reference": null
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "procs.rs2",
+       "line": 1,
+       "column": 35,
+       "endLine": 1,
+       "endColumn": 45
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 1,
+        "column": 35,
+        "endLine": 1,
+        "endColumn": 38
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 1,
+        "column": 40,
+        "endLine": 1,
+        "endColumn": 45
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "procs.rs2",
+       "line": 1,
+       "column": 47,
+       "endLine": 1,
+       "endColumn": 50
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [
+     {
+      "$node": "IfStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 2,
+       "column": 1,
+       "endLine": 4,
+       "endColumn": 2
+      },
+      "kind": "IfStatement",
+      "condition": {
+       "$node": "ConditionExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 2,
+        "column": 5,
+        "endLine": 2,
+        "endColumn": 17
+       },
+       "type": null,
+       "typeHint": null,
+       "left": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 2,
+         "column": 5,
+         "endLine": 2,
+         "endColumn": 9
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 2,
+          "column": 6,
+          "endLine": 2,
+          "endColumn": 9
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "max",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "operator": {
+        "$node": "Token",
+        "source": {
+         "name": "procs.rs2",
+         "line": 2,
+         "column": 10,
+         "endLine": 2,
+         "endColumn": 12
+        },
+        "text": "<="
+       },
+       "right": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 2,
+         "column": 13,
+         "endLine": 2,
+         "endColumn": 17
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 2,
+          "column": 14,
+          "endLine": 2,
+          "endColumn": 17
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "min",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "kind": "ConditionExpression"
+      },
+      "thenStatement": {
+       "$node": "BlockStatement",
+       "source": {
+        "name": "procs.rs2",
+        "line": 2,
+        "column": 19,
+        "endLine": 4,
+        "endColumn": 2
+       },
+       "kind": "BlockStatement",
+       "statements": [
+        {
+         "$node": "AssignmentStatement",
+         "source": {
+          "name": "procs.rs2",
+          "line": 3,
+          "column": 5,
+          "endLine": 3,
+          "endColumn": 29
+         },
+         "kind": "AssignmentStatement",
+         "vars": [
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "procs.rs2",
+            "line": 3,
+            "column": 5,
+            "endLine": 3,
+            "endColumn": 9
+           },
+           "type": null,
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "procs.rs2",
+             "line": 3,
+             "column": 6,
+             "endLine": 3,
+             "endColumn": 9
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "min",
+            "reference": null
+           },
+           "reference": null,
+           "kind": "LocalVariableExpression",
+           "index": null
+          },
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "procs.rs2",
+            "line": 3,
+            "column": 11,
+            "endLine": 3,
+            "endColumn": 15
+           },
+           "type": null,
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "procs.rs2",
+             "line": 3,
+             "column": 12,
+             "endLine": 3,
+             "endColumn": 15
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "max",
+            "reference": null
+           },
+           "reference": null,
+           "kind": "LocalVariableExpression",
+           "index": null
+          }
+         ],
+         "expressions": [
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "procs.rs2",
+            "line": 3,
+            "column": 18,
+            "endLine": 3,
+            "endColumn": 22
+           },
+           "type": null,
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "procs.rs2",
+             "line": 3,
+             "column": 19,
+             "endLine": 3,
+             "endColumn": 22
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "max",
+            "reference": null
+           },
+           "reference": null,
+           "kind": "LocalVariableExpression",
+           "index": null
+          },
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "procs.rs2",
+            "line": 3,
+            "column": 24,
+            "endLine": 3,
+            "endColumn": 28
+           },
+           "type": null,
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "procs.rs2",
+             "line": 3,
+             "column": 25,
+             "endLine": 3,
+             "endColumn": 28
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "min",
+            "reference": null
+           },
+           "reference": null,
+           "kind": "LocalVariableExpression",
+           "index": null
+          }
+         ]
+        }
+       ]
+      },
+      "elseStatement": null
+     },
+     {
+      "$node": "IfStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 5,
+       "column": 1,
+       "endLine": 7,
+       "endColumn": 2
+      },
+      "kind": "IfStatement",
+      "condition": {
+       "$node": "ConditionExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 5,
+        "column": 5,
+        "endLine": 5,
+        "endColumn": 18
+       },
+       "type": null,
+       "typeHint": null,
+       "left": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 5,
+         "column": 5,
+         "endLine": 5,
+         "endColumn": 11
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 5,
+          "column": 6,
+          "endLine": 5,
+          "endColumn": 11
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "value",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "operator": {
+        "$node": "Token",
+        "source": {
+         "name": "procs.rs2",
+         "line": 5,
+         "column": 12,
+         "endLine": 5,
+         "endColumn": 13
+        },
+        "text": "<"
+       },
+       "right": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 5,
+         "column": 14,
+         "endLine": 5,
+         "endColumn": 18
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 5,
+          "column": 15,
+          "endLine": 5,
+          "endColumn": 18
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "min",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "kind": "ConditionExpression"
+      },
+      "thenStatement": {
+       "$node": "BlockStatement",
+       "source": {
+        "name": "procs.rs2",
+        "line": 5,
+        "column": 20,
+        "endLine": 7,
+        "endColumn": 2
+       },
+       "kind": "BlockStatement",
+       "statements": [
+        {
+         "$node": "ReturnStatement",
+         "source": {
+          "name": "procs.rs2",
+          "line": 6,
+          "column": 5,
+          "endLine": 6,
+          "endColumn": 18
+         },
+         "kind": "ReturnStatement",
+         "expressions": [
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "procs.rs2",
+            "line": 6,
+            "column": 12,
+            "endLine": 6,
+            "endColumn": 16
+           },
+           "type": null,
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "procs.rs2",
+             "line": 6,
+             "column": 13,
+             "endLine": 6,
+             "endColumn": 16
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "min",
+            "reference": null
+           },
+           "reference": null,
+           "kind": "LocalVariableExpression",
+           "index": null
+          }
+         ]
+        }
+       ]
+      },
+      "elseStatement": null
+     },
+     {
+      "$node": "IfStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 8,
+       "column": 1,
+       "endLine": 10,
+       "endColumn": 2
+      },
+      "kind": "IfStatement",
+      "condition": {
+       "$node": "ConditionExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 8,
+        "column": 5,
+        "endLine": 8,
+        "endColumn": 18
+       },
+       "type": null,
+       "typeHint": null,
+       "left": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 8,
+         "column": 5,
+         "endLine": 8,
+         "endColumn": 11
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 8,
+          "column": 6,
+          "endLine": 8,
+          "endColumn": 11
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "value",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "operator": {
+        "$node": "Token",
+        "source": {
+         "name": "procs.rs2",
+         "line": 8,
+         "column": 12,
+         "endLine": 8,
+         "endColumn": 13
+        },
+        "text": ">"
+       },
+       "right": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 8,
+         "column": 14,
+         "endLine": 8,
+         "endColumn": 18
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 8,
+          "column": 15,
+          "endLine": 8,
+          "endColumn": 18
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "max",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "kind": "ConditionExpression"
+      },
+      "thenStatement": {
+       "$node": "BlockStatement",
+       "source": {
+        "name": "procs.rs2",
+        "line": 8,
+        "column": 20,
+        "endLine": 10,
+        "endColumn": 2
+       },
+       "kind": "BlockStatement",
+       "statements": [
+        {
+         "$node": "ReturnStatement",
+         "source": {
+          "name": "procs.rs2",
+          "line": 9,
+          "column": 5,
+          "endLine": 9,
+          "endColumn": 18
+         },
+         "kind": "ReturnStatement",
+         "expressions": [
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "procs.rs2",
+            "line": 9,
+            "column": 12,
+            "endLine": 9,
+            "endColumn": 16
+           },
+           "type": null,
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "procs.rs2",
+             "line": 9,
+             "column": 13,
+             "endLine": 9,
+             "endColumn": 16
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "max",
+            "reference": null
+           },
+           "reference": null,
+           "kind": "LocalVariableExpression",
+           "index": null
+          }
+         ]
+        }
+       ]
+      },
+      "elseStatement": null
+     },
+     {
+      "$node": "ReturnStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 11,
+       "column": 1,
+       "endLine": 11,
+       "endColumn": 16
+      },
+      "kind": "ReturnStatement",
+      "expressions": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 11,
+         "column": 8,
+         "endLine": 11,
+         "endColumn": 14
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 11,
+          "column": 9,
+          "endLine": 11,
+          "endColumn": 14
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "value",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       }
+      ]
+     }
+    ],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "procs.rs2",
+     "line": 13,
+     "column": 1,
+     "endLine": 14,
+     "endColumn": 16
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 13,
+      "column": 2,
+      "endLine": 13,
+      "endColumn": 6
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "proc",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 13,
+      "column": 7,
+      "endLine": 13,
+      "endColumn": 11
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "swap",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "procs.rs2",
+       "line": 13,
+       "column": 13,
+       "endLine": 13,
+       "endColumn": 19
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 13,
+        "column": 13,
+        "endLine": 13,
+        "endColumn": 16
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 13,
+        "column": 18,
+        "endLine": 13,
+        "endColumn": 19
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "a",
+       "reference": null
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "procs.rs2",
+       "line": 13,
+       "column": 21,
+       "endLine": 13,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 13,
+        "column": 21,
+        "endLine": 13,
+        "endColumn": 27
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 13,
+        "column": 29,
+        "endLine": 13,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "b",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "procs.rs2",
+       "line": 13,
+       "column": 32,
+       "endLine": 13,
+       "endColumn": 38
+      },
+      "text": "string"
+     },
+     {
+      "$node": "Token",
+      "source": {
+       "name": "procs.rs2",
+       "line": 13,
+       "column": 40,
+       "endLine": 13,
+       "endColumn": 43
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [
+     {
+      "$node": "ReturnStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 14,
+       "column": 1,
+       "endLine": 14,
+       "endColumn": 16
+      },
+      "kind": "ReturnStatement",
+      "expressions": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 14,
+         "column": 8,
+         "endLine": 14,
+         "endColumn": 10
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 14,
+          "column": 9,
+          "endLine": 14,
+          "endColumn": 10
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "b",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 14,
+         "column": 12,
+         "endLine": 14,
+         "endColumn": 14
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 14,
+          "column": 13,
+          "endLine": 14,
+          "endColumn": 14
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "a",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       }
+      ]
+     }
+    ],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "procs.rs2",
+     "line": 16,
+     "column": 1,
+     "endLine": 20,
+     "endColumn": 9
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 16,
+      "column": 2,
+      "endLine": 16,
+      "endColumn": 6
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "proc",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 16,
+      "column": 7,
+      "endLine": 16,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "tuples",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 17,
+       "column": 1,
+       "endLine": 17,
+       "endColumn": 15
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 17,
+        "column": 1,
+        "endLine": 17,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 17,
+        "column": 13,
+        "endLine": 17,
+        "endColumn": 14
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "s",
+       "reference": null
+      },
+      "initializer": null
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 18,
+       "column": 1,
+       "endLine": 18,
+       "endColumn": 12
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 18,
+        "column": 1,
+        "endLine": 18,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 18,
+        "column": 10,
+        "endLine": 18,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "i",
+       "reference": null
+      },
+      "initializer": null
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 19,
+       "column": 1,
+       "endLine": 19,
+       "endColumn": 26
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 19,
+         "column": 1,
+         "endLine": 19,
+         "endColumn": 3
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 19,
+          "column": 2,
+          "endLine": 19,
+          "endColumn": 3
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "s",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 19,
+         "column": 5,
+         "endLine": 19,
+         "endColumn": 7
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 19,
+          "column": 6,
+          "endLine": 19,
+          "endColumn": 7
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "i",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "ProcCallExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 19,
+         "column": 10,
+         "endLine": 19,
+         "endColumn": 25
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 19,
+          "column": 11,
+          "endLine": 19,
+          "endColumn": 15
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "swap",
+         "reference": null
+        },
+        "arguments": [
+         {
+          "$node": "IntegerLiteral",
+          "source": {
+           "name": "procs.rs2",
+           "line": 19,
+           "column": 16,
+           "endLine": 19,
+           "endColumn": 17
+          },
+          "type": null,
+          "typeHint": null,
+          "value": "1",
+          "reference": null,
+          "radix": 10,
+          "kind": "IntegerLiteral",
+          "numberValue": null
+         },
+         {
+          "$node": "StringLiteral",
+          "source": {
+           "name": "procs.rs2",
+           "line": 19,
+           "column": 19,
+           "endLine": 19,
+           "endColumn": 24
+          },
+          "type": null,
+          "typeHint": null,
+          "value": "one",
+          "reference": null,
+          "kind": "StringLiteral",
+          "subExpression": null
+         }
+        ],
+        "kind": "ProcCallExpression",
+        "symbol": null
+       }
+      ]
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 20,
+       "column": 1,
+       "endLine": 20,
+       "endColumn": 9
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 20,
+        "column": 1,
+        "endLine": 20,
+        "endColumn": 8
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "procs.rs2",
+         "line": 20,
+         "column": 1,
+         "endLine": 20,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "procs.rs2",
+          "line": 20,
+          "column": 5,
+          "endLine": 20,
+          "endColumn": 7
+         },
+         "type": null,
+         "typeHint": null,
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "procs.rs2",
+           "line": 20,
+           "column": 6,
+           "endLine": 20,
+           "endColumn": 7
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "s",
+          "reference": null
+         },
+         "reference": null,
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "kind": "CommandCallExpression",
+       "arguments2": null,
+       "symbol": null
+      }
+     }
+    ],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "procs.rs2",
+     "line": 22,
+     "column": 1,
+     "endLine": 23,
+     "endColumn": 22
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 22,
+      "column": 2,
+      "endLine": 22,
+      "endColumn": 7
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "label",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 22,
+      "column": 8,
+      "endLine": 22,
+      "endColumn": 12
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "done",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "procs.rs2",
+       "line": 22,
+       "column": 14,
+       "endLine": 22,
+       "endColumn": 23
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 22,
+        "column": 14,
+        "endLine": 22,
+        "endColumn": 17
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 22,
+        "column": 19,
+        "endLine": 22,
+        "endColumn": 23
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "code",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 23,
+       "column": 1,
+       "endLine": 23,
+       "endColumn": 22
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 23,
+        "column": 1,
+        "endLine": 23,
+        "endColumn": 21
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "procs.rs2",
+         "line": 23,
+         "column": 1,
+         "endLine": 23,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "CommandCallExpression",
+         "source": {
+          "name": "procs.rs2",
+          "line": 23,
+          "column": 5,
+          "endLine": 23,
+          "endColumn": 20
+         },
+         "type": null,
+         "typeHint": null,
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "procs.rs2",
+           "line": 23,
+           "column": 5,
+           "endLine": 23,
+           "endColumn": 13
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "tostring",
+          "reference": null
+         },
+         "arguments": [
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "procs.rs2",
+            "line": 23,
+            "column": 14,
+            "endLine": 23,
+            "endColumn": 19
+           },
+           "type": null,
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "procs.rs2",
+             "line": 23,
+             "column": 15,
+             "endLine": 23,
+             "endColumn": 19
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "code",
+            "reference": null
+           },
+           "reference": null,
+           "kind": "LocalVariableExpression",
+           "index": null
+          }
+         ],
+         "kind": "CommandCallExpression",
+         "arguments2": null,
+         "symbol": null
+        }
+       ],
+       "kind": "CommandCallExpression",
+       "arguments2": null,
+       "symbol": null
+      }
+     }
+    ],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "procs.rs2",
+     "line": 25,
+     "column": 1,
+     "endLine": 29,
+     "endColumn": 11
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 25,
+      "column": 2,
+      "endLine": 25,
+      "endColumn": 7
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "label",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 25,
+      "column": 8,
+      "endLine": 25,
+      "endColumn": 12
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "loop",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "procs.rs2",
+       "line": 25,
+       "column": 14,
+       "endLine": 25,
+       "endColumn": 20
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 25,
+        "column": 14,
+        "endLine": 25,
+        "endColumn": 17
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 25,
+        "column": 19,
+        "endLine": 25,
+        "endColumn": 20
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "n",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "IfStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 26,
+       "column": 1,
+       "endLine": 28,
+       "endColumn": 2
+      },
+      "kind": "IfStatement",
+      "condition": {
+       "$node": "ConditionExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 26,
+        "column": 5,
+        "endLine": 26,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "left": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "procs.rs2",
+         "line": 26,
+         "column": 5,
+         "endLine": 26,
+         "endColumn": 7
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "procs.rs2",
+          "line": 26,
+          "column": 6,
+          "endLine": 26,
+          "endColumn": 7
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "n",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "operator": {
+        "$node": "Token",
+        "source": {
+         "name": "procs.rs2",
+         "line": 26,
+         "column": 8,
+         "endLine": 26,
+         "endColumn": 9
+        },
+        "text": ">"
+       },
+       "right": {
+        "$node": "IntegerLiteral",
+        "source": {
+         "name": "procs.rs2",
+         "line": 26,
+         "column": 10,
+         "endLine": 26,
+         "endColumn": 11
+        },
+        "type": null,
+        "typeHint": null,
+        "value": "0",
+        "reference": null,
+        "radix": 10,
+        "kind": "IntegerLiteral",
+        "numberValue": null
+       },
+       "kind": "ConditionExpression"
+      },
+      "thenStatement": {
+       "$node": "BlockStatement",
+       "source": {
+        "name": "procs.rs2",
+        "line": 26,
+        "column": 13,
+        "endLine": 28,
+        "endColumn": 2
+       },
+       "kind": "BlockStatement",
+       "statements": [
+        {
+         "$node": "ExpressionStatement",
+         "source": {
+          "name": "procs.rs2",
+          "line": 27,
+          "column": 5,
+          "endLine": 27,
+          "endColumn": 25
+         },
+         "kind": "ExpressionStatement",
+         "expression": {
+          "$node": "JumpCallExpression",
+          "source": {
+           "name": "procs.rs2",
+           "line": 27,
+           "column": 5,
+           "endLine": 27,
+           "endColumn": 24
+          },
+          "type": null,
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "procs.rs2",
+            "line": 27,
+            "column": 6,
+            "endLine": 27,
+            "endColumn": 10
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "loop",
+           "reference": null
+          },
+          "arguments": [
+           {
+            "$node": "CalcExpression",
+            "source": {
+             "name": "procs.rs2",
+             "line": 27,
+             "column": 11,
+             "endLine": 27,
+             "endColumn": 23
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "CalcExpression",
+            "expression": {
+             "$node": "ArithmeticExpression",
+             "source": {
+              "name": "procs.rs2",
+              "line": 27,
+              "column": 16,
+              "endLine": 27,
+              "endColumn": 22
+             },
+             "type": null,
+             "typeHint": null,
+             "left": {
+              "$node": "LocalVariableExpression",
+              "source": {
+               "name": "procs.rs2",
+               "line": 27,
+               "column": 16,
+               "endLine": 27,
+               "endColumn": 18
+              },
+              "type": null,
+              "typeHint": null,
+              "name": {
+               "$node": "Identifier",
+               "source": {
+                "name": "procs.rs2",
+                "line": 27,
+                "column": 17,
+                "endLine": 27,
+                "endColumn": 18
+               },
+               "type": null,
+               "typeHint": null,
+               "kind": "Identifier",
+               "text": "n",
+               "reference": null
+              },
+              "reference": null,
+              "kind": "LocalVariableExpression",
+              "index": null
+             },
+             "operator": {
+              "$node": "Token",
+              "source": {
+               "name": "procs.rs2",
+               "line": 27,
+               "column": 19,
+               "endLine": 27,
+               "endColumn": 20
+              },
+              "text": "-"
+             },
+             "right": {
+              "$node": "IntegerLiteral",
+              "source": {
+               "name": "procs.rs2",
+               "line": 27,
+               "column": 21,
+               "endLine": 27,
+               "endColumn": 22
+              },
+              "type": null,
+              "typeHint": null,
+              "value": "1",
+              "reference": null,
+              "radix": 10,
+              "kind": "IntegerLiteral",
+              "numberValue": null
+             },
+             "kind": "ArithmeticExpression"
+            }
+           }
+          ],
+          "kind": "JumpCallExpression",
+          "symbol": null
+         }
+        }
+       ]
+      },
+      "elseStatement": null
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 29,
+       "column": 1,
+       "endLine": 29,
+       "endColumn": 11
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "JumpCallExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 29,
+        "column": 1,
+        "endLine": 29,
+        "endColumn": 10
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "procs.rs2",
+         "line": 29,
+         "column": 2,
+         "endLine": 29,
+         "endColumn": 6
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "done",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "procs.rs2",
+          "line": 29,
+          "column": 7,
+          "endLine": 29,
+          "endColumn": 9
+         },
+         "type": null,
+         "typeHint": null,
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "procs.rs2",
+           "line": 29,
+           "column": 8,
+           "endLine": 29,
+           "endColumn": 9
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "n",
+          "reference": null
+         },
+         "reference": null,
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       ],
+       "kind": "JumpCallExpression",
+       "symbol": null
+      }
+     }
+    ],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "procs.rs2",
+     "line": 31,
+     "column": 1,
+     "endLine": 33,
+     "endColumn": 9
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 31,
+      "column": 2,
+      "endLine": 31,
+      "endColumn": 6
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "proc",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 31,
+      "column": 7,
+      "endLine": 31,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "caller",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 32,
+       "column": 1,
+       "endLine": 32,
+       "endColumn": 33
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "procs.rs2",
+        "line": 32,
+        "column": 1,
+        "endLine": 32,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "procs.rs2",
+        "line": 32,
+        "column": 10,
+        "endLine": 32,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "r",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "ProcCallExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 32,
+        "column": 14,
+        "endLine": 32,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "procs.rs2",
+         "line": 32,
+         "column": 15,
+         "endLine": 32,
+         "endColumn": 21
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "minmax",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "procs.rs2",
+          "line": 32,
+          "column": 22,
+          "endLine": 32,
+          "endColumn": 23
+         },
+         "type": null,
+         "typeHint": null,
+         "value": "0",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": null
+        },
+        {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "procs.rs2",
+          "line": 32,
+          "column": 25,
+          "endLine": 32,
+          "endColumn": 27
+         },
+         "type": null,
+         "typeHint": null,
+         "value": "10",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": null
+        },
+        {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "procs.rs2",
+          "line": 32,
+          "column": 29,
+          "endLine": 32,
+          "endColumn": 31
+         },
+         "type": null,
+         "typeHint": null,
+         "value": "15",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": null
+        }
+       ],
+       "kind": "ProcCallExpression",
+       "symbol": null
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 33,
+       "column": 1,
+       "endLine": 33,
+       "endColumn": 9
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "ProcCallExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 33,
+        "column": 1,
+        "endLine": 33,
+        "endColumn": 8
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "procs.rs2",
+         "line": 33,
+         "column": 2,
+         "endLine": 33,
+         "endColumn": 8
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "tuples",
+        "reference": null
+       },
+       "arguments": [],
+       "kind": "ProcCallExpression",
+       "symbol": null
+      }
+     }
+    ],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "procs.rs2",
+     "line": 35,
+     "column": 1,
+     "endLine": 37,
+     "endColumn": 10
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 35,
+      "column": 2,
+      "endLine": 35,
+      "endColumn": 7
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "label",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "procs.rs2",
+      "line": 35,
+      "column": 8,
+      "endLine": 35,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "start",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 36,
+       "column": 1,
+       "endLine": 36,
+       "endColumn": 9
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "ProcCallExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 36,
+        "column": 1,
+        "endLine": 36,
+        "endColumn": 8
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "procs.rs2",
+         "line": 36,
+         "column": 2,
+         "endLine": 36,
+         "endColumn": 8
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "caller",
+        "reference": null
+       },
+       "arguments": [],
+       "kind": "ProcCallExpression",
+       "symbol": null
+      }
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "procs.rs2",
+       "line": 37,
+       "column": 1,
+       "endLine": 37,
+       "endColumn": 10
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "JumpCallExpression",
+       "source": {
+        "name": "procs.rs2",
+        "line": 37,
+        "column": 1,
+        "endLine": 37,
+        "endColumn": 9
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "procs.rs2",
+         "line": 37,
+         "column": 2,
+         "endLine": 37,
+         "endColumn": 6
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "loop",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "procs.rs2",
+          "line": 37,
+          "column": 7,
+          "endLine": 37,
+          "endColumn": 8
+         },
+         "type": null,
+         "typeHint": null,
+         "value": "3",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": null
+        }
+       ],
+       "kind": "JumpCallExpression",
+       "symbol": null
+      }
+     }
+    ],
+    "subjectReference": null
+   }
+  ]
+ }
+]

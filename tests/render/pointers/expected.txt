@@ -1,0 +1,13 @@
+error: use of uninitialized pointer `.active_npc`
+ --> case.rs2:2:16
+  |
+2 | [ai_spawn,man] ~p0; ~p0;
+  |                ^^^
+  |
+note: `.active_npc` required here
+ --> case.rs2:1:11
+  |
+1 | [proc,p0] .npc_say("y");
+  |           ^^^^^^^^^^^^^
+
+error: could not compile due to 1 previous error

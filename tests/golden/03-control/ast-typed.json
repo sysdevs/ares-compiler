@@ -1,0 +1,4602 @@
+[
+ {
+  "$node": "ScriptFile",
+  "source": {
+   "name": "aa_commands.rs2",
+   "line": 1,
+   "column": 1,
+   "endLine": 11,
+   "endColumn": 6
+  },
+  "scripts": [
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 1,
+     "column": 1,
+     "endLine": 1,
+     "endColumn": 28
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 1,
+      "column": 2,
+      "endLine": 1,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 1,
+      "column": 10,
+      "endLine": 1,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "mes",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 1,
+       "column": 15,
+       "endLine": 1,
+       "endColumn": 27
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 1,
+        "column": 15,
+        "endLine": 1,
+        "endColumn": 21
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 1,
+        "column": 23,
+        "endLine": 1,
+        "endColumn": 27
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "text",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "text",
+       "type": "string"
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "mes",
+     "parameters": "string",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "string"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 2,
+     "column": 1,
+     "endLine": 2,
+     "endColumn": 39
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 2,
+      "column": 2,
+      "endLine": 2,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 2,
+      "column": 10,
+      "endLine": 2,
+      "endColumn": 18
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "tostring",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 2,
+       "column": 20,
+       "endLine": 2,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 2,
+        "column": 20,
+        "endLine": 2,
+        "endColumn": 23
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 2,
+        "column": 25,
+        "endLine": 2,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "value",
+       "type": "int"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 2,
+       "column": 32,
+       "endLine": 2,
+       "endColumn": 38
+      },
+      "text": "string"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "tostring",
+     "parameters": "int",
+     "returns": "string"
+    },
+    "returnType": {
+     "$type": "string"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "int"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 3,
+     "column": 1,
+     "endLine": 3,
+     "endColumn": 39
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 3,
+      "column": 2,
+      "endLine": 3,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 3,
+      "column": 10,
+      "endLine": 3,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "escape",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 3,
+       "column": 18,
+       "endLine": 3,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 3,
+        "column": 18,
+        "endLine": 3,
+        "endColumn": 24
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 3,
+        "column": 26,
+        "endLine": 3,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "text",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "text",
+       "type": "string"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 3,
+       "column": 32,
+       "endLine": 3,
+       "endColumn": 38
+      },
+      "text": "string"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "escape",
+     "parameters": "string",
+     "returns": "string"
+    },
+    "returnType": {
+     "$type": "string"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "string"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 4,
+     "column": 1,
+     "endLine": 4,
+     "endColumn": 32
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 4,
+      "column": 2,
+      "endLine": 4,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 4,
+      "column": 10,
+      "endLine": 4,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "random",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 4,
+       "column": 18,
+       "endLine": 4,
+       "endColumn": 26
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 4,
+        "column": 18,
+        "endLine": 4,
+        "endColumn": 21
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 4,
+        "column": 23,
+        "endLine": 4,
+        "endColumn": 26
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "max",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "max",
+       "type": "int"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 4,
+       "column": 28,
+       "endLine": 4,
+       "endColumn": 31
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "random",
+     "parameters": "int",
+     "returns": "int"
+    },
+    "returnType": {
+     "$type": "int"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "int"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 5,
+     "column": 1,
+     "endLine": 5,
+     "endColumn": 52
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 5,
+      "column": 2,
+      "endLine": 5,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 5,
+      "column": 10,
+      "endLine": 5,
+      "endColumn": 18
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "npc_find",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 20,
+       "endLine": 5,
+       "endColumn": 32
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 20,
+        "endLine": 5,
+        "endColumn": 25
+       },
+       "text": "coord"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 27,
+        "endLine": 5,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "coord",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "coord",
+       "type": "coord"
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 34,
+       "endLine": 5,
+       "endColumn": 42
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 34,
+        "endLine": 5,
+        "endColumn": 37
+       },
+       "text": "npc"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 39,
+        "endLine": 5,
+        "endColumn": 42
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "npc",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "npc",
+       "type": "npc"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 44,
+       "endLine": 5,
+       "endColumn": 51
+      },
+      "text": "boolean"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "npc_find",
+     "parameters": "coord,npc",
+     "returns": "boolean"
+    },
+    "returnType": {
+     "$type": "boolean"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "coord,npc"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 6,
+     "column": 1,
+     "endLine": 6,
+     "endColumn": 30
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 6,
+      "column": 2,
+      "endLine": 6,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 6,
+      "column": 10,
+      "endLine": 6,
+      "endColumn": 17
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "p_delay",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 6,
+       "column": 19,
+       "endLine": 6,
+       "endColumn": 29
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 6,
+        "column": 19,
+        "endLine": 6,
+        "endColumn": 22
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 6,
+        "column": 24,
+        "endLine": 6,
+        "endColumn": 29
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "ticks",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "ticks",
+       "type": "int"
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "p_delay",
+     "parameters": "int",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "int"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 7,
+     "column": 1,
+     "endLine": 7,
+     "endColumn": 33
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 7,
+      "column": 2,
+      "endLine": 7,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 7,
+      "column": 10,
+      "endLine": 7,
+      "endColumn": 20
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "npc_setvar",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 7,
+       "column": 22,
+       "endLine": 7,
+       "endColumn": 32
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 7,
+        "column": 22,
+        "endLine": 7,
+        "endColumn": 25
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 7,
+        "column": 27,
+        "endLine": 7,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "value",
+       "type": "int"
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "npc_setvar",
+     "parameters": "int",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "int"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 8,
+     "column": 1,
+     "endLine": 8,
+     "endColumn": 45
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 8,
+      "column": 2,
+      "endLine": 8,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 8,
+      "column": 10,
+      "endLine": 8,
+      "endColumn": 19
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "inv_total",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 21,
+       "endLine": 8,
+       "endColumn": 29
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 21,
+        "endLine": 8,
+        "endColumn": 24
+       },
+       "text": "inv"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 26,
+        "endLine": 8,
+        "endColumn": 29
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "inv",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "inv",
+       "type": "inv"
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 31,
+       "endLine": 8,
+       "endColumn": 39
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 31,
+        "endLine": 8,
+        "endColumn": 34
+       },
+       "text": "obj"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 36,
+        "endLine": 8,
+        "endColumn": 39
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "obj",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "obj",
+       "type": "obj"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 41,
+       "endLine": 8,
+       "endColumn": 44
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "inv_total",
+     "parameters": "inv,obj",
+     "returns": "int"
+    },
+    "returnType": {
+     "$type": "int"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "inv,obj"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 9,
+     "column": 1,
+     "endLine": 9,
+     "endColumn": 32
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 9,
+      "column": 2,
+      "endLine": 9,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 9,
+      "column": 10,
+      "endLine": 9,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "coordx",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 9,
+       "column": 18,
+       "endLine": 9,
+       "endColumn": 26
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 9,
+        "column": 18,
+        "endLine": 9,
+        "endColumn": 23
+       },
+       "text": "coord"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 9,
+        "column": 25,
+        "endLine": 9,
+        "endColumn": 26
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "c",
+       "reference": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "c",
+       "type": "coord"
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 9,
+       "column": 28,
+       "endLine": 9,
+       "endColumn": 31
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "coordx",
+     "parameters": "coord",
+     "returns": "int"
+    },
+    "returnType": {
+     "$type": "int"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "coord"
+    }
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 10,
+     "column": 1,
+     "endLine": 10,
+     "endColumn": 15
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 10,
+      "column": 2,
+      "endLine": 10,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 10,
+      "column": 10,
+      "endLine": 10,
+      "endColumn": 14
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "dump",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "command",
+     "name": "dump",
+     "parameters": "unit",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "command"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "unit"
+    }
+   }
+  ]
+ },
+ {
+  "$node": "ScriptFile",
+  "source": {
+   "name": "control.rs2",
+   "line": 1,
+   "column": 1,
+   "endLine": 40,
+   "endColumn": 6
+  },
+  "scripts": [
+   {
+    "$node": "Script",
+    "source": {
+     "name": "control.rs2",
+     "line": 1,
+     "column": 1,
+     "endLine": 39,
+     "endColumn": 2
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "control.rs2",
+      "line": 1,
+      "column": 2,
+      "endLine": 1,
+      "endColumn": 6
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "proc",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "control.rs2",
+      "line": 1,
+      "column": 7,
+      "endLine": 1,
+      "endColumn": 14
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "control",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 2,
+       "column": 1,
+       "endLine": 2,
+       "endColumn": 25
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "control.rs2",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "control.rs2",
+        "line": 2,
+        "column": 10,
+        "endLine": 2,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "x",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "control.rs2",
+        "line": 2,
+        "column": 14,
+        "endLine": 2,
+        "endColumn": 24
+       },
+       "type": {
+        "$type": "int"
+       },
+       "typeHint": {
+        "$type": "int"
+       },
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "control.rs2",
+         "line": 2,
+         "column": 14,
+         "endLine": 2,
+         "endColumn": 20
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "random",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "control.rs2",
+          "line": 2,
+          "column": 21,
+          "endLine": 2,
+          "endColumn": 23
+         },
+         "type": {
+          "$type": "int"
+         },
+         "typeHint": {
+          "$type": "int"
+         },
+         "value": "10",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": 10
+        }
+       ],
+       "symbol": {
+        "$sym": "ServerScriptSymbol",
+        "trigger": "command",
+        "name": "random",
+        "parameters": "int",
+        "returns": "int"
+       },
+       "kind": "CommandCallExpression",
+       "arguments2": null
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "x",
+       "type": "int"
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 3,
+       "column": 1,
+       "endLine": 3,
+       "endColumn": 26
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "control.rs2",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 12
+       },
+       "text": "def_boolean"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "control.rs2",
+        "line": 3,
+        "column": 14,
+        "endLine": 3,
+        "endColumn": 18
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "flag",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "BooleanLiteral",
+       "source": {
+        "name": "control.rs2",
+        "line": 3,
+        "column": 21,
+        "endLine": 3,
+        "endColumn": 25
+       },
+       "type": {
+        "$type": "boolean"
+       },
+       "typeHint": {
+        "$type": "boolean"
+       },
+       "value": true,
+       "reference": null,
+       "kind": "BooleanLiteral"
+      },
+      "symbol": {
+       "$sym": "LocalVariableSymbol",
+       "name": "flag",
+       "type": "boolean"
+      }
+     },
+     {
+      "$node": "IfStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 4,
+       "column": 1,
+       "endLine": 14,
+       "endColumn": 2
+      },
+      "kind": "IfStatement",
+      "condition": {
+       "$node": "ConditionExpression",
+       "source": {
+        "name": "control.rs2",
+        "line": 4,
+        "column": 5,
+        "endLine": 4,
+        "endColumn": 11
+       },
+       "type": {
+        "$type": "boolean"
+       },
+       "typeHint": {
+        "$type": "boolean"
+       },
+       "left": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "control.rs2",
+         "line": 4,
+         "column": 5,
+         "endLine": 4,
+         "endColumn": 7
+        },
+        "type": {
+         "$type": "int"
+        },
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "control.rs2",
+          "line": 4,
+          "column": 6,
+          "endLine": 4,
+          "endColumn": 7
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "x",
+         "reference": null
+        },
+        "reference": {
+         "$sym": "LocalVariableSymbol",
+         "name": "x",
+         "type": "int"
+        },
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "operator": {
+        "$node": "Token",
+        "source": {
+         "name": "control.rs2",
+         "line": 4,
+         "column": 8,
+         "endLine": 4,
+         "endColumn": 9
+        },
+        "text": "="
+       },
+       "right": {
+        "$node": "IntegerLiteral",
+        "source": {
+         "name": "control.rs2",
+         "line": 4,
+         "column": 10,
+         "endLine": 4,
+         "endColumn": 11
+        },
+        "type": {
+         "$type": "int"
+        },
+        "typeHint": {
+         "$type": "int"
+        },
+        "value": "1",
+        "reference": null,
+        "radix": 10,
+        "kind": "IntegerLiteral",
+        "numberValue": 1
+       },
+       "kind": "ConditionExpression"
+      },
+      "thenStatement": {
+       "$node": "BlockStatement",
+       "source": {
+        "name": "control.rs2",
+        "line": 4,
+        "column": 13,
+        "endLine": 6,
+        "endColumn": 2
+       },
+       "kind": "BlockStatement",
+       "statements": [
+        {
+         "$node": "ExpressionStatement",
+         "source": {
+          "name": "control.rs2",
+          "line": 5,
+          "column": 5,
+          "endLine": 5,
+          "endColumn": 16
+         },
+         "kind": "ExpressionStatement",
+         "expression": {
+          "$node": "CommandCallExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 5,
+           "column": 5,
+           "endLine": 5,
+           "endColumn": 15
+          },
+          "type": {
+           "$type": "unit"
+          },
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "control.rs2",
+            "line": 5,
+            "column": 5,
+            "endLine": 5,
+            "endColumn": 8
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "mes",
+           "reference": null
+          },
+          "arguments": [
+           {
+            "$node": "StringLiteral",
+            "source": {
+             "name": "control.rs2",
+             "line": 5,
+             "column": 9,
+             "endLine": 5,
+             "endColumn": 14
+            },
+            "type": {
+             "$type": "string"
+            },
+            "typeHint": {
+             "$type": "string"
+            },
+            "value": "one",
+            "reference": null,
+            "kind": "StringLiteral",
+            "subExpression": null
+           }
+          ],
+          "symbol": {
+           "$sym": "ServerScriptSymbol",
+           "trigger": "command",
+           "name": "mes",
+           "parameters": "string",
+           "returns": "unit"
+          },
+          "kind": "CommandCallExpression",
+          "arguments2": null
+         }
+        }
+       ]
+      },
+      "elseStatement": {
+       "$node": "IfStatement",
+       "source": {
+        "name": "control.rs2",
+        "line": 6,
+        "column": 8,
+        "endLine": 14,
+        "endColumn": 2
+       },
+       "kind": "IfStatement",
+       "condition": {
+        "$node": "ConditionExpression",
+        "source": {
+         "name": "control.rs2",
+         "line": 6,
+         "column": 12,
+         "endLine": 6,
+         "endColumn": 33
+        },
+        "type": {
+         "$type": "boolean"
+        },
+        "typeHint": {
+         "$type": "boolean"
+        },
+        "left": {
+         "$node": "ConditionExpression",
+         "source": {
+          "name": "control.rs2",
+          "line": 6,
+          "column": 12,
+          "endLine": 6,
+          "endColumn": 18
+         },
+         "type": {
+          "$type": "boolean"
+         },
+         "typeHint": null,
+         "left": {
+          "$node": "LocalVariableExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 6,
+           "column": 12,
+           "endLine": 6,
+           "endColumn": 14
+          },
+          "type": {
+           "$type": "int"
+          },
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "control.rs2",
+            "line": 6,
+            "column": 13,
+            "endLine": 6,
+            "endColumn": 14
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "x",
+           "reference": null
+          },
+          "reference": {
+           "$sym": "LocalVariableSymbol",
+           "name": "x",
+           "type": "int"
+          },
+          "kind": "LocalVariableExpression",
+          "index": null
+         },
+         "operator": {
+          "$node": "Token",
+          "source": {
+           "name": "control.rs2",
+           "line": 6,
+           "column": 15,
+           "endLine": 6,
+           "endColumn": 16
+          },
+          "text": "!"
+         },
+         "right": {
+          "$node": "IntegerLiteral",
+          "source": {
+           "name": "control.rs2",
+           "line": 6,
+           "column": 17,
+           "endLine": 6,
+           "endColumn": 18
+          },
+          "type": {
+           "$type": "int"
+          },
+          "typeHint": {
+           "$type": "int"
+          },
+          "value": "2",
+          "reference": null,
+          "radix": 10,
+          "kind": "IntegerLiteral",
+          "numberValue": 2
+         },
+         "kind": "ConditionExpression"
+        },
+        "operator": {
+         "$node": "Token",
+         "source": {
+          "name": "control.rs2",
+          "line": 6,
+          "column": 19,
+          "endLine": 6,
+          "endColumn": 20
+         },
+         "text": "&"
+        },
+        "right": {
+         "$node": "ConditionExpression",
+         "source": {
+          "name": "control.rs2",
+          "line": 6,
+          "column": 21,
+          "endLine": 6,
+          "endColumn": 33
+         },
+         "type": {
+          "$type": "boolean"
+         },
+         "typeHint": {
+          "$type": "boolean"
+         },
+         "left": {
+          "$node": "LocalVariableExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 6,
+           "column": 21,
+           "endLine": 6,
+           "endColumn": 26
+          },
+          "type": {
+           "$type": "boolean"
+          },
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "control.rs2",
+            "line": 6,
+            "column": 22,
+            "endLine": 6,
+            "endColumn": 26
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "flag",
+           "reference": null
+          },
+          "reference": {
+           "$sym": "LocalVariableSymbol",
+           "name": "flag",
+           "type": "boolean"
+          },
+          "kind": "LocalVariableExpression",
+          "index": null
+         },
+         "operator": {
+          "$node": "Token",
+          "source": {
+           "name": "control.rs2",
+           "line": 6,
+           "column": 27,
+           "endLine": 6,
+           "endColumn": 28
+          },
+          "text": "="
+         },
+         "right": {
+          "$node": "BooleanLiteral",
+          "source": {
+           "name": "control.rs2",
+           "line": 6,
+           "column": 29,
+           "endLine": 6,
+           "endColumn": 33
+          },
+          "type": {
+           "$type": "boolean"
+          },
+          "typeHint": {
+           "$type": "boolean"
+          },
+          "value": true,
+          "reference": null,
+          "kind": "BooleanLiteral"
+         },
+         "kind": "ConditionExpression"
+        },
+        "kind": "ConditionExpression"
+       },
+       "thenStatement": {
+        "$node": "BlockStatement",
+        "source": {
+         "name": "control.rs2",
+         "line": 6,
+         "column": 35,
+         "endLine": 8,
+         "endColumn": 2
+        },
+        "kind": "BlockStatement",
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 7,
+           "column": 5,
+           "endLine": 7,
+           "endColumn": 29
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 7,
+            "column": 5,
+            "endLine": 7,
+            "endColumn": 28
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 7,
+             "column": 5,
+             "endLine": 7,
+             "endColumn": 8
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 7,
+              "column": 9,
+              "endLine": 7,
+              "endColumn": 27
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "not two and flag",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       },
+       "elseStatement": {
+        "$node": "IfStatement",
+        "source": {
+         "name": "control.rs2",
+         "line": 8,
+         "column": 8,
+         "endLine": 14,
+         "endColumn": 2
+        },
+        "kind": "IfStatement",
+        "condition": {
+         "$node": "ConditionExpression",
+         "source": {
+          "name": "control.rs2",
+          "line": 8,
+          "column": 12,
+          "endLine": 8,
+          "endColumn": 27
+         },
+         "type": {
+          "$type": "boolean"
+         },
+         "typeHint": {
+          "$type": "boolean"
+         },
+         "left": {
+          "$node": "ConditionExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 8,
+           "column": 12,
+           "endLine": 8,
+           "endColumn": 18
+          },
+          "type": {
+           "$type": "boolean"
+          },
+          "typeHint": null,
+          "left": {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 8,
+            "column": 12,
+            "endLine": 8,
+            "endColumn": 14
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 8,
+             "column": 13,
+             "endLine": 8,
+             "endColumn": 14
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "x",
+            "reference": null
+           },
+           "reference": {
+            "$sym": "LocalVariableSymbol",
+            "name": "x",
+            "type": "int"
+           },
+           "kind": "LocalVariableExpression",
+           "index": null
+          },
+          "operator": {
+           "$node": "Token",
+           "source": {
+            "name": "control.rs2",
+            "line": 8,
+            "column": 15,
+            "endLine": 8,
+            "endColumn": 16
+           },
+           "text": "<"
+          },
+          "right": {
+           "$node": "IntegerLiteral",
+           "source": {
+            "name": "control.rs2",
+            "line": 8,
+            "column": 17,
+            "endLine": 8,
+            "endColumn": 18
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": {
+            "$type": "int"
+           },
+           "value": "5",
+           "reference": null,
+           "radix": 10,
+           "kind": "IntegerLiteral",
+           "numberValue": 5
+          },
+          "kind": "ConditionExpression"
+         },
+         "operator": {
+          "$node": "Token",
+          "source": {
+           "name": "control.rs2",
+           "line": 8,
+           "column": 19,
+           "endLine": 8,
+           "endColumn": 20
+          },
+          "text": "|"
+         },
+         "right": {
+          "$node": "ConditionExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 8,
+           "column": 21,
+           "endLine": 8,
+           "endColumn": 27
+          },
+          "type": {
+           "$type": "boolean"
+          },
+          "typeHint": {
+           "$type": "boolean"
+          },
+          "left": {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 8,
+            "column": 21,
+            "endLine": 8,
+            "endColumn": 23
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 8,
+             "column": 22,
+             "endLine": 8,
+             "endColumn": 23
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "x",
+            "reference": null
+           },
+           "reference": {
+            "$sym": "LocalVariableSymbol",
+            "name": "x",
+            "type": "int"
+           },
+           "kind": "LocalVariableExpression",
+           "index": null
+          },
+          "operator": {
+           "$node": "Token",
+           "source": {
+            "name": "control.rs2",
+            "line": 8,
+            "column": 24,
+            "endLine": 8,
+            "endColumn": 25
+           },
+           "text": ">"
+          },
+          "right": {
+           "$node": "IntegerLiteral",
+           "source": {
+            "name": "control.rs2",
+            "line": 8,
+            "column": 26,
+            "endLine": 8,
+            "endColumn": 27
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": {
+            "$type": "int"
+           },
+           "value": "8",
+           "reference": null,
+           "radix": 10,
+           "kind": "IntegerLiteral",
+           "numberValue": 8
+          },
+          "kind": "ConditionExpression"
+         },
+         "kind": "ConditionExpression"
+        },
+        "thenStatement": {
+         "$node": "BlockStatement",
+         "source": {
+          "name": "control.rs2",
+          "line": 8,
+          "column": 29,
+          "endLine": 10,
+          "endColumn": 2
+         },
+         "kind": "BlockStatement",
+         "statements": [
+          {
+           "$node": "ExpressionStatement",
+           "source": {
+            "name": "control.rs2",
+            "line": 9,
+            "column": 5,
+            "endLine": 9,
+            "endColumn": 20
+           },
+           "kind": "ExpressionStatement",
+           "expression": {
+            "$node": "CommandCallExpression",
+            "source": {
+             "name": "control.rs2",
+             "line": 9,
+             "column": 5,
+             "endLine": 9,
+             "endColumn": 19
+            },
+            "type": {
+             "$type": "unit"
+            },
+            "typeHint": null,
+            "name": {
+             "$node": "Identifier",
+             "source": {
+              "name": "control.rs2",
+              "line": 9,
+              "column": 5,
+              "endLine": 9,
+              "endColumn": 8
+             },
+             "type": null,
+             "typeHint": null,
+             "kind": "Identifier",
+             "text": "mes",
+             "reference": null
+            },
+            "arguments": [
+             {
+              "$node": "StringLiteral",
+              "source": {
+               "name": "control.rs2",
+               "line": 9,
+               "column": 9,
+               "endLine": 9,
+               "endColumn": 18
+              },
+              "type": {
+               "$type": "string"
+              },
+              "typeHint": {
+               "$type": "string"
+              },
+              "value": "outside",
+              "reference": null,
+              "kind": "StringLiteral",
+              "subExpression": null
+             }
+            ],
+            "symbol": {
+             "$sym": "ServerScriptSymbol",
+             "trigger": "command",
+             "name": "mes",
+             "parameters": "string",
+             "returns": "unit"
+            },
+            "kind": "CommandCallExpression",
+            "arguments2": null
+           }
+          }
+         ]
+        },
+        "elseStatement": {
+         "$node": "IfStatement",
+         "source": {
+          "name": "control.rs2",
+          "line": 10,
+          "column": 8,
+          "endLine": 14,
+          "endColumn": 2
+         },
+         "kind": "IfStatement",
+         "condition": {
+          "$node": "ConditionExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 10,
+           "column": 12,
+           "endLine": 10,
+           "endColumn": 50
+          },
+          "type": {
+           "$type": "boolean"
+          },
+          "typeHint": {
+           "$type": "boolean"
+          },
+          "left": {
+           "$node": "ParenthesizedExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 10,
+            "column": 12,
+            "endLine": 10,
+            "endColumn": 35
+           },
+           "type": {
+            "$type": "boolean"
+           },
+           "typeHint": null,
+           "kind": "ParenthesizedExpression",
+           "expression": {
+            "$node": "ConditionExpression",
+            "source": {
+             "name": "control.rs2",
+             "line": 10,
+             "column": 13,
+             "endLine": 10,
+             "endColumn": 34
+            },
+            "type": {
+             "$type": "boolean"
+            },
+            "typeHint": null,
+            "left": {
+             "$node": "ParenthesizedExpression",
+             "source": {
+              "name": "control.rs2",
+              "line": 10,
+              "column": 13,
+              "endLine": 10,
+              "endColumn": 22
+             },
+             "type": {
+              "$type": "boolean"
+             },
+             "typeHint": null,
+             "kind": "ParenthesizedExpression",
+             "expression": {
+              "$node": "ConditionExpression",
+              "source": {
+               "name": "control.rs2",
+               "line": 10,
+               "column": 14,
+               "endLine": 10,
+               "endColumn": 21
+              },
+              "type": {
+               "$type": "boolean"
+              },
+              "typeHint": null,
+              "left": {
+               "$node": "LocalVariableExpression",
+               "source": {
+                "name": "control.rs2",
+                "line": 10,
+                "column": 14,
+                "endLine": 10,
+                "endColumn": 16
+               },
+               "type": {
+                "$type": "int"
+               },
+               "typeHint": null,
+               "name": {
+                "$node": "Identifier",
+                "source": {
+                 "name": "control.rs2",
+                 "line": 10,
+                 "column": 15,
+                 "endLine": 10,
+                 "endColumn": 16
+                },
+                "type": null,
+                "typeHint": null,
+                "kind": "Identifier",
+                "text": "x",
+                "reference": null
+               },
+               "reference": {
+                "$sym": "LocalVariableSymbol",
+                "name": "x",
+                "type": "int"
+               },
+               "kind": "LocalVariableExpression",
+               "index": null
+              },
+              "operator": {
+               "$node": "Token",
+               "source": {
+                "name": "control.rs2",
+                "line": 10,
+                "column": 17,
+                "endLine": 10,
+                "endColumn": 19
+               },
+               "text": "<="
+              },
+              "right": {
+               "$node": "IntegerLiteral",
+               "source": {
+                "name": "control.rs2",
+                "line": 10,
+                "column": 20,
+                "endLine": 10,
+                "endColumn": 21
+               },
+               "type": {
+                "$type": "int"
+               },
+               "typeHint": {
+                "$type": "int"
+               },
+               "value": "6",
+               "reference": null,
+               "radix": 10,
+               "kind": "IntegerLiteral",
+               "numberValue": 6
+              },
+              "kind": "ConditionExpression"
+             }
+            },
+            "operator": {
+             "$node": "Token",
+             "source": {
+              "name": "control.rs2",
+              "line": 10,
+              "column": 23,
+              "endLine": 10,
+              "endColumn": 24
+             },
+             "text": "|"
+            },
+            "right": {
+             "$node": "ParenthesizedExpression",
+             "source": {
+              "name": "control.rs2",
+              "line": 10,
+              "column": 25,
+              "endLine": 10,
+              "endColumn": 34
+             },
+             "type": {
+              "$type": "boolean"
+             },
+             "typeHint": {
+              "$type": "boolean"
+             },
+             "kind": "ParenthesizedExpression",
+             "expression": {
+              "$node": "ConditionExpression",
+              "source": {
+               "name": "control.rs2",
+               "line": 10,
+               "column": 26,
+               "endLine": 10,
+               "endColumn": 33
+              },
+              "type": {
+               "$type": "boolean"
+              },
+              "typeHint": {
+               "$type": "boolean"
+              },
+              "left": {
+               "$node": "LocalVariableExpression",
+               "source": {
+                "name": "control.rs2",
+                "line": 10,
+                "column": 26,
+                "endLine": 10,
+                "endColumn": 28
+               },
+               "type": {
+                "$type": "int"
+               },
+               "typeHint": null,
+               "name": {
+                "$node": "Identifier",
+                "source": {
+                 "name": "control.rs2",
+                 "line": 10,
+                 "column": 27,
+                 "endLine": 10,
+                 "endColumn": 28
+                },
+                "type": null,
+                "typeHint": null,
+                "kind": "Identifier",
+                "text": "x",
+                "reference": null
+               },
+               "reference": {
+                "$sym": "LocalVariableSymbol",
+                "name": "x",
+                "type": "int"
+               },
+               "kind": "LocalVariableExpression",
+               "index": null
+              },
+              "operator": {
+               "$node": "Token",
+               "source": {
+                "name": "control.rs2",
+                "line": 10,
+                "column": 29,
+                "endLine": 10,
+                "endColumn": 31
+               },
+               "text": ">="
+              },
+              "right": {
+               "$node": "IntegerLiteral",
+               "source": {
+                "name": "control.rs2",
+                "line": 10,
+                "column": 32,
+                "endLine": 10,
+                "endColumn": 33
+               },
+               "type": {
+                "$type": "int"
+               },
+               "typeHint": {
+                "$type": "int"
+               },
+               "value": "7",
+               "reference": null,
+               "radix": 10,
+               "kind": "IntegerLiteral",
+               "numberValue": 7
+              },
+              "kind": "ConditionExpression"
+             }
+            },
+            "kind": "ConditionExpression"
+           }
+          },
+          "operator": {
+           "$node": "Token",
+           "source": {
+            "name": "control.rs2",
+            "line": 10,
+            "column": 36,
+            "endLine": 10,
+            "endColumn": 37
+           },
+           "text": "&"
+          },
+          "right": {
+           "$node": "ConditionExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 10,
+            "column": 38,
+            "endLine": 10,
+            "endColumn": 50
+           },
+           "type": {
+            "$type": "boolean"
+           },
+           "typeHint": {
+            "$type": "boolean"
+           },
+           "left": {
+            "$node": "LocalVariableExpression",
+            "source": {
+             "name": "control.rs2",
+             "line": 10,
+             "column": 38,
+             "endLine": 10,
+             "endColumn": 43
+            },
+            "type": {
+             "$type": "boolean"
+            },
+            "typeHint": null,
+            "name": {
+             "$node": "Identifier",
+             "source": {
+              "name": "control.rs2",
+              "line": 10,
+              "column": 39,
+              "endLine": 10,
+              "endColumn": 43
+             },
+             "type": null,
+             "typeHint": null,
+             "kind": "Identifier",
+             "text": "flag",
+             "reference": null
+            },
+            "reference": {
+             "$sym": "LocalVariableSymbol",
+             "name": "flag",
+             "type": "boolean"
+            },
+            "kind": "LocalVariableExpression",
+            "index": null
+           },
+           "operator": {
+            "$node": "Token",
+            "source": {
+             "name": "control.rs2",
+             "line": 10,
+             "column": 44,
+             "endLine": 10,
+             "endColumn": 45
+            },
+            "text": "="
+           },
+           "right": {
+            "$node": "BooleanLiteral",
+            "source": {
+             "name": "control.rs2",
+             "line": 10,
+             "column": 46,
+             "endLine": 10,
+             "endColumn": 50
+            },
+            "type": {
+             "$type": "boolean"
+            },
+            "typeHint": {
+             "$type": "boolean"
+            },
+            "value": true,
+            "reference": null,
+            "kind": "BooleanLiteral"
+           },
+           "kind": "ConditionExpression"
+          },
+          "kind": "ConditionExpression"
+         },
+         "thenStatement": {
+          "$node": "BlockStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 10,
+           "column": 52,
+           "endLine": 12,
+           "endColumn": 2
+          },
+          "kind": "BlockStatement",
+          "statements": [
+           {
+            "$node": "ExpressionStatement",
+            "source": {
+             "name": "control.rs2",
+             "line": 11,
+             "column": 5,
+             "endLine": 11,
+             "endColumn": 19
+            },
+            "kind": "ExpressionStatement",
+            "expression": {
+             "$node": "CommandCallExpression",
+             "source": {
+              "name": "control.rs2",
+              "line": 11,
+              "column": 5,
+              "endLine": 11,
+              "endColumn": 18
+             },
+             "type": {
+              "$type": "unit"
+             },
+             "typeHint": null,
+             "name": {
+              "$node": "Identifier",
+              "source": {
+               "name": "control.rs2",
+               "line": 11,
+               "column": 5,
+               "endLine": 11,
+               "endColumn": 8
+              },
+              "type": null,
+              "typeHint": null,
+              "kind": "Identifier",
+              "text": "mes",
+              "reference": null
+             },
+             "arguments": [
+              {
+               "$node": "StringLiteral",
+               "source": {
+                "name": "control.rs2",
+                "line": 11,
+                "column": 9,
+                "endLine": 11,
+                "endColumn": 17
+               },
+               "type": {
+                "$type": "string"
+               },
+               "typeHint": {
+                "$type": "string"
+               },
+               "value": "parens",
+               "reference": null,
+               "kind": "StringLiteral",
+               "subExpression": null
+              }
+             ],
+             "symbol": {
+              "$sym": "ServerScriptSymbol",
+              "trigger": "command",
+              "name": "mes",
+              "parameters": "string",
+              "returns": "unit"
+             },
+             "kind": "CommandCallExpression",
+             "arguments2": null
+            }
+           }
+          ]
+         },
+         "elseStatement": {
+          "$node": "BlockStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 12,
+           "column": 8,
+           "endLine": 14,
+           "endColumn": 2
+          },
+          "kind": "BlockStatement",
+          "statements": [
+           {
+            "$node": "ExpressionStatement",
+            "source": {
+             "name": "control.rs2",
+             "line": 13,
+             "column": 5,
+             "endLine": 13,
+             "endColumn": 17
+            },
+            "kind": "ExpressionStatement",
+            "expression": {
+             "$node": "CommandCallExpression",
+             "source": {
+              "name": "control.rs2",
+              "line": 13,
+              "column": 5,
+              "endLine": 13,
+              "endColumn": 16
+             },
+             "type": {
+              "$type": "unit"
+             },
+             "typeHint": null,
+             "name": {
+              "$node": "Identifier",
+              "source": {
+               "name": "control.rs2",
+               "line": 13,
+               "column": 5,
+               "endLine": 13,
+               "endColumn": 8
+              },
+              "type": null,
+              "typeHint": null,
+              "kind": "Identifier",
+              "text": "mes",
+              "reference": null
+             },
+             "arguments": [
+              {
+               "$node": "StringLiteral",
+               "source": {
+                "name": "control.rs2",
+                "line": 13,
+                "column": 9,
+                "endLine": 13,
+                "endColumn": 15
+               },
+               "type": {
+                "$type": "string"
+               },
+               "typeHint": {
+                "$type": "string"
+               },
+               "value": "else",
+               "reference": null,
+               "kind": "StringLiteral",
+               "subExpression": null
+              }
+             ],
+             "symbol": {
+              "$sym": "ServerScriptSymbol",
+              "trigger": "command",
+              "name": "mes",
+              "parameters": "string",
+              "returns": "unit"
+             },
+             "kind": "CommandCallExpression",
+             "arguments2": null
+            }
+           }
+          ]
+         }
+        }
+       }
+      }
+     },
+     {
+      "$node": "WhileStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 15,
+       "column": 1,
+       "endLine": 20,
+       "endColumn": 2
+      },
+      "kind": "WhileStatement",
+      "condition": {
+       "$node": "ConditionExpression",
+       "source": {
+        "name": "control.rs2",
+        "line": 15,
+        "column": 8,
+        "endLine": 15,
+        "endColumn": 14
+       },
+       "type": {
+        "$type": "boolean"
+       },
+       "typeHint": {
+        "$type": "boolean"
+       },
+       "left": {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "control.rs2",
+         "line": 15,
+         "column": 8,
+         "endLine": 15,
+         "endColumn": 10
+        },
+        "type": {
+         "$type": "int"
+        },
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "control.rs2",
+          "line": 15,
+          "column": 9,
+          "endLine": 15,
+          "endColumn": 10
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "x",
+         "reference": null
+        },
+        "reference": {
+         "$sym": "LocalVariableSymbol",
+         "name": "x",
+         "type": "int"
+        },
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       "operator": {
+        "$node": "Token",
+        "source": {
+         "name": "control.rs2",
+         "line": 15,
+         "column": 11,
+         "endLine": 15,
+         "endColumn": 12
+        },
+        "text": ">"
+       },
+       "right": {
+        "$node": "IntegerLiteral",
+        "source": {
+         "name": "control.rs2",
+         "line": 15,
+         "column": 13,
+         "endLine": 15,
+         "endColumn": 14
+        },
+        "type": {
+         "$type": "int"
+        },
+        "typeHint": {
+         "$type": "int"
+        },
+        "value": "0",
+        "reference": null,
+        "radix": 10,
+        "kind": "IntegerLiteral",
+        "numberValue": 0
+       },
+       "kind": "ConditionExpression"
+      },
+      "thenStatement": {
+       "$node": "BlockStatement",
+       "source": {
+        "name": "control.rs2",
+        "line": 15,
+        "column": 16,
+        "endLine": 20,
+        "endColumn": 2
+       },
+       "kind": "BlockStatement",
+       "statements": [
+        {
+         "$node": "AssignmentStatement",
+         "source": {
+          "name": "control.rs2",
+          "line": 16,
+          "column": 5,
+          "endLine": 16,
+          "endColumn": 23
+         },
+         "kind": "AssignmentStatement",
+         "vars": [
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 16,
+            "column": 5,
+            "endLine": 16,
+            "endColumn": 7
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 16,
+             "column": 6,
+             "endLine": 16,
+             "endColumn": 7
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "x",
+            "reference": null
+           },
+           "reference": {
+            "$sym": "LocalVariableSymbol",
+            "name": "x",
+            "type": "int"
+           },
+           "kind": "LocalVariableExpression",
+           "index": null
+          }
+         ],
+         "expressions": [
+          {
+           "$node": "CalcExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 16,
+            "column": 10,
+            "endLine": 16,
+            "endColumn": 22
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": {
+            "$type": "int"
+           },
+           "kind": "CalcExpression",
+           "expression": {
+            "$node": "ArithmeticExpression",
+            "source": {
+             "name": "control.rs2",
+             "line": 16,
+             "column": 15,
+             "endLine": 16,
+             "endColumn": 21
+            },
+            "type": {
+             "$type": "int"
+            },
+            "typeHint": {
+             "$type": "int"
+            },
+            "left": {
+             "$node": "LocalVariableExpression",
+             "source": {
+              "name": "control.rs2",
+              "line": 16,
+              "column": 15,
+              "endLine": 16,
+              "endColumn": 17
+             },
+             "type": {
+              "$type": "int"
+             },
+             "typeHint": {
+              "$type": "int"
+             },
+             "name": {
+              "$node": "Identifier",
+              "source": {
+               "name": "control.rs2",
+               "line": 16,
+               "column": 16,
+               "endLine": 16,
+               "endColumn": 17
+              },
+              "type": null,
+              "typeHint": null,
+              "kind": "Identifier",
+              "text": "x",
+              "reference": null
+             },
+             "reference": {
+              "$sym": "LocalVariableSymbol",
+              "name": "x",
+              "type": "int"
+             },
+             "kind": "LocalVariableExpression",
+             "index": null
+            },
+            "operator": {
+             "$node": "Token",
+             "source": {
+              "name": "control.rs2",
+              "line": 16,
+              "column": 18,
+              "endLine": 16,
+              "endColumn": 19
+             },
+             "text": "-"
+            },
+            "right": {
+             "$node": "IntegerLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 16,
+              "column": 20,
+              "endLine": 16,
+              "endColumn": 21
+             },
+             "type": {
+              "$type": "int"
+             },
+             "typeHint": {
+              "$type": "int"
+             },
+             "value": "1",
+             "reference": null,
+             "radix": 10,
+             "kind": "IntegerLiteral",
+             "numberValue": 1
+            },
+            "kind": "ArithmeticExpression"
+           }
+          }
+         ]
+        },
+        {
+         "$node": "IfStatement",
+         "source": {
+          "name": "control.rs2",
+          "line": 17,
+          "column": 5,
+          "endLine": 19,
+          "endColumn": 6
+         },
+         "kind": "IfStatement",
+         "condition": {
+          "$node": "ConditionExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 17,
+           "column": 9,
+           "endLine": 17,
+           "endColumn": 15
+          },
+          "type": {
+           "$type": "boolean"
+          },
+          "typeHint": {
+           "$type": "boolean"
+          },
+          "left": {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 17,
+            "column": 9,
+            "endLine": 17,
+            "endColumn": 11
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 17,
+             "column": 10,
+             "endLine": 17,
+             "endColumn": 11
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "x",
+            "reference": null
+           },
+           "reference": {
+            "$sym": "LocalVariableSymbol",
+            "name": "x",
+            "type": "int"
+           },
+           "kind": "LocalVariableExpression",
+           "index": null
+          },
+          "operator": {
+           "$node": "Token",
+           "source": {
+            "name": "control.rs2",
+            "line": 17,
+            "column": 12,
+            "endLine": 17,
+            "endColumn": 13
+           },
+           "text": "="
+          },
+          "right": {
+           "$node": "IntegerLiteral",
+           "source": {
+            "name": "control.rs2",
+            "line": 17,
+            "column": 14,
+            "endLine": 17,
+            "endColumn": 15
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": {
+            "$type": "int"
+           },
+           "value": "3",
+           "reference": null,
+           "radix": 10,
+           "kind": "IntegerLiteral",
+           "numberValue": 3
+          },
+          "kind": "ConditionExpression"
+         },
+         "thenStatement": {
+          "$node": "BlockStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 17,
+           "column": 17,
+           "endLine": 19,
+           "endColumn": 6
+          },
+          "kind": "BlockStatement",
+          "statements": [
+           {
+            "$node": "ExpressionStatement",
+            "source": {
+             "name": "control.rs2",
+             "line": 18,
+             "column": 9,
+             "endLine": 18,
+             "endColumn": 22
+            },
+            "kind": "ExpressionStatement",
+            "expression": {
+             "$node": "CommandCallExpression",
+             "source": {
+              "name": "control.rs2",
+              "line": 18,
+              "column": 9,
+              "endLine": 18,
+              "endColumn": 21
+             },
+             "type": {
+              "$type": "unit"
+             },
+             "typeHint": null,
+             "name": {
+              "$node": "Identifier",
+              "source": {
+               "name": "control.rs2",
+               "line": 18,
+               "column": 9,
+               "endLine": 18,
+               "endColumn": 12
+              },
+              "type": null,
+              "typeHint": null,
+              "kind": "Identifier",
+              "text": "mes",
+              "reference": null
+             },
+             "arguments": [
+              {
+               "$node": "StringLiteral",
+               "source": {
+                "name": "control.rs2",
+                "line": 18,
+                "column": 13,
+                "endLine": 18,
+                "endColumn": 20
+               },
+               "type": {
+                "$type": "string"
+               },
+               "typeHint": {
+                "$type": "string"
+               },
+               "value": "three",
+               "reference": null,
+               "kind": "StringLiteral",
+               "subExpression": null
+              }
+             ],
+             "symbol": {
+              "$sym": "ServerScriptSymbol",
+              "trigger": "command",
+              "name": "mes",
+              "parameters": "string",
+              "returns": "unit"
+             },
+             "kind": "CommandCallExpression",
+             "arguments2": null
+            }
+           }
+          ]
+         },
+         "elseStatement": null
+        }
+       ]
+      }
+     },
+     {
+      "$node": "SwitchStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 21,
+       "column": 1,
+       "endLine": 26,
+       "endColumn": 2
+      },
+      "kind": "SwitchStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "control.rs2",
+        "line": 21,
+        "column": 1,
+        "endLine": 21,
+        "endColumn": 11
+       },
+       "text": "switch_int"
+      },
+      "condition": {
+       "$node": "LocalVariableExpression",
+       "source": {
+        "name": "control.rs2",
+        "line": 21,
+        "column": 13,
+        "endLine": 21,
+        "endColumn": 15
+       },
+       "type": {
+        "$type": "int"
+       },
+       "typeHint": {
+        "$type": "int"
+       },
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "control.rs2",
+         "line": 21,
+         "column": 14,
+         "endLine": 21,
+         "endColumn": 15
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "x",
+        "reference": null
+       },
+       "reference": {
+        "$sym": "LocalVariableSymbol",
+        "name": "x",
+        "type": "int"
+       },
+       "kind": "LocalVariableExpression",
+       "index": null
+      },
+      "cases": [
+       {
+        "$node": "SwitchCase",
+        "source": {
+         "name": "control.rs2",
+         "line": 22,
+         "column": 5,
+         "endLine": 22,
+         "endColumn": 23
+        },
+        "kind": "SwitchCase",
+        "keys": [
+         {
+          "$node": "IntegerLiteral",
+          "source": {
+           "name": "control.rs2",
+           "line": 22,
+           "column": 10,
+           "endLine": 22,
+           "endColumn": 11
+          },
+          "type": {
+           "$type": "int"
+          },
+          "typeHint": {
+           "$type": "int"
+          },
+          "value": "1",
+          "reference": null,
+          "radix": 10,
+          "kind": "IntegerLiteral",
+          "numberValue": 1
+         }
+        ],
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 22,
+           "column": 14,
+           "endLine": 22,
+           "endColumn": 23
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 22,
+            "column": 14,
+            "endLine": 22,
+            "endColumn": 22
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 22,
+             "column": 14,
+             "endLine": 22,
+             "endColumn": 17
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 22,
+              "column": 18,
+              "endLine": 22,
+              "endColumn": 21
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "1",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       },
+       {
+        "$node": "SwitchCase",
+        "source": {
+         "name": "control.rs2",
+         "line": 23,
+         "column": 5,
+         "endLine": 23,
+         "endColumn": 31
+        },
+        "kind": "SwitchCase",
+        "keys": [
+         {
+          "$node": "IntegerLiteral",
+          "source": {
+           "name": "control.rs2",
+           "line": 23,
+           "column": 10,
+           "endLine": 23,
+           "endColumn": 11
+          },
+          "type": {
+           "$type": "int"
+          },
+          "typeHint": {
+           "$type": "int"
+          },
+          "value": "2",
+          "reference": null,
+          "radix": 10,
+          "kind": "IntegerLiteral",
+          "numberValue": 2
+         },
+         {
+          "$node": "IntegerLiteral",
+          "source": {
+           "name": "control.rs2",
+           "line": 23,
+           "column": 13,
+           "endLine": 23,
+           "endColumn": 14
+          },
+          "type": {
+           "$type": "int"
+          },
+          "typeHint": {
+           "$type": "int"
+          },
+          "value": "3",
+          "reference": null,
+          "radix": 10,
+          "kind": "IntegerLiteral",
+          "numberValue": 3
+         }
+        ],
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 23,
+           "column": 17,
+           "endLine": 23,
+           "endColumn": 31
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 23,
+            "column": 17,
+            "endLine": 23,
+            "endColumn": 30
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 23,
+             "column": 17,
+             "endLine": 23,
+             "endColumn": 20
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 23,
+              "column": 21,
+              "endLine": 23,
+              "endColumn": 29
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "2 or 3",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       },
+       {
+        "$node": "SwitchCase",
+        "source": {
+         "name": "control.rs2",
+         "line": 24,
+         "column": 5,
+         "endLine": 24,
+         "endColumn": 34
+        },
+        "kind": "SwitchCase",
+        "keys": [
+         {
+          "$node": "ConstantVariableExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 24,
+           "column": 10,
+           "endLine": 24,
+           "endColumn": 20
+          },
+          "type": {
+           "$type": "int"
+          },
+          "typeHint": {
+           "$type": "int"
+          },
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "control.rs2",
+            "line": 24,
+            "column": 11,
+            "endLine": 24,
+            "endColumn": 20
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "max_level",
+           "reference": null
+          },
+          "reference": null,
+          "kind": "ConstantVariableExpression",
+          "subExpression": {
+           "$node": "IntegerLiteral",
+           "source": {
+            "name": "control.rs2",
+            "line": 24,
+            "column": 10,
+            "endLine": 24,
+            "endColumn": 12
+           },
+           "type": {
+            "$type": "int"
+           },
+           "typeHint": {
+            "$type": "int"
+           },
+           "value": "99",
+           "reference": null,
+           "radix": 10,
+           "kind": "IntegerLiteral",
+           "numberValue": 99
+          }
+         }
+        ],
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 24,
+           "column": 23,
+           "endLine": 24,
+           "endColumn": 34
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 24,
+            "column": 23,
+            "endLine": 24,
+            "endColumn": 33
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 24,
+             "column": 23,
+             "endLine": 24,
+             "endColumn": 26
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 24,
+              "column": 27,
+              "endLine": 24,
+              "endColumn": 32
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "max",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       },
+       {
+        "$node": "SwitchCase",
+        "source": {
+         "name": "control.rs2",
+         "line": 25,
+         "column": 5,
+         "endLine": 25,
+         "endColumn": 35
+        },
+        "kind": "SwitchCase",
+        "keys": [],
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 25,
+           "column": 20,
+           "endLine": 25,
+           "endColumn": 35
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 25,
+            "column": 20,
+            "endLine": 25,
+            "endColumn": 34
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 25,
+             "column": 20,
+             "endLine": 25,
+             "endColumn": 23
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 25,
+              "column": 24,
+              "endLine": 25,
+              "endColumn": 33
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "default",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       }
+      ],
+      "defaultCase": {
+       "$node": "SwitchCase",
+       "source": {
+        "name": "control.rs2",
+        "line": 25,
+        "column": 5,
+        "endLine": 25,
+        "endColumn": 35
+       },
+       "kind": "SwitchCase",
+       "keys": [],
+       "statements": [
+        {
+         "$node": "ExpressionStatement",
+         "source": {
+          "name": "control.rs2",
+          "line": 25,
+          "column": 20,
+          "endLine": 25,
+          "endColumn": 35
+         },
+         "kind": "ExpressionStatement",
+         "expression": {
+          "$node": "CommandCallExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 25,
+           "column": 20,
+           "endLine": 25,
+           "endColumn": 34
+          },
+          "type": {
+           "$type": "unit"
+          },
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "control.rs2",
+            "line": 25,
+            "column": 20,
+            "endLine": 25,
+            "endColumn": 23
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "mes",
+           "reference": null
+          },
+          "arguments": [
+           {
+            "$node": "StringLiteral",
+            "source": {
+             "name": "control.rs2",
+             "line": 25,
+             "column": 24,
+             "endLine": 25,
+             "endColumn": 33
+            },
+            "type": {
+             "$type": "string"
+            },
+            "typeHint": {
+             "$type": "string"
+            },
+            "value": "default",
+            "reference": null,
+            "kind": "StringLiteral",
+            "subExpression": null
+           }
+          ],
+          "symbol": {
+           "$sym": "ServerScriptSymbol",
+           "trigger": "command",
+           "name": "mes",
+           "parameters": "string",
+           "returns": "unit"
+          },
+          "kind": "CommandCallExpression",
+          "arguments2": null
+         }
+        }
+       ]
+      },
+      "type": {
+       "$type": "int"
+      }
+     },
+     {
+      "$node": "SwitchStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 27,
+       "column": 1,
+       "endLine": 30,
+       "endColumn": 2
+      },
+      "kind": "SwitchStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "control.rs2",
+        "line": 27,
+        "column": 1,
+        "endLine": 27,
+        "endColumn": 15
+       },
+       "text": "switch_boolean"
+      },
+      "condition": {
+       "$node": "LocalVariableExpression",
+       "source": {
+        "name": "control.rs2",
+        "line": 27,
+        "column": 17,
+        "endLine": 27,
+        "endColumn": 22
+       },
+       "type": {
+        "$type": "boolean"
+       },
+       "typeHint": {
+        "$type": "boolean"
+       },
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "control.rs2",
+         "line": 27,
+         "column": 18,
+         "endLine": 27,
+         "endColumn": 22
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "flag",
+        "reference": null
+       },
+       "reference": {
+        "$sym": "LocalVariableSymbol",
+        "name": "flag",
+        "type": "boolean"
+       },
+       "kind": "LocalVariableExpression",
+       "index": null
+      },
+      "cases": [
+       {
+        "$node": "SwitchCase",
+        "source": {
+         "name": "control.rs2",
+         "line": 28,
+         "column": 5,
+         "endLine": 28,
+         "endColumn": 26
+        },
+        "kind": "SwitchCase",
+        "keys": [
+         {
+          "$node": "BooleanLiteral",
+          "source": {
+           "name": "control.rs2",
+           "line": 28,
+           "column": 10,
+           "endLine": 28,
+           "endColumn": 14
+          },
+          "type": {
+           "$type": "boolean"
+          },
+          "typeHint": {
+           "$type": "boolean"
+          },
+          "value": true,
+          "reference": null,
+          "kind": "BooleanLiteral"
+         }
+        ],
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 28,
+           "column": 17,
+           "endLine": 28,
+           "endColumn": 26
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 28,
+            "column": 17,
+            "endLine": 28,
+            "endColumn": 25
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 28,
+             "column": 17,
+             "endLine": 28,
+             "endColumn": 20
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 28,
+              "column": 21,
+              "endLine": 28,
+              "endColumn": 24
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "t",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       },
+       {
+        "$node": "SwitchCase",
+        "source": {
+         "name": "control.rs2",
+         "line": 29,
+         "column": 5,
+         "endLine": 29,
+         "endColumn": 27
+        },
+        "kind": "SwitchCase",
+        "keys": [
+         {
+          "$node": "BooleanLiteral",
+          "source": {
+           "name": "control.rs2",
+           "line": 29,
+           "column": 10,
+           "endLine": 29,
+           "endColumn": 15
+          },
+          "type": {
+           "$type": "boolean"
+          },
+          "typeHint": {
+           "$type": "boolean"
+          },
+          "value": false,
+          "reference": null,
+          "kind": "BooleanLiteral"
+         }
+        ],
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 29,
+           "column": 18,
+           "endLine": 29,
+           "endColumn": 27
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 29,
+            "column": 18,
+            "endLine": 29,
+            "endColumn": 26
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 29,
+             "column": 18,
+             "endLine": 29,
+             "endColumn": 21
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 29,
+              "column": 22,
+              "endLine": 29,
+              "endColumn": 25
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "f",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       }
+      ],
+      "defaultCase": null,
+      "type": {
+       "$type": "boolean"
+      }
+     },
+     {
+      "$node": "SwitchStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 31,
+       "column": 1,
+       "endLine": 34,
+       "endColumn": 2
+      },
+      "kind": "SwitchStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "control.rs2",
+        "line": 31,
+        "column": 1,
+        "endLine": 31,
+        "endColumn": 11
+       },
+       "text": "switch_npc"
+      },
+      "condition": {
+       "$node": "Identifier",
+       "source": {
+        "name": "control.rs2",
+        "line": 31,
+        "column": 13,
+        "endLine": 31,
+        "endColumn": 16
+       },
+       "type": {
+        "$type": "npc"
+       },
+       "typeHint": {
+        "$type": "npc"
+       },
+       "kind": "Identifier",
+       "text": "man",
+       "reference": {
+        "$sym": "BasicSymbol",
+        "name": "man",
+        "type": "npc",
+        "isProtected": false
+       }
+      },
+      "cases": [
+       {
+        "$node": "SwitchCase",
+        "source": {
+         "name": "control.rs2",
+         "line": 32,
+         "column": 5,
+         "endLine": 32,
+         "endColumn": 36
+        },
+        "kind": "SwitchCase",
+        "keys": [
+         {
+          "$node": "Identifier",
+          "source": {
+           "name": "control.rs2",
+           "line": 32,
+           "column": 10,
+           "endLine": 32,
+           "endColumn": 13
+          },
+          "type": {
+           "$type": "npc"
+          },
+          "typeHint": {
+           "$type": "npc"
+          },
+          "kind": "Identifier",
+          "text": "man",
+          "reference": {
+           "$sym": "BasicSymbol",
+           "name": "man",
+           "type": "npc",
+           "isProtected": false
+          }
+         },
+         {
+          "$node": "Identifier",
+          "source": {
+           "name": "control.rs2",
+           "line": 32,
+           "column": 15,
+           "endLine": 32,
+           "endColumn": 20
+          },
+          "type": {
+           "$type": "npc"
+          },
+          "typeHint": {
+           "$type": "npc"
+          },
+          "kind": "Identifier",
+          "text": "woman",
+          "reference": {
+           "$sym": "BasicSymbol",
+           "name": "woman",
+           "type": "npc",
+           "isProtected": false
+          }
+         }
+        ],
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 32,
+           "column": 23,
+           "endLine": 32,
+           "endColumn": 36
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 32,
+            "column": 23,
+            "endLine": 32,
+            "endColumn": 35
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 32,
+             "column": 23,
+             "endLine": 32,
+             "endColumn": 26
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 32,
+              "column": 27,
+              "endLine": 32,
+              "endColumn": 34
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "human",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       },
+       {
+        "$node": "SwitchCase",
+        "source": {
+         "name": "control.rs2",
+         "line": 33,
+         "column": 5,
+         "endLine": 33,
+         "endColumn": 33
+        },
+        "kind": "SwitchCase",
+        "keys": [],
+        "statements": [
+         {
+          "$node": "ExpressionStatement",
+          "source": {
+           "name": "control.rs2",
+           "line": 33,
+           "column": 20,
+           "endLine": 33,
+           "endColumn": 33
+          },
+          "kind": "ExpressionStatement",
+          "expression": {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 33,
+            "column": 20,
+            "endLine": 33,
+            "endColumn": 32
+           },
+           "type": {
+            "$type": "unit"
+           },
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 33,
+             "column": 20,
+             "endLine": 33,
+             "endColumn": 23
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "mes",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "StringLiteral",
+             "source": {
+              "name": "control.rs2",
+              "line": 33,
+              "column": 24,
+              "endLine": 33,
+              "endColumn": 31
+             },
+             "type": {
+              "$type": "string"
+             },
+             "typeHint": {
+              "$type": "string"
+             },
+             "value": "other",
+             "reference": null,
+             "kind": "StringLiteral",
+             "subExpression": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "mes",
+            "parameters": "string",
+            "returns": "unit"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         }
+        ]
+       }
+      ],
+      "defaultCase": {
+       "$node": "SwitchCase",
+       "source": {
+        "name": "control.rs2",
+        "line": 33,
+        "column": 5,
+        "endLine": 33,
+        "endColumn": 33
+       },
+       "kind": "SwitchCase",
+       "keys": [],
+       "statements": [
+        {
+         "$node": "ExpressionStatement",
+         "source": {
+          "name": "control.rs2",
+          "line": 33,
+          "column": 20,
+          "endLine": 33,
+          "endColumn": 33
+         },
+         "kind": "ExpressionStatement",
+         "expression": {
+          "$node": "CommandCallExpression",
+          "source": {
+           "name": "control.rs2",
+           "line": 33,
+           "column": 20,
+           "endLine": 33,
+           "endColumn": 32
+          },
+          "type": {
+           "$type": "unit"
+          },
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "control.rs2",
+            "line": 33,
+            "column": 20,
+            "endLine": 33,
+            "endColumn": 23
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "mes",
+           "reference": null
+          },
+          "arguments": [
+           {
+            "$node": "StringLiteral",
+            "source": {
+             "name": "control.rs2",
+             "line": 33,
+             "column": 24,
+             "endLine": 33,
+             "endColumn": 31
+            },
+            "type": {
+             "$type": "string"
+            },
+            "typeHint": {
+             "$type": "string"
+            },
+            "value": "other",
+            "reference": null,
+            "kind": "StringLiteral",
+            "subExpression": null
+           }
+          ],
+          "symbol": {
+           "$sym": "ServerScriptSymbol",
+           "trigger": "command",
+           "name": "mes",
+           "parameters": "string",
+           "returns": "unit"
+          },
+          "kind": "CommandCallExpression",
+          "arguments2": null
+         }
+        }
+       ]
+      },
+      "type": {
+       "$type": "npc"
+      }
+     },
+     {
+      "$node": "EmptyStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 35,
+       "column": 1,
+       "endLine": 35,
+       "endColumn": 2
+      },
+      "readonly": "EmptyStatement"
+     },
+     {
+      "$node": "BlockStatement",
+      "source": {
+       "name": "control.rs2",
+       "line": 36,
+       "column": 1,
+       "endLine": 39,
+       "endColumn": 2
+      },
+      "kind": "BlockStatement",
+      "statements": [
+       {
+        "$node": "DeclarationStatement",
+        "source": {
+         "name": "control.rs2",
+         "line": 37,
+         "column": 5,
+         "endLine": 37,
+         "endColumn": 24
+        },
+        "kind": "DeclarationStatement",
+        "typeToken": {
+         "$node": "Token",
+         "source": {
+          "name": "control.rs2",
+          "line": 37,
+          "column": 5,
+          "endLine": 37,
+          "endColumn": 12
+         },
+         "text": "def_int"
+        },
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "control.rs2",
+          "line": 37,
+          "column": 14,
+          "endLine": 37,
+          "endColumn": 19
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "inner",
+         "reference": null
+        },
+        "initializer": {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "control.rs2",
+          "line": 37,
+          "column": 22,
+          "endLine": 37,
+          "endColumn": 23
+         },
+         "type": {
+          "$type": "int"
+         },
+         "typeHint": {
+          "$type": "int"
+         },
+         "value": "1",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": 1
+        },
+        "symbol": {
+         "$sym": "LocalVariableSymbol",
+         "name": "inner",
+         "type": "int"
+        }
+       },
+       {
+        "$node": "ExpressionStatement",
+        "source": {
+         "name": "control.rs2",
+         "line": 38,
+         "column": 5,
+         "endLine": 38,
+         "endColumn": 27
+        },
+        "kind": "ExpressionStatement",
+        "expression": {
+         "$node": "CommandCallExpression",
+         "source": {
+          "name": "control.rs2",
+          "line": 38,
+          "column": 5,
+          "endLine": 38,
+          "endColumn": 26
+         },
+         "type": {
+          "$type": "unit"
+         },
+         "typeHint": null,
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "control.rs2",
+           "line": 38,
+           "column": 5,
+           "endLine": 38,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "mes",
+          "reference": null
+         },
+         "arguments": [
+          {
+           "$node": "CommandCallExpression",
+           "source": {
+            "name": "control.rs2",
+            "line": 38,
+            "column": 9,
+            "endLine": 38,
+            "endColumn": 25
+           },
+           "type": {
+            "$type": "string"
+           },
+           "typeHint": {
+            "$type": "string"
+           },
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "control.rs2",
+             "line": 38,
+             "column": 9,
+             "endLine": 38,
+             "endColumn": 17
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "tostring",
+            "reference": null
+           },
+           "arguments": [
+            {
+             "$node": "LocalVariableExpression",
+             "source": {
+              "name": "control.rs2",
+              "line": 38,
+              "column": 18,
+              "endLine": 38,
+              "endColumn": 24
+             },
+             "type": {
+              "$type": "int"
+             },
+             "typeHint": {
+              "$type": "int"
+             },
+             "name": {
+              "$node": "Identifier",
+              "source": {
+               "name": "control.rs2",
+               "line": 38,
+               "column": 19,
+               "endLine": 38,
+               "endColumn": 24
+              },
+              "type": null,
+              "typeHint": null,
+              "kind": "Identifier",
+              "text": "inner",
+              "reference": null
+             },
+             "reference": {
+              "$sym": "LocalVariableSymbol",
+              "name": "inner",
+              "type": "int"
+             },
+             "kind": "LocalVariableExpression",
+             "index": null
+            }
+           ],
+           "symbol": {
+            "$sym": "ServerScriptSymbol",
+            "trigger": "command",
+            "name": "tostring",
+            "parameters": "int",
+            "returns": "string"
+           },
+           "kind": "CommandCallExpression",
+           "arguments2": null
+          }
+         ],
+         "symbol": {
+          "$sym": "ServerScriptSymbol",
+          "trigger": "command",
+          "name": "mes",
+          "parameters": "string",
+          "returns": "unit"
+         },
+         "kind": "CommandCallExpression",
+         "arguments2": null
+        }
+       }
+      ]
+     }
+    ],
+    "symbol": {
+     "$sym": "ServerScriptSymbol",
+     "trigger": "proc",
+     "name": "control",
+     "parameters": "unit",
+     "returns": "unit"
+    },
+    "returnType": {
+     "$type": "unit"
+    },
+    "triggerType": {
+     "$trigger": "proc"
+    },
+    "subjectReference": null,
+    "parameterType": {
+     "$type": "unit"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,5978 @@
+{
+ "tests/fixtures/01-literals/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/02-strings/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/03-control/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/04-calc/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/05-vars/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/06-procs-labels/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/07-commands/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/08-macros/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/09-triggers/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/10-errors/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "greeting",
+      {
+       "name": "greeting",
+       "value": "hello"
+      },
+      "none"
+     ],
+     [
+      "spawn",
+      {
+       "name": "spawn",
+       "value": "0_50_50_20_20"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "man",
+      {
+       "name": "man",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "woman",
+      {
+       "name": "woman",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "hans",
+      {
+       "name": "hans",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "coins",
+      {
+       "name": "coins",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "category",
+    "entries": [
+     [
+      "humans",
+      {
+       "name": "humans",
+       "type": "category",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "inv",
+      {
+       "name": "inv",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<string>",
+    "entries": [
+     [
+      "name_var",
+      {
+       "name": "name_var",
+       "type": "varp<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "secret",
+      {
+       "name": "secret",
+       "type": "varp<int>",
+       "isProtected": true
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "npc_hp",
+      {
+       "name": "npc_hp",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varo<int>",
+    "entries": [
+     [
+      "obj_charges",
+      {
+       "name": "obj_charges",
+       "type": "varo<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<int>",
+    "entries": [
+     [
+      "world_counter",
+      {
+       "name": "world_counter",
+       "type": "vars<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/symbols/edge.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "5",
+      {
+       "name": "5",
+       "value": "1"
+      },
+      "none"
+     ],
+     [
+      "max_level",
+      {
+       "name": "max_level",
+       "value": "99"
+      },
+      "none"
+     ],
+     [
+      "Foo Bar",
+      {
+       "name": "Foo Bar",
+       "value": "x"
+      },
+      "none"
+     ],
+     [
+      "0",
+      {
+       "name": "0",
+       "value": "zero"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "small",
+      {
+       "name": "small",
+       "type": "npc",
+       "isProtected": false
+      },
+      -2147483648
+     ],
+     [
+      "neg",
+      {
+       "name": "neg",
+       "type": "npc",
+       "isProtected": false
+      },
+      -1
+     ],
+     [
+      "lead",
+      {
+       "name": "lead",
+       "type": "npc",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "goblin",
+      {
+       "name": "goblin",
+       "type": "npc",
+       "isProtected": false
+      },
+      2
+     ],
+     [
+      "big_rat",
+      {
+       "name": "Big  Rat",
+       "type": "npc",
+       "isProtected": false
+      },
+      10
+     ],
+     [
+      "imp",
+      {
+       "name": "imp",
+       "type": "npc",
+       "isProtected": false
+      },
+      12
+     ],
+     [
+      "big",
+      {
+       "name": "big",
+       "type": "npc",
+       "isProtected": false
+      },
+      2147483647
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "goblin",
+      {
+       "name": "goblin",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "big_rat",
+      {
+       "name": "Big\tRat",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "idkit",
+    "entries": [
+     [
+      "kit",
+      {
+       "name": "kit",
+       "type": "idkit",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "mesanim",
+    "entries": [
+     [
+      "happy",
+      {
+       "name": "happy",
+       "type": "mesanim",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "param<int>",
+    "entries": [
+     [
+      "p_int",
+      {
+       "name": "p_int",
+       "type": "param<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "param<string>",
+    "entries": [
+     [
+      "p_str",
+      {
+       "name": "p_str",
+       "type": "param<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "param<unit>",
+    "entries": [
+     [
+      "p_none",
+      {
+       "name": "p_none",
+       "type": "param<unit>",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "seq",
+    "entries": [
+     [
+      "walk",
+      {
+       "name": "walk",
+       "type": "seq",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int,string>",
+    "entries": [
+     [
+      "a",
+      {
+       "name": "a",
+       "type": "varp<int,string>",
+       "isProtected": true
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<namedobj>",
+    "entries": [
+     [
+      "b",
+      {
+       "name": "b",
+       "type": "varp<namedobj>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<coord>",
+    "entries": [
+     [
+      "c",
+      {
+       "name": "c",
+       "type": "varp<coord>",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<unit>",
+    "entries": [
+     [
+      "n1",
+      {
+       "name": "n1",
+       "type": "varn<unit>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varn<int>",
+    "entries": [
+     [
+      "n2",
+      {
+       "name": "n2",
+       "type": "varn<int>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "vars<boolean>",
+    "entries": [
+     [
+      "s1",
+      {
+       "name": "s1",
+       "type": "vars<boolean>",
+       "isProtected": false
+      },
+      3
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "vb",
+      {
+       "name": "vb",
+       "type": "varbit<int>",
+       "isProtected": true
+      },
+      7
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "enum",
+    "entries": [
+     [
+      "e",
+      {
+       "name": "e",
+       "type": "enum",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "struct",
+    "entries": [
+     [
+      "st",
+      {
+       "name": "st",
+       "type": "struct",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "dbcolumn<int,string,obj>",
+    "entries": [
+     [
+      "col",
+      {
+       "name": "col",
+       "type": "dbcolumn<int,string,obj>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "dbrow",
+    "entries": [
+     [
+      "row",
+      {
+       "name": "row",
+       "type": "dbrow",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "dbtable",
+    "entries": [
+     [
+      "tab",
+      {
+       "name": "tab",
+       "type": "dbtable",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/symbols/fatal-dup-constant.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "a",
+      {
+       "name": "a",
+       "value": "1"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "npc",
+    "entries": [
+     [
+      "a",
+      {
+       "name": "a",
+       "type": "npc",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/symbols/fatal-dup.json": {
+  "fatal": "Unable to add basic: type=npc, name=rat"
+ },
+ "tests/symbols/fatal-protected-empty-vartype.json": {
+  "table": [
+   {
+    "kind": "Basic",
+    "type": "varp<unit>",
+    "entries": [
+     [
+      "a",
+      {
+       "name": "a",
+       "type": "varp<unit>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/symbols/fatal-unknown-vartype.json": {
+  "fatal": "Unable to find type: 'nope'."
+ },
+ "tests/symbols/fatal-bad-id.json": {
+  "fatal": "Invalid symbol id \"12abc\" for imp."
+ }
+}

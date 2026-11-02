@@ -1,0 +1,8 @@
+[proc,mismatch]
+def_int $a = "not an int";
+def_string $s = 1;
+mes($a);
+~takes_int("text");
+
+[proc,takes_int](int $value)
+mes(tostring($value));

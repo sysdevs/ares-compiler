@@ -1,0 +1,800 @@
+[
+ {
+  "fullName": "[proc,minmax]",
+  "sourceName": "procs.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "min",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "max",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "value",
+     "type": "int"
+    }
+   ],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "min",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "max",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "value",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "max",
+       "type": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "min",
+       "type": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "BranchLessThanOrEquals",
+      "operand": {
+       "$label": "if_true_0"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "max",
+       "type": "int"
+      },
+      "line": 3
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "min",
+       "type": "int"
+      },
+      "line": 3
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "max",
+       "type": "int"
+      },
+      "line": 3
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "min",
+       "type": "int"
+      },
+      "line": 3
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "value",
+       "type": "int"
+      },
+      "line": 5
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "min",
+       "type": "int"
+      },
+      "line": 5
+     },
+     {
+      "op": "BranchLessThan",
+      "operand": {
+       "$label": "if_true_1"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_1",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "min",
+       "type": "int"
+      },
+      "line": 6
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": 6
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_1"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_1",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "value",
+       "type": "int"
+      },
+      "line": 8
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "max",
+       "type": "int"
+      },
+      "line": 8
+     },
+     {
+      "op": "BranchGreaterThan",
+      "operand": {
+       "$label": "if_true_2"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_2"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_2",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "max",
+       "type": "int"
+      },
+      "line": 9
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": 9
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_2"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_2",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "value",
+       "type": "int"
+      },
+      "line": 11
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": 11
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": null
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[proc,swap]",
+  "sourceName": "procs.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "a",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "b",
+     "type": "string"
+    }
+   ],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "a",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "b",
+     "type": "string"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "b",
+       "type": "string"
+      },
+      "line": 14
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "a",
+       "type": "int"
+      },
+      "line": 14
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": 14
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "",
+      "line": null
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": null
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[proc,tuples]",
+  "sourceName": "procs.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "s",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "i",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "",
+      "line": null
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 17
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": null
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "i",
+       "type": "int"
+      },
+      "line": 18
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 19
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "one",
+      "line": 19
+     },
+     {
+      "op": "Gosub",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "proc",
+       "name": "swap",
+       "parameters": "int,string",
+       "returns": "string,int"
+      },
+      "line": 19
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "i",
+       "type": "int"
+      },
+      "line": 19
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 19
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "string"
+      },
+      "line": 20
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 20
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[label,done]",
+  "sourceName": "procs.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "code",
+     "type": "int"
+    }
+   ],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "code",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "code",
+       "type": "int"
+      },
+      "line": 23
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "tostring",
+       "parameters": "int",
+       "returns": "string"
+      },
+      "line": 23
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 23
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[label,loop]",
+  "sourceName": "procs.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "n",
+     "type": "int"
+    }
+   ],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "n",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "int"
+      },
+      "line": 26
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": 26
+     },
+     {
+      "op": "BranchGreaterThan",
+      "operand": {
+       "$label": "if_true_0"
+      },
+      "line": null
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_true_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "int"
+      },
+      "line": 27
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 27
+     },
+     {
+      "op": "Sub",
+      "operand": null,
+      "line": null
+     },
+     {
+      "op": "Jump",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "label",
+       "name": "loop",
+       "parameters": "int",
+       "returns": "nothing"
+      },
+      "line": 27
+     },
+     {
+      "op": "Branch",
+      "operand": {
+       "$label": "if_end_0"
+      },
+      "line": null
+     }
+    ]
+   },
+   {
+    "label": "if_end_0",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "int"
+      },
+      "line": 29
+     },
+     {
+      "op": "Jump",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "label",
+       "name": "done",
+       "parameters": "int",
+       "returns": "nothing"
+      },
+      "line": 29
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[proc,caller]",
+  "sourceName": "procs.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "r",
+     "type": "int"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": 32
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 10,
+      "line": 32
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 15,
+      "line": 32
+     },
+     {
+      "op": "Gosub",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "proc",
+       "name": "minmax",
+       "parameters": "int,int,int",
+       "returns": "int"
+      },
+      "line": 32
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "r",
+       "type": "int"
+      },
+      "line": 32
+     },
+     {
+      "op": "Gosub",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "proc",
+       "name": "tuples",
+       "parameters": "unit",
+       "returns": "unit"
+      },
+      "line": 33
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[label,start]",
+  "sourceName": "procs.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": []
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "Gosub",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "proc",
+       "name": "caller",
+       "parameters": "unit",
+       "returns": "unit"
+      },
+      "line": 36
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 3,
+      "line": 37
+     },
+     {
+      "op": "Jump",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "label",
+       "name": "loop",
+       "parameters": "int",
+       "returns": "nothing"
+      },
+      "line": 37
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ }
+]

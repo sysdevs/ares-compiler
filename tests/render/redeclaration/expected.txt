@@ -1,0 +1,37 @@
+error: `[proc,twice]` is defined multiple times
+ --> script.rs2:5:1
+  |
+5 | [proc,twice]
+  | ^^^^^^^^^^^^ redefined here
+  |
+note: first defined here
+ --> script.rs2:1:1
+  |
+1 | [proc,twice]
+  | ^^^^^^^^^^^^
+
+error: local variable `$p` is defined multiple times
+ --> script.rs2:8:23
+  |
+8 | [proc,params](int $p, string $p)
+  |                       ^^^^^^^^^
+  |
+note: first defined here
+ --> script.rs2:8:15
+  |
+8 | [proc,params](int $p, string $p)
+  |               ^^^^^^
+
+error: local variable `$a` is defined multiple times
+ --> script.rs2:3:10
+  |
+3 | def_int $a = 2;
+  |          ^
+  |
+note: first defined here
+ --> script.rs2:2:10
+  |
+2 | def_int $a = 1;
+  |          ^
+
+error: could not compile due to 3 previous errors

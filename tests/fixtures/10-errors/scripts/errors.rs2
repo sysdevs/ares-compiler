@@ -1,0 +1,5 @@
+[proc,errors]
+def_int $a = "not an int";
+def_string $s = 1;
+mes($a);
+undefined_command(1);

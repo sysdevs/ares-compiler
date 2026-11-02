@@ -1,0 +1,157 @@
+[
+ {
+  "fullName": "[opnpc1,man]",
+  "sourceName": "triggers.rs2",
+  "subjectReference": {
+   "$sym": "BasicSymbol",
+   "name": "man",
+   "type": "npc",
+   "isProtected": false
+  },
+  "locals": {
+   "parameters": [],
+   "all": []
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "talking to man",
+      "line": 2
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 2
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[opnpc1,_]",
+  "sourceName": "triggers.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": []
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantString",
+      "operand": "any npc",
+      "line": 5
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 5
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ },
+ {
+  "fullName": "[debugproc,dbg]",
+  "sourceName": "triggers.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "a",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "b",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "c",
+     "type": "mapelement"
+    }
+   ],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "a",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "b",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "c",
+     "type": "mapelement"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "b",
+       "type": "string"
+      },
+      "line": 8
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 8
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ }
+]

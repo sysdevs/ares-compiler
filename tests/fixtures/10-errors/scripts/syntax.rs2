@@ -1,0 +1,3 @@
+[proc,broken]
+def_int $a = ;
+mes("unterminated

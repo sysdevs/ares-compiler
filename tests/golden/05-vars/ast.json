@@ -1,0 +1,2956 @@
+[
+ {
+  "$node": "ScriptFile",
+  "source": {
+   "name": "aa_commands.rs2",
+   "line": 1,
+   "column": 1,
+   "endLine": 11,
+   "endColumn": 6
+  },
+  "scripts": [
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 1,
+     "column": 1,
+     "endLine": 1,
+     "endColumn": 28
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 1,
+      "column": 2,
+      "endLine": 1,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 1,
+      "column": 10,
+      "endLine": 1,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "mes",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 1,
+       "column": 15,
+       "endLine": 1,
+       "endColumn": 27
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 1,
+        "column": 15,
+        "endLine": 1,
+        "endColumn": 21
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 1,
+        "column": 23,
+        "endLine": 1,
+        "endColumn": 27
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "text",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 2,
+     "column": 1,
+     "endLine": 2,
+     "endColumn": 39
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 2,
+      "column": 2,
+      "endLine": 2,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 2,
+      "column": 10,
+      "endLine": 2,
+      "endColumn": 18
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "tostring",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 2,
+       "column": 20,
+       "endLine": 2,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 2,
+        "column": 20,
+        "endLine": 2,
+        "endColumn": 23
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 2,
+        "column": 25,
+        "endLine": 2,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 2,
+       "column": 32,
+       "endLine": 2,
+       "endColumn": 38
+      },
+      "text": "string"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 3,
+     "column": 1,
+     "endLine": 3,
+     "endColumn": 39
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 3,
+      "column": 2,
+      "endLine": 3,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 3,
+      "column": 10,
+      "endLine": 3,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "escape",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 3,
+       "column": 18,
+       "endLine": 3,
+       "endColumn": 30
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 3,
+        "column": 18,
+        "endLine": 3,
+        "endColumn": 24
+       },
+       "text": "string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 3,
+        "column": 26,
+        "endLine": 3,
+        "endColumn": 30
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "text",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 3,
+       "column": 32,
+       "endLine": 3,
+       "endColumn": 38
+      },
+      "text": "string"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 4,
+     "column": 1,
+     "endLine": 4,
+     "endColumn": 32
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 4,
+      "column": 2,
+      "endLine": 4,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 4,
+      "column": 10,
+      "endLine": 4,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "random",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 4,
+       "column": 18,
+       "endLine": 4,
+       "endColumn": 26
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 4,
+        "column": 18,
+        "endLine": 4,
+        "endColumn": 21
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 4,
+        "column": 23,
+        "endLine": 4,
+        "endColumn": 26
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "max",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 4,
+       "column": 28,
+       "endLine": 4,
+       "endColumn": 31
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 5,
+     "column": 1,
+     "endLine": 5,
+     "endColumn": 52
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 5,
+      "column": 2,
+      "endLine": 5,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 5,
+      "column": 10,
+      "endLine": 5,
+      "endColumn": 18
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "npc_find",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 20,
+       "endLine": 5,
+       "endColumn": 32
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 20,
+        "endLine": 5,
+        "endColumn": 25
+       },
+       "text": "coord"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 27,
+        "endLine": 5,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "coord",
+       "reference": null
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 34,
+       "endLine": 5,
+       "endColumn": 42
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 34,
+        "endLine": 5,
+        "endColumn": 37
+       },
+       "text": "npc"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 5,
+        "column": 39,
+        "endLine": 5,
+        "endColumn": 42
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "npc",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 5,
+       "column": 44,
+       "endLine": 5,
+       "endColumn": 51
+      },
+      "text": "boolean"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 6,
+     "column": 1,
+     "endLine": 6,
+     "endColumn": 30
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 6,
+      "column": 2,
+      "endLine": 6,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 6,
+      "column": 10,
+      "endLine": 6,
+      "endColumn": 17
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "p_delay",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 6,
+       "column": 19,
+       "endLine": 6,
+       "endColumn": 29
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 6,
+        "column": 19,
+        "endLine": 6,
+        "endColumn": 22
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 6,
+        "column": 24,
+        "endLine": 6,
+        "endColumn": 29
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "ticks",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 7,
+     "column": 1,
+     "endLine": 7,
+     "endColumn": 33
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 7,
+      "column": 2,
+      "endLine": 7,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 7,
+      "column": 10,
+      "endLine": 7,
+      "endColumn": 20
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "npc_setvar",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 7,
+       "column": 22,
+       "endLine": 7,
+       "endColumn": 32
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 7,
+        "column": 22,
+        "endLine": 7,
+        "endColumn": 25
+       },
+       "text": "int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 7,
+        "column": 27,
+        "endLine": 7,
+        "endColumn": 32
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "value",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": null,
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 8,
+     "column": 1,
+     "endLine": 8,
+     "endColumn": 45
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 8,
+      "column": 2,
+      "endLine": 8,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 8,
+      "column": 10,
+      "endLine": 8,
+      "endColumn": 19
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "inv_total",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 21,
+       "endLine": 8,
+       "endColumn": 29
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 21,
+        "endLine": 8,
+        "endColumn": 24
+       },
+       "text": "inv"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 26,
+        "endLine": 8,
+        "endColumn": 29
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "inv",
+       "reference": null
+      }
+     },
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 31,
+       "endLine": 8,
+       "endColumn": 39
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 31,
+        "endLine": 8,
+        "endColumn": 34
+       },
+       "text": "obj"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 8,
+        "column": 36,
+        "endLine": 8,
+        "endColumn": 39
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "obj",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 8,
+       "column": 41,
+       "endLine": 8,
+       "endColumn": 44
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 9,
+     "column": 1,
+     "endLine": 9,
+     "endColumn": 32
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 9,
+      "column": 2,
+      "endLine": 9,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 9,
+      "column": 10,
+      "endLine": 9,
+      "endColumn": 16
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "coordx",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": [
+     {
+      "$node": "Parameter",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 9,
+       "column": 18,
+       "endLine": 9,
+       "endColumn": 26
+      },
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 9,
+        "column": 18,
+        "endLine": 9,
+        "endColumn": 23
+       },
+       "text": "coord"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "aa_commands.rs2",
+        "line": 9,
+        "column": 25,
+        "endLine": 9,
+        "endColumn": 26
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "c",
+       "reference": null
+      }
+     }
+    ],
+    "returnTokens": [
+     {
+      "$node": "Token",
+      "source": {
+       "name": "aa_commands.rs2",
+       "line": 9,
+       "column": 28,
+       "endLine": 9,
+       "endColumn": 31
+      },
+      "text": "int"
+     }
+    ],
+    "statements": [],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "aa_commands.rs2",
+     "line": 10,
+     "column": 1,
+     "endLine": 10,
+     "endColumn": 15
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 10,
+      "column": 2,
+      "endLine": 10,
+      "endColumn": 9
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "command",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "aa_commands.rs2",
+      "line": 10,
+      "column": 10,
+      "endLine": 10,
+      "endColumn": 14
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "dump",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [],
+    "subjectReference": null
+   }
+  ]
+ },
+ {
+  "$node": "ScriptFile",
+  "source": {
+   "name": "vars.rs2",
+   "line": 1,
+   "column": 1,
+   "endLine": 28,
+   "endColumn": 6
+  },
+  "scripts": [
+   {
+    "$node": "Script",
+    "source": {
+     "name": "vars.rs2",
+     "line": 1,
+     "column": 1,
+     "endLine": 17,
+     "endColumn": 9
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "vars.rs2",
+      "line": 1,
+      "column": 2,
+      "endLine": 1,
+      "endColumn": 6
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "proc",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "vars.rs2",
+      "line": 1,
+      "column": 7,
+      "endLine": 1,
+      "endColumn": 11
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "vars",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 2,
+       "column": 1,
+       "endLine": 2,
+       "endColumn": 16
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 2,
+        "column": 10,
+        "endLine": 2,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "i",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "IntegerLiteral",
+       "source": {
+        "name": "vars.rs2",
+        "line": 2,
+        "column": 14,
+        "endLine": 2,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "value": "1",
+       "reference": null,
+       "radix": 10,
+       "kind": "IntegerLiteral",
+       "numberValue": null
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 3,
+       "column": 1,
+       "endLine": 3,
+       "endColumn": 21
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 3,
+        "column": 13,
+        "endLine": 3,
+        "endColumn": 14
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "s",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "StringLiteral",
+       "source": {
+        "name": "vars.rs2",
+        "line": 3,
+        "column": 17,
+        "endLine": 3,
+        "endColumn": 20
+       },
+       "type": null,
+       "typeHint": null,
+       "value": "s",
+       "reference": null,
+       "kind": "StringLiteral",
+       "subExpression": null
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 4,
+       "column": 1,
+       "endLine": 4,
+       "endColumn": 12
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 4,
+        "column": 10,
+        "endLine": 4,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "j",
+       "reference": null
+      },
+      "initializer": null
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 5,
+       "column": 1,
+       "endLine": 5,
+       "endColumn": 15
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 5,
+        "column": 1,
+        "endLine": 5,
+        "endColumn": 11
+       },
+       "text": "def_string"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 5,
+        "column": 13,
+        "endLine": 5,
+        "endColumn": 14
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "t",
+       "reference": null
+      },
+      "initializer": null
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 6,
+       "column": 1,
+       "endLine": 6,
+       "endColumn": 33
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 6,
+         "column": 1,
+         "endLine": 6,
+         "endColumn": 10
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 6,
+          "column": 2,
+          "endLine": 6,
+          "endColumn": 10
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "playtime",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "GameVariableExpression",
+        "dot": false
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "CalcExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 6,
+         "column": 13,
+         "endLine": 6,
+         "endColumn": 32
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "CalcExpression",
+        "expression": {
+         "$node": "ArithmeticExpression",
+         "source": {
+          "name": "vars.rs2",
+          "line": 6,
+          "column": 18,
+          "endLine": 6,
+          "endColumn": 31
+         },
+         "type": null,
+         "typeHint": null,
+         "left": {
+          "$node": "GameVariableExpression",
+          "source": {
+           "name": "vars.rs2",
+           "line": 6,
+           "column": 18,
+           "endLine": 6,
+           "endColumn": 27
+          },
+          "type": null,
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "vars.rs2",
+            "line": 6,
+            "column": 19,
+            "endLine": 6,
+            "endColumn": 27
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "playtime",
+           "reference": null
+          },
+          "reference": null,
+          "kind": "GameVariableExpression",
+          "dot": false
+         },
+         "operator": {
+          "$node": "Token",
+          "source": {
+           "name": "vars.rs2",
+           "line": 6,
+           "column": 28,
+           "endLine": 6,
+           "endColumn": 29
+          },
+          "text": "+"
+         },
+         "right": {
+          "$node": "IntegerLiteral",
+          "source": {
+           "name": "vars.rs2",
+           "line": 6,
+           "column": 30,
+           "endLine": 6,
+           "endColumn": 31
+          },
+          "type": null,
+          "typeHint": null,
+          "value": "1",
+          "reference": null,
+          "radix": 10,
+          "kind": "IntegerLiteral",
+          "numberValue": null
+         },
+         "kind": "ArithmeticExpression"
+        }
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 7,
+       "column": 1,
+       "endLine": 7,
+       "endColumn": 17
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 7,
+         "column": 1,
+         "endLine": 7,
+         "endColumn": 10
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 7,
+          "column": 2,
+          "endLine": 7,
+          "endColumn": 10
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "name_var",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "GameVariableExpression",
+        "dot": false
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "StringLiteral",
+        "source": {
+         "name": "vars.rs2",
+         "line": 7,
+         "column": 13,
+         "endLine": 7,
+         "endColumn": 16
+        },
+        "type": null,
+        "typeHint": null,
+        "value": "x",
+        "reference": null,
+        "kind": "StringLiteral",
+        "subExpression": null
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 8,
+       "column": 1,
+       "endLine": 8,
+       "endColumn": 24
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 8,
+         "column": 1,
+         "endLine": 8,
+         "endColumn": 11
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 8,
+          "column": 3,
+          "endLine": 8,
+          "endColumn": 11
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "playtime",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "GameVariableExpression",
+        "dot": true
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 8,
+         "column": 14,
+         "endLine": 8,
+         "endColumn": 23
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 8,
+          "column": 15,
+          "endLine": 8,
+          "endColumn": 23
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "playtime",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "GameVariableExpression",
+        "dot": false
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 9,
+       "column": 1,
+       "endLine": 9,
+       "endColumn": 15
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 9,
+         "column": 1,
+         "endLine": 9,
+         "endColumn": 10
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 9,
+          "column": 2,
+          "endLine": 9,
+          "endColumn": 10
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "flag_bit",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "GameVariableExpression",
+        "dot": false
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "IntegerLiteral",
+        "source": {
+         "name": "vars.rs2",
+         "line": 9,
+         "column": 13,
+         "endLine": 9,
+         "endColumn": 14
+        },
+        "type": null,
+        "typeHint": null,
+        "value": "1",
+        "reference": null,
+        "radix": 10,
+        "kind": "IntegerLiteral",
+        "numberValue": null
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 10,
+       "column": 1,
+       "endLine": 10,
+       "endColumn": 43
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 10,
+         "column": 1,
+         "endLine": 10,
+         "endColumn": 15
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 10,
+          "column": 2,
+          "endLine": 10,
+          "endColumn": 15
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "world_counter",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "GameVariableExpression",
+        "dot": false
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "CalcExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 10,
+         "column": 18,
+         "endLine": 10,
+         "endColumn": 42
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "CalcExpression",
+        "expression": {
+         "$node": "ArithmeticExpression",
+         "source": {
+          "name": "vars.rs2",
+          "line": 10,
+          "column": 23,
+          "endLine": 10,
+          "endColumn": 41
+         },
+         "type": null,
+         "typeHint": null,
+         "left": {
+          "$node": "GameVariableExpression",
+          "source": {
+           "name": "vars.rs2",
+           "line": 10,
+           "column": 23,
+           "endLine": 10,
+           "endColumn": 37
+          },
+          "type": null,
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "vars.rs2",
+            "line": 10,
+            "column": 24,
+            "endLine": 10,
+            "endColumn": 37
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "world_counter",
+           "reference": null
+          },
+          "reference": null,
+          "kind": "GameVariableExpression",
+          "dot": false
+         },
+         "operator": {
+          "$node": "Token",
+          "source": {
+           "name": "vars.rs2",
+           "line": 10,
+           "column": 38,
+           "endLine": 10,
+           "endColumn": 39
+          },
+          "text": "+"
+         },
+         "right": {
+          "$node": "IntegerLiteral",
+          "source": {
+           "name": "vars.rs2",
+           "line": 10,
+           "column": 40,
+           "endLine": 10,
+           "endColumn": 41
+          },
+          "type": null,
+          "typeHint": null,
+          "value": "1",
+          "reference": null,
+          "radix": 10,
+          "kind": "IntegerLiteral",
+          "numberValue": null
+         },
+         "kind": "ArithmeticExpression"
+        }
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 11,
+       "column": 1,
+       "endLine": 11,
+       "endColumn": 18
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 11,
+         "column": 1,
+         "endLine": 11,
+         "endColumn": 13
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "GameVariableExpression",
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 11,
+          "column": 2,
+          "endLine": 11,
+          "endColumn": 13
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "obj_charges",
+         "reference": null
+        },
+        "reference": null,
+        "dot": false
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "IntegerLiteral",
+        "source": {
+         "name": "vars.rs2",
+         "line": 11,
+         "column": 16,
+         "endLine": 11,
+         "endColumn": 17
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "IntegerLiteral",
+        "value": "1",
+        "reference": null,
+        "radix": 10,
+        "numberValue": null
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 12,
+       "column": 1,
+       "endLine": 12,
+       "endColumn": 30
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 12,
+         "column": 1,
+         "endLine": 12,
+         "endColumn": 14
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 12,
+          "column": 3,
+          "endLine": 12,
+          "endColumn": 14
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "obj_charges",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "GameVariableExpression",
+        "dot": true
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "GameVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 12,
+         "column": 17,
+         "endLine": 12,
+         "endColumn": 29
+        },
+        "type": null,
+        "typeHint": null,
+        "reference": null,
+        "kind": "GameVariableExpression",
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 12,
+          "column": 18,
+          "endLine": 12,
+          "endColumn": 29
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "obj_charges",
+         "reference": null
+        },
+        "dot": false
+       }
+      ]
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 13,
+       "column": 1,
+       "endLine": 13,
+       "endColumn": 24
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 13,
+        "column": 1,
+        "endLine": 13,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 13,
+        "column": 10,
+        "endLine": 13,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "k",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "GameVariableExpression",
+       "source": {
+        "name": "vars.rs2",
+        "line": 13,
+        "column": 14,
+        "endLine": 13,
+        "endColumn": 23
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "GameVariableExpression",
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "vars.rs2",
+         "line": 13,
+         "column": 15,
+         "endLine": 13,
+         "endColumn": 23
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "flag_bit",
+        "reference": null
+       },
+       "reference": null,
+       "dot": false
+      }
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 14,
+       "column": 1,
+       "endLine": 14,
+       "endColumn": 19
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 14,
+         "column": 1,
+         "endLine": 14,
+         "endColumn": 3
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 14,
+          "column": 2,
+          "endLine": 14,
+          "endColumn": 3
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "i",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": null
+       },
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 14,
+         "column": 5,
+         "endLine": 14,
+         "endColumn": 7
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "LocalVariableExpression",
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 14,
+          "column": 6,
+          "endLine": 14,
+          "endColumn": 7
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "s",
+         "reference": null
+        },
+        "reference": null,
+        "index": null
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "IntegerLiteral",
+        "source": {
+         "name": "vars.rs2",
+         "line": 14,
+         "column": 10,
+         "endLine": 14,
+         "endColumn": 11
+        },
+        "type": null,
+        "typeHint": null,
+        "reference": null,
+        "kind": "IntegerLiteral",
+        "value": "2",
+        "radix": 10,
+        "numberValue": null
+       },
+       {
+        "$node": "StringLiteral",
+        "source": {
+         "name": "vars.rs2",
+         "line": 14,
+         "column": 13,
+         "endLine": 14,
+         "endColumn": 18
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "StringLiteral",
+        "value": "two",
+        "reference": null,
+        "subExpression": null
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 15,
+       "column": 1,
+       "endLine": 15,
+       "endColumn": 9
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 15,
+         "column": 1,
+         "endLine": 15,
+         "endColumn": 3
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "LocalVariableExpression",
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 15,
+          "column": 2,
+          "endLine": 15,
+          "endColumn": 3
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "j",
+         "reference": null
+        },
+        "reference": null,
+        "index": null
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 15,
+         "column": 6,
+         "endLine": 15,
+         "endColumn": 8
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "LocalVariableExpression",
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 15,
+          "column": 7,
+          "endLine": 15,
+          "endColumn": 8
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "i",
+         "reference": null
+        },
+        "reference": null,
+        "index": null
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 16,
+       "column": 1,
+       "endLine": 16,
+       "endColumn": 9
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 16,
+         "column": 1,
+         "endLine": 16,
+         "endColumn": 3
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "LocalVariableExpression",
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 16,
+          "column": 2,
+          "endLine": 16,
+          "endColumn": 3
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "t",
+         "reference": null
+        },
+        "reference": null,
+        "index": null
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 16,
+         "column": 6,
+         "endLine": 16,
+         "endColumn": 8
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "LocalVariableExpression",
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 16,
+          "column": 7,
+          "endLine": 16,
+          "endColumn": 8
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "s",
+         "reference": null
+        },
+        "reference": null,
+        "index": null
+       }
+      ]
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 17,
+       "column": 1,
+       "endLine": 17,
+       "endColumn": 9
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "vars.rs2",
+        "line": 17,
+        "column": 1,
+        "endLine": 17,
+        "endColumn": 8
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "CommandCallExpression",
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "vars.rs2",
+         "line": 17,
+         "column": 1,
+         "endLine": 17,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "vars.rs2",
+          "line": 17,
+          "column": 5,
+          "endLine": 17,
+          "endColumn": 7
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "LocalVariableExpression",
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "vars.rs2",
+           "line": 17,
+           "column": 6,
+           "endLine": 17,
+           "endColumn": 7
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "s",
+          "reference": null
+         },
+         "reference": null,
+         "index": null
+        }
+       ],
+       "arguments2": null,
+       "symbol": null
+      }
+     }
+    ],
+    "subjectReference": null
+   },
+   {
+    "$node": "Script",
+    "source": {
+     "name": "vars.rs2",
+     "line": 19,
+     "column": 1,
+     "endLine": 27,
+     "endColumn": 24
+    },
+    "kind": "Script",
+    "trigger": {
+     "$node": "Identifier",
+     "source": {
+      "name": "vars.rs2",
+      "line": 19,
+      "column": 2,
+      "endLine": 19,
+      "endColumn": 6
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "proc",
+     "reference": null
+    },
+    "name": {
+     "$node": "Identifier",
+     "source": {
+      "name": "vars.rs2",
+      "line": 19,
+      "column": 7,
+      "endLine": 19,
+      "endColumn": 13
+     },
+     "type": null,
+     "typeHint": null,
+     "kind": "Identifier",
+     "text": "arrays",
+     "reference": null
+    },
+    "isStar": false,
+    "parameters": null,
+    "returnTokens": null,
+    "statements": [
+     {
+      "$node": "ArrayDeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 20,
+       "column": 1,
+       "endLine": 20,
+       "endColumn": 18
+      },
+      "kind": "ArrayDeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 20,
+        "column": 1,
+        "endLine": 20,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 20,
+        "column": 10,
+        "endLine": 20,
+        "endColumn": 13
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "arr",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "IntegerLiteral",
+       "source": {
+        "name": "vars.rs2",
+        "line": 20,
+        "column": 14,
+        "endLine": 20,
+        "endColumn": 16
+       },
+       "type": null,
+       "typeHint": null,
+       "value": "10",
+       "reference": null,
+       "radix": 10,
+       "kind": "IntegerLiteral",
+       "numberValue": null
+      }
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 21,
+       "column": 1,
+       "endLine": 21,
+       "endColumn": 16
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 21,
+        "column": 1,
+        "endLine": 21,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 21,
+        "column": 10,
+        "endLine": 21,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "n",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "IntegerLiteral",
+       "source": {
+        "name": "vars.rs2",
+        "line": 21,
+        "column": 14,
+        "endLine": 21,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "value": "5",
+       "reference": null,
+       "radix": 10,
+       "kind": "IntegerLiteral",
+       "numberValue": null
+      }
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 22,
+       "column": 1,
+       "endLine": 22,
+       "endColumn": 13
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 22,
+         "column": 1,
+         "endLine": 22,
+         "endColumn": 8
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 22,
+          "column": 2,
+          "endLine": 22,
+          "endColumn": 5
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "arr",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "vars.rs2",
+          "line": 22,
+          "column": 6,
+          "endLine": 22,
+          "endColumn": 7
+         },
+         "type": null,
+         "typeHint": null,
+         "value": "0",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": null
+        }
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "IntegerLiteral",
+        "source": {
+         "name": "vars.rs2",
+         "line": 22,
+         "column": 11,
+         "endLine": 22,
+         "endColumn": 12
+        },
+        "type": null,
+        "typeHint": null,
+        "value": "7",
+        "reference": null,
+        "radix": 10,
+        "kind": "IntegerLiteral",
+        "numberValue": null
+       }
+      ]
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 23,
+       "column": 1,
+       "endLine": 23,
+       "endColumn": 30
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 23,
+         "column": 1,
+         "endLine": 23,
+         "endColumn": 9
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 23,
+          "column": 2,
+          "endLine": 23,
+          "endColumn": 5
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "arr",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": {
+         "$node": "LocalVariableExpression",
+         "source": {
+          "name": "vars.rs2",
+          "line": 23,
+          "column": 6,
+          "endLine": 23,
+          "endColumn": 8
+         },
+         "type": null,
+         "typeHint": null,
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "vars.rs2",
+           "line": 23,
+           "column": 7,
+           "endLine": 23,
+           "endColumn": 8
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "n",
+          "reference": null
+         },
+         "reference": null,
+         "kind": "LocalVariableExpression",
+         "index": null
+        }
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "CalcExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 23,
+         "column": 12,
+         "endLine": 23,
+         "endColumn": 29
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "CalcExpression",
+        "expression": {
+         "$node": "ArithmeticExpression",
+         "source": {
+          "name": "vars.rs2",
+          "line": 23,
+          "column": 17,
+          "endLine": 23,
+          "endColumn": 28
+         },
+         "type": null,
+         "typeHint": null,
+         "left": {
+          "$node": "LocalVariableExpression",
+          "source": {
+           "name": "vars.rs2",
+           "line": 23,
+           "column": 17,
+           "endLine": 23,
+           "endColumn": 24
+          },
+          "type": null,
+          "typeHint": null,
+          "name": {
+           "$node": "Identifier",
+           "source": {
+            "name": "vars.rs2",
+            "line": 23,
+            "column": 18,
+            "endLine": 23,
+            "endColumn": 21
+           },
+           "type": null,
+           "typeHint": null,
+           "kind": "Identifier",
+           "text": "arr",
+           "reference": null
+          },
+          "reference": null,
+          "kind": "LocalVariableExpression",
+          "index": {
+           "$node": "IntegerLiteral",
+           "source": {
+            "name": "vars.rs2",
+            "line": 23,
+            "column": 22,
+            "endLine": 23,
+            "endColumn": 23
+           },
+           "type": null,
+           "typeHint": null,
+           "value": "0",
+           "reference": null,
+           "radix": 10,
+           "kind": "IntegerLiteral",
+           "numberValue": null
+          }
+         },
+         "operator": {
+          "$node": "Token",
+          "source": {
+           "name": "vars.rs2",
+           "line": 23,
+           "column": 25,
+           "endLine": 23,
+           "endColumn": 26
+          },
+          "text": "+"
+         },
+         "right": {
+          "$node": "IntegerLiteral",
+          "source": {
+           "name": "vars.rs2",
+           "line": 23,
+           "column": 27,
+           "endLine": 23,
+           "endColumn": 28
+          },
+          "type": null,
+          "typeHint": null,
+          "value": "1",
+          "reference": null,
+          "radix": 10,
+          "kind": "IntegerLiteral",
+          "numberValue": null
+         },
+         "kind": "ArithmeticExpression"
+        }
+       }
+      ]
+     },
+     {
+      "$node": "DeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 24,
+       "column": 1,
+       "endLine": 24,
+       "endColumn": 22
+      },
+      "kind": "DeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 24,
+        "column": 1,
+        "endLine": 24,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 24,
+        "column": 10,
+        "endLine": 24,
+        "endColumn": 11
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "x",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "LocalVariableExpression",
+       "source": {
+        "name": "vars.rs2",
+        "line": 24,
+        "column": 14,
+        "endLine": 24,
+        "endColumn": 21
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "vars.rs2",
+         "line": 24,
+         "column": 15,
+         "endLine": 24,
+         "endColumn": 18
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "arr",
+        "reference": null
+       },
+       "reference": null,
+       "kind": "LocalVariableExpression",
+       "index": {
+        "$node": "IntegerLiteral",
+        "source": {
+         "name": "vars.rs2",
+         "line": 24,
+         "column": 19,
+         "endLine": 24,
+         "endColumn": 20
+        },
+        "type": null,
+        "typeHint": null,
+        "value": "3",
+        "reference": null,
+        "radix": 10,
+        "kind": "IntegerLiteral",
+        "numberValue": null
+       }
+      }
+     },
+     {
+      "$node": "ArrayDeclarationStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 25,
+       "column": 1,
+       "endLine": 25,
+       "endColumn": 19
+      },
+      "kind": "ArrayDeclarationStatement",
+      "typeToken": {
+       "$node": "Token",
+       "source": {
+        "name": "vars.rs2",
+        "line": 25,
+        "column": 1,
+        "endLine": 25,
+        "endColumn": 8
+       },
+       "text": "def_int"
+      },
+      "name": {
+       "$node": "Identifier",
+       "source": {
+        "name": "vars.rs2",
+        "line": 25,
+        "column": 10,
+        "endLine": 25,
+        "endColumn": 15
+       },
+       "type": null,
+       "typeHint": null,
+       "kind": "Identifier",
+       "text": "other",
+       "reference": null
+      },
+      "initializer": {
+       "$node": "IntegerLiteral",
+       "source": {
+        "name": "vars.rs2",
+        "line": 25,
+        "column": 16,
+        "endLine": 25,
+        "endColumn": 17
+       },
+       "type": null,
+       "typeHint": null,
+       "value": "3",
+       "reference": null,
+       "radix": 10,
+       "kind": "IntegerLiteral",
+       "numberValue": null
+      }
+     },
+     {
+      "$node": "AssignmentStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 26,
+       "column": 1,
+       "endLine": 26,
+       "endColumn": 21
+      },
+      "kind": "AssignmentStatement",
+      "vars": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 26,
+         "column": 1,
+         "endLine": 26,
+         "endColumn": 10
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 26,
+          "column": 2,
+          "endLine": 26,
+          "endColumn": 7
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "other",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "vars.rs2",
+          "line": 26,
+          "column": 8,
+          "endLine": 26,
+          "endColumn": 9
+         },
+         "type": null,
+         "typeHint": null,
+         "value": "1",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": null
+        }
+       }
+      ],
+      "expressions": [
+       {
+        "$node": "LocalVariableExpression",
+        "source": {
+         "name": "vars.rs2",
+         "line": 26,
+         "column": 13,
+         "endLine": 26,
+         "endColumn": 20
+        },
+        "type": null,
+        "typeHint": null,
+        "name": {
+         "$node": "Identifier",
+         "source": {
+          "name": "vars.rs2",
+          "line": 26,
+          "column": 14,
+          "endLine": 26,
+          "endColumn": 17
+         },
+         "type": null,
+         "typeHint": null,
+         "kind": "Identifier",
+         "text": "arr",
+         "reference": null
+        },
+        "reference": null,
+        "kind": "LocalVariableExpression",
+        "index": {
+         "$node": "IntegerLiteral",
+         "source": {
+          "name": "vars.rs2",
+          "line": 26,
+          "column": 18,
+          "endLine": 26,
+          "endColumn": 19
+         },
+         "type": null,
+         "typeHint": null,
+         "value": "1",
+         "reference": null,
+         "radix": 10,
+         "kind": "IntegerLiteral",
+         "numberValue": null
+        }
+       }
+      ]
+     },
+     {
+      "$node": "ExpressionStatement",
+      "source": {
+       "name": "vars.rs2",
+       "line": 27,
+       "column": 1,
+       "endLine": 27,
+       "endColumn": 24
+      },
+      "kind": "ExpressionStatement",
+      "expression": {
+       "$node": "CommandCallExpression",
+       "source": {
+        "name": "vars.rs2",
+        "line": 27,
+        "column": 1,
+        "endLine": 27,
+        "endColumn": 23
+       },
+       "type": null,
+       "typeHint": null,
+       "name": {
+        "$node": "Identifier",
+        "source": {
+         "name": "vars.rs2",
+         "line": 27,
+         "column": 1,
+         "endLine": 27,
+         "endColumn": 4
+        },
+        "type": null,
+        "typeHint": null,
+        "kind": "Identifier",
+        "text": "mes",
+        "reference": null
+       },
+       "arguments": [
+        {
+         "$node": "CommandCallExpression",
+         "source": {
+          "name": "vars.rs2",
+          "line": 27,
+          "column": 5,
+          "endLine": 27,
+          "endColumn": 22
+         },
+         "type": null,
+         "typeHint": null,
+         "name": {
+          "$node": "Identifier",
+          "source": {
+           "name": "vars.rs2",
+           "line": 27,
+           "column": 5,
+           "endLine": 27,
+           "endColumn": 13
+          },
+          "type": null,
+          "typeHint": null,
+          "kind": "Identifier",
+          "text": "tostring",
+          "reference": null
+         },
+         "arguments": [
+          {
+           "$node": "LocalVariableExpression",
+           "source": {
+            "name": "vars.rs2",
+            "line": 27,
+            "column": 14,
+            "endLine": 27,
+            "endColumn": 21
+           },
+           "type": null,
+           "typeHint": null,
+           "name": {
+            "$node": "Identifier",
+            "source": {
+             "name": "vars.rs2",
+             "line": 27,
+             "column": 15,
+             "endLine": 27,
+             "endColumn": 18
+            },
+            "type": null,
+            "typeHint": null,
+            "kind": "Identifier",
+            "text": "arr",
+            "reference": null
+           },
+           "reference": null,
+           "kind": "LocalVariableExpression",
+           "index": {
+            "$node": "IntegerLiteral",
+            "source": {
+             "name": "vars.rs2",
+             "line": 27,
+             "column": 19,
+             "endLine": 27,
+             "endColumn": 20
+            },
+            "type": null,
+            "typeHint": null,
+            "value": "0",
+            "reference": null,
+            "radix": 10,
+            "kind": "IntegerLiteral",
+            "numberValue": null
+           }
+          }
+         ],
+         "kind": "CommandCallExpression",
+         "arguments2": null,
+         "symbol": null
+        }
+       ],
+       "kind": "CommandCallExpression",
+       "arguments2": null,
+       "symbol": null
+      }
+     }
+    ],
+    "subjectReference": null
+   }
+  ]
+ }
+]

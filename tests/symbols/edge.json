@@ -1,0 +1,278 @@
+{
+ "constant": {
+  "max": 100,
+  "map": {
+   "5": "1",
+   "max_level": "99",
+   "Foo Bar": "x",
+   "0": "zero"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "npc": {
+  "max": 100,
+  "map": {
+   "10": "Big  Rat",
+   "2": "goblin",
+   "01": "lead",
+   "-1": "neg",
+   "2147483647": "big",
+   "-2147483648": "small",
+   "12": "imp"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "obj": {
+  "max": 100,
+  "map": {
+   "0": "goblin",
+   "1": "Big\tRat"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varp": {
+  "max": 100,
+  "map": {
+   "0": "a",
+   "1": "b",
+   "2": "c"
+  },
+  "vartype": {
+   "0": "int,string",
+   "1": "namedobj",
+   "2": "coord"
+  },
+  "protect": {
+   "0": true,
+   "2": false
+  },
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varn": {
+  "max": 100,
+  "map": {
+   "0": "n1",
+   "1": "n2"
+  },
+  "vartype": {
+   "0": "",
+   "1": "int"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "vars": {
+  "max": 100,
+  "map": {
+   "3": "s1"
+  },
+  "vartype": {
+   "3": "boolean"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varbit": {
+  "max": 100,
+  "map": {
+   "7": "vb"
+  },
+  "vartype": {
+   "7": "int"
+  },
+  "protect": {
+   "7": true
+  },
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "param": {
+  "max": 100,
+  "map": {
+   "0": "p_int",
+   "1": "p_str",
+   "2": "p_none"
+  },
+  "vartype": {
+   "0": "int",
+   "1": "string"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "dbcolumn": {
+  "max": 100,
+  "map": {
+   "0": "col"
+  },
+  "vartype": {
+   "0": "int,string,obj"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "enum": {
+  "max": 100,
+  "map": {
+   "0": "e"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "struct": {
+  "max": 100,
+  "map": {
+   "0": "st"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "dbrow": {
+  "max": 100,
+  "map": {
+   "0": "row"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "dbtable": {
+  "max": 100,
+  "map": {
+   "0": "tab"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "idk": {
+  "max": 100,
+  "map": {
+   "0": "kit"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "mesanim": {
+  "max": 100,
+  "map": {
+   "0": "happy"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "seq": {
+  "max": 100,
+  "map": {
+   "0": "walk"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ }
+}

@@ -1,0 +1,417 @@
+[
+ {
+  "fullName": "[proc,literals]",
+  "sourceName": "literals.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "a",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "b",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "c",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "d",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "e",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "f",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "g",
+     "type": "boolean"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "h",
+     "type": "boolean"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "i",
+     "type": "coord"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "j",
+     "type": "coord"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "k",
+     "type": "char"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "l",
+     "type": "char"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "m",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "n",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "o",
+     "type": "npc"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "p",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "q",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "r",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "s",
+     "type": "coord"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 2
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "a",
+       "type": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": -42,
+      "line": 3
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "b",
+       "type": "int"
+      },
+      "line": 3
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 2147483647,
+      "line": 4
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "c",
+       "type": "int"
+      },
+      "line": 4
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": -1,
+      "line": 5
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "d",
+       "type": "int"
+      },
+      "line": 5
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 10,
+      "line": 6
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "e",
+       "type": "int"
+      },
+      "line": 6
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 2147483647,
+      "line": 7
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "f",
+       "type": "int"
+      },
+      "line": 7
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 1,
+      "line": 8
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "g",
+       "type": "boolean"
+      },
+      "line": 8
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 0,
+      "line": 9
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "h",
+       "type": "boolean"
+      },
+      "line": 9
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 52759700,
+      "line": 10
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "i",
+       "type": "coord"
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 818921983,
+      "line": 11
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "j",
+       "type": "coord"
+      },
+      "line": 11
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 120,
+      "line": 12
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "k",
+       "type": "char"
+      },
+      "line": 12
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 39,
+      "line": 13
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "l",
+       "type": "char"
+      },
+      "line": 13
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "plain",
+      "line": 14
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "m",
+       "type": "string"
+      },
+      "line": 14
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "",
+      "line": 15
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "string"
+      },
+      "line": 15
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": -1,
+      "line": 16
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "o",
+       "type": "npc"
+      },
+      "line": 16
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "null",
+      "line": null
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "p",
+       "type": "string"
+      },
+      "line": 17
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 99,
+      "line": 18
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "q",
+       "type": "int"
+      },
+      "line": 18
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "hello",
+      "line": 18
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "r",
+       "type": "string"
+      },
+      "line": 19
+     },
+     {
+      "op": "PushConstantInt",
+      "operand": 52759700,
+      "line": 20
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "s",
+       "type": "coord"
+      },
+      "line": 20
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "a",
+       "type": "int"
+      },
+      "line": 21
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "tostring",
+       "parameters": "int",
+       "returns": "string"
+      },
+      "line": 21
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 21
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ }
+]

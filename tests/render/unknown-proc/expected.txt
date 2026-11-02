@@ -1,0 +1,31 @@
+error: cannot find proc `~give_item`
+ --> script.rs2:2:1
+  |
+2 | ~give_item;
+  | ^^^^^^^^^^
+  |
+  = help: a proc with a similar name exists: `~give_items`
+
+error: cannot find command `tostrin`
+ --> script.rs2:3:5
+  |
+3 | mes(tostrin(1));
+  |     ^^^^^^^^^^
+  |
+  = help: a command with a similar name exists: `tostring`
+
+error: cannot find local variable `$cuont`
+ --> script.rs2:5:14
+  |
+5 | mes(tostring($cuont));
+  |              ^^^^^^
+  |
+  = help: a local variable with a similar name exists: `$count`
+
+error: cannot find proc `~not_a_proc`
+  --> script.rs2:10:1
+   |
+10 | ~not_a_proc(1, "x");
+   | ^^^^^^^^^^^^^^^^^^^
+
+error: could not compile due to 4 previous errors

@@ -1,0 +1,19 @@
+{
+ "npc": {
+  "max": 100,
+  "map": {
+   "0": "goblin",
+   "12abc": "imp",
+   "0x1F": "hex"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "aa_commands.rs2": [],
+ "macros.rs2": [
+  {
+   "startLine": 2,
+   "startColumn": 1,
+   "endLine": 2,
+   "endColumn": 16,
+   "callSiteLine": 2,
+   "callSiteColumn": 1,
+   "argValues": [],
+   "macroName": "ANSWER",
+   "macroFile": "aa_defs.macro",
+   "macroLine": 6,
+   "callEndLine": 2,
+   "callEndColumn": 9,
+   "endColumnExclusive": 17
+  },
+  {
+   "startLine": 3,
+   "startColumn": 1,
+   "endLine": 3,
+   "endColumn": 21,
+   "callSiteLine": 3,
+   "callSiteColumn": 1,
+   "argValues": [
+    "\"hi\""
+   ],
+   "macroName": "SAY_TWICE",
+   "macroFile": "aa_defs.macro",
+   "macroLine": 2,
+   "callEndLine": 3,
+   "callEndColumn": 18,
+   "endColumnExclusive": 22
+  }
+ ],
+ "zz_crlf.rs2": []
+}

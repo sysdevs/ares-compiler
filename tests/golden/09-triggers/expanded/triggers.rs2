@@ -1,0 +1,8 @@
+[opnpc1,man]
+mes("talking to man");
+
+[opnpc1,_]
+mes("any npc");
+
+[debugproc,dbg](int $a, string $b, mapelement $c)
+mes($b);

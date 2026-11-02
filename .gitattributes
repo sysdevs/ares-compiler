@@ -1,0 +1,2 @@
+# Fixtures and goldens are byte-exact inputs/outputs: never convert line endings.
+tests/** -text

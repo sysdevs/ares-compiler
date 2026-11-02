@@ -1,0 +1,39 @@
+[proc,control]
+def_int $x = random(10);
+def_boolean $flag = true;
+if ($x = 1) {
+    mes("one");
+} else if ($x ! 2 & $flag = true) {
+    mes("not two and flag");
+} else if ($x < 5 | $x > 8) {
+    mes("outside");
+} else if ((($x <= 6) | ($x >= 7)) & $flag = true) {
+    mes("parens");
+} else {
+    mes("else");
+}
+while ($x > 0) {
+    $x = calc($x - 1);
+    if ($x = 3) {
+        mes("three");
+    }
+}
+switch_int ($x) {
+    case 1 : mes("1");
+    case 2, 3 : mes("2 or 3");
+    case ^max_level : mes("max");
+    case default : mes("default");
+}
+switch_boolean ($flag) {
+    case true : mes("t");
+    case false : mes("f");
+}
+switch_npc (man) {
+    case man, woman : mes("human");
+    case default : mes("other");
+}
+;
+{
+    def_int $inner = 1;
+    mes(tostring($inner));
+}

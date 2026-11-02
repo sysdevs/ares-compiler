@@ -1,0 +1,17 @@
+[proc,strings]
+def_int $n = 7;
+def_string $name = "Bob";
+def_string $t1 = "Hello <$name>, you have <tostring($n)> coins";
+def_string $t2 = "<col=ff0000>red</col> and <br> break <u>u</u>";
+def_string $t3 = "<p,quiz>Choose:";
+def_string $t4 = "escaped \" quote and \\ backslash and \< lt";
+def_string $t5 = "euro € sign and latin ñ and astral 😀";
+def_string $t6 = "nested <"inner <$name>">";
+def_string $t7 = "tag then expr <col=00ff00><$t1></col>";
+mes($t1);
+mes($t2);
+mes($t3);
+mes($t4);
+mes($t5);
+mes($t6);
+mes($t7);

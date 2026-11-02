@@ -1,0 +1,8 @@
+// macros collapse to a single line at the call site
+#define SAY_TWICE, text
+mes(text);
+mes(text);
+#enddef
+#define ANSWER,
+def_int $a = 42;
+#enddef

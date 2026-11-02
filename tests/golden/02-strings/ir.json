@@ -1,0 +1,483 @@
+[
+ {
+  "fullName": "[proc,strings]",
+  "sourceName": "strings.rs2",
+  "subjectReference": null,
+  "locals": {
+   "parameters": [],
+   "all": [
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "n",
+     "type": "int"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "name",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "t1",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "t2",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "t3",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "t4",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "t5",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "t6",
+     "type": "string"
+    },
+    {
+     "$sym": "LocalVariableSymbol",
+     "name": "t7",
+     "type": "string"
+    }
+   ]
+  },
+  "blocks": [
+   {
+    "label": "entry",
+    "instructions": [
+     {
+      "op": "PushConstantInt",
+      "operand": 7,
+      "line": 2
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "int"
+      },
+      "line": 2
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "Bob",
+      "line": 3
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "name",
+       "type": "string"
+      },
+      "line": 3
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "Hello ",
+      "line": 4
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "name",
+       "type": "string"
+      },
+      "line": 4
+     },
+     {
+      "op": "PushConstantString",
+      "operand": ", you have ",
+      "line": 4
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "n",
+       "type": "int"
+      },
+      "line": 4
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "tostring",
+       "parameters": "int",
+       "returns": "string"
+      },
+      "line": 4
+     },
+     {
+      "op": "PushConstantString",
+      "operand": " coins",
+      "line": 4
+     },
+     {
+      "op": "JoinString",
+      "operand": 5,
+      "line": 4
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t1",
+       "type": "string"
+      },
+      "line": 4
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "<col=ff0000>",
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "red",
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "</col>",
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": " and ",
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "<br>",
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": " break ",
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "<u>",
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "u",
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "</u>",
+      "line": 5
+     },
+     {
+      "op": "JoinString",
+      "operand": 9,
+      "line": 5
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t2",
+       "type": "string"
+      },
+      "line": 5
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "<p,quiz>",
+      "line": 6
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "Choose:",
+      "line": 6
+     },
+     {
+      "op": "JoinString",
+      "operand": 2,
+      "line": 6
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t3",
+       "type": "string"
+      },
+      "line": 6
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "escaped \" quote and \\ backslash and < lt",
+      "line": 7
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t4",
+       "type": "string"
+      },
+      "line": 7
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "euro € sign and latin ñ and astral 😀",
+      "line": 8
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t5",
+       "type": "string"
+      },
+      "line": 8
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "nested ",
+      "line": 9
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "inner ",
+      "line": 9
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "name",
+       "type": "string"
+      },
+      "line": 9
+     },
+     {
+      "op": "JoinString",
+      "operand": 2,
+      "line": 9
+     },
+     {
+      "op": "JoinString",
+      "operand": 2,
+      "line": 9
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t6",
+       "type": "string"
+      },
+      "line": 9
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "tag then expr ",
+      "line": 10
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "<col=00ff00>",
+      "line": 10
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t1",
+       "type": "string"
+      },
+      "line": 10
+     },
+     {
+      "op": "PushConstantString",
+      "operand": "</col>",
+      "line": 10
+     },
+     {
+      "op": "JoinString",
+      "operand": 4,
+      "line": 10
+     },
+     {
+      "op": "PopLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t7",
+       "type": "string"
+      },
+      "line": 10
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t1",
+       "type": "string"
+      },
+      "line": 11
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 11
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t2",
+       "type": "string"
+      },
+      "line": 12
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 12
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t3",
+       "type": "string"
+      },
+      "line": 13
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 13
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t4",
+       "type": "string"
+      },
+      "line": 14
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 14
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t5",
+       "type": "string"
+      },
+      "line": 15
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 15
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t6",
+       "type": "string"
+      },
+      "line": 16
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 16
+     },
+     {
+      "op": "PushLocalVar",
+      "operand": {
+       "$sym": "LocalVariableSymbol",
+       "name": "t7",
+       "type": "string"
+      },
+      "line": 17
+     },
+     {
+      "op": "Command",
+      "operand": {
+       "$sym": "ServerScriptSymbol",
+       "trigger": "command",
+       "name": "mes",
+       "parameters": "string",
+       "returns": "unit"
+      },
+      "line": 17
+     },
+     {
+      "op": "Return",
+      "operand": null,
+      "line": null
+     }
+    ]
+   }
+  ],
+  "switchTables": []
+ }
+]

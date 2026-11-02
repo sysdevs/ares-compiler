@@ -1,0 +1,21 @@
+[proc,literals]
+def_int $a = 1;
+def_int $b = -42;
+def_int $c = 0x7fffffff;
+def_int $d = 0xffffffff;
+def_int $e = 0b1010;
+def_int $f = 2147483647;
+def_boolean $g = true;
+def_boolean $h = false;
+def_coord $i = 0_50_50_20_20;
+def_coord $j = 3_12_7_63_63;
+def_char $k = 'x';
+def_char $l = '\'';
+def_string $m = "plain";
+def_string $n = "";
+def_npc $o = null;
+def_string $p = null;
+def_int $q = ^max_level;
+def_string $r = ^greeting;
+def_coord $s = ^spawn;
+mes(tostring($a));
