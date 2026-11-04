@@ -77,6 +77,14 @@ as `pointers` does for pointer rules) and compares
 case's `expected.txt`. `BLESS=1 cargo test --release --test render` rewrites
 them. Add a case by adding a directory with its scripts and blessing.
 
+## Memory (`tests/parse_frees.rs`)
+
+`parsing_frees_the_grammar` counts live heap bytes (its own test binary, with
+a counting global allocator) across 100 script and constant parses and fails
+if they keep anything. The grammar is rebuilt per parse; chumsky's
+`Recursive::declare` makes it an `Rc` cycle that leaks, so recursive parsers
+use `recursive()`, whose self-references are weak.
+
 ## Real content
 
 `content_matches` compiles a LostCity Content checkout and is skipped unless

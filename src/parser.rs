@@ -337,19 +337,39 @@ fn grammar<'a>(cx: &'a Cx<'a>) -> Grammar<'a> {
     let identifier = tok(&IDENTIFIER_KINDS).map(|i| cx.ident(i)).boxed();
     let advanced_identifier = tok(&ADVANCED_IDENTIFIER_KINDS).map(|i| cx.ident(i)).boxed();
 
-    let mut expression = Recursive::<chumsky::recursive::Indirect<In<'a>, Expression, Ex<'a>>>::declare();
-    let expr: P<'a, Expression> = expression.clone().boxed();
-
-    let expression_list = expr.clone().separated_by(kw(K::COMMA)).at_least(1).collect::<Vec<_>>().boxed();
-    // `( expressionList? )` → the list or empty.
-    let args = expression_list
-        .clone()
-        .or_not()
-        .map(Option::unwrap_or_default)
-        .delimited_by(kw(K::LPAREN), kw(K::RPAREN))
-        .boxed();
-    // `parenthesis` yields its inner expression.
-    let parenthesis = paren(expr.clone());
+    // The recursive parsers are built with `recursive()`, whose self-references are
+    // weak: `Recursive::declare()` handles are strong, so a grammar built from them
+    // is an `Rc` cycle that is never freed (one leaked grammar per parse).
+    // `expression` and `arithmetic` refer to each other, so `arithmetic` is built
+    // inside `expression`; the parsers both need are built once per handle.
+    let local_identifier = advanced_identifier.clone();
+    let pieces = move |expr: P<'a, Expression>| {
+        let expression_list = expr.clone().separated_by(kw(K::COMMA)).at_least(1).collect::<Vec<_>>().boxed();
+        // `( expressionList? )` → the list or empty.
+        let args = expression_list
+            .clone()
+            .or_not()
+            .map(Option::unwrap_or_default)
+            .delimited_by(kw(K::LPAREN), kw(K::RPAREN))
+            .boxed();
+        // `parenthesis` yields its inner expression.
+        let parenthesis = paren(expr).boxed();
+        let local_variable = kw(K::DOLLAR)
+            .ignore_then(local_identifier.clone())
+            .then(parenthesis.clone().or_not())
+            .map_with(move |(name, index), e| {
+                Expression::LocalVariable(LocalVariableExpression {
+                    source: cx.loc(e.span()),
+                    ty: None,
+                    type_hint: None,
+                    name,
+                    index: index.map(Box::new),
+                    reference: None,
+                })
+            })
+            .boxed();
+        (expression_list, args, parenthesis, local_variable)
+    };
 
     let wrapped = move |expression: Expression, span: SimpleSpan| WrappedExpression {
         source: cx.loc(span),
@@ -370,74 +390,6 @@ fn grammar<'a>(cx: &'a Cx<'a>) -> Grammar<'a> {
         }
     };
 
-    let mut arithmetic = Recursive::<chumsky::recursive::Indirect<In<'a>, Expression, Ex<'a>>>::declare();
-    arithmetic.define(
-        paren(arithmetic.clone().boxed())
-            .map_with(move |x, e| Expression::Parenthesized(wrapped(x, e.span())))
-            .or(expr.clone())
-            .pratt((
-                infix(left(4), tok(&[K::MUL, K::DIV, K::MOD]), binary(Expression::Arithmetic)),
-                infix(left(3), tok(&[K::PLUS, K::MINUS]), binary(Expression::Arithmetic)),
-                infix(left(2), tok(&[K::AND]), binary(Expression::Arithmetic)),
-                infix(left(1), tok(&[K::OR]), binary(Expression::Arithmetic)),
-            )),
-    );
-
-    let mut condition = Recursive::<chumsky::recursive::Indirect<In<'a>, Expression, Ex<'a>>>::declare();
-    condition.define(
-        paren(condition.clone().boxed())
-            .map_with(move |x, e| Expression::Parenthesized(wrapped(x, e.span())))
-            .or(expr.clone())
-            .pratt((
-                infix(left(4), tok(&[K::LT, K::GT, K::LTE, K::GTE]), binary(Expression::Condition)),
-                infix(left(3), tok(&[K::EQ, K::EXCL]), binary(Expression::Condition)),
-                infix(left(2), tok(&[K::AND]), binary(Expression::Condition)),
-                infix(left(1), tok(&[K::OR]), binary(Expression::Condition)),
-            )),
-    );
-    let condition = condition.boxed();
-
-    let calc = kw(K::CALC)
-        .ignore_then(paren(arithmetic.boxed()))
-        .map_with(move |x, e| Expression::Calc(wrapped(x, e.span())));
-
-    // Deliberate: only the groups that are present are collected, so in
-    // `name*()(a)` the second group lands in `arguments`.
-    let star_group = expression_list.clone().or_not().delimited_by(kw(K::LPAREN), kw(K::RPAREN)).boxed();
-    let command_call = identifier
-        .clone()
-        .then_ignore(kw(K::MUL))
-        .then(star_group.clone())
-        .then(star_group)
-        .map(|((name, a), b)| {
-            let mut present = a.into_iter().chain(b);
-            (name, present.next().unwrap_or_default(), Some(present.next().unwrap_or_default()))
-        })
-        .or(identifier.clone().then(args.clone()).map(|(name, a)| (name, a, None)))
-        .map_with(move |(name, arguments, arguments2), e| {
-            Expression::CommandCall(CommandCallExpression { source: cx.loc(e.span()), ty: None, type_hint: None, name, arguments, arguments2, symbol: None })
-        });
-    let (call_identifier, call_args) = (identifier.clone(), args.clone());
-    let call = move |sigil: K, make: fn(CallExpression) -> Expression| {
-        kw(sigil).ignore_then(call_identifier.clone()).then(call_args.clone().or_not()).map_with(move |(name, arguments), e| {
-            make(CallExpression { source: cx.loc(e.span()), ty: None, type_hint: None, name, arguments: arguments.unwrap_or_default(), symbol: None })
-        })
-    };
-
-    let local_variable = kw(K::DOLLAR)
-        .ignore_then(advanced_identifier.clone())
-        .then(parenthesis.clone().or_not())
-        .map_with(move |(name, index), e| {
-            Expression::LocalVariable(LocalVariableExpression {
-                source: cx.loc(e.span()),
-                ty: None,
-                type_hint: None,
-                name,
-                index: index.map(Box::new),
-                reference: None,
-            })
-        })
-        .boxed();
     let game_variable = just(K::MOD)
         .to(false)
         .or(just(K::DOTMOD).to(true))
@@ -446,176 +398,240 @@ fn grammar<'a>(cx: &'a Cx<'a>) -> Grammar<'a> {
             Expression::GameVariable(GameVariableExpression { source: cx.loc(e.span()), ty: None, type_hint: None, dot, name, reference: None })
         })
         .boxed();
-    let constant_variable = kw(K::CARET).ignore_then(advanced_identifier.clone()).map_with(move |name, e| {
-        Expression::ConstantVariable(ConstantVariableExpression {
-            source: cx.loc(e.span()),
-            ty: None,
-            type_hint: None,
-            name,
-            sub_expression: None,
-            reference: None,
-        })
-    });
 
-    let literal = move |kinds: &'static [K], f: fn(&str) -> LiteralValue| {
-        tok(kinds).map(move |i| {
-            let source = cx.range(i, i);
-            let (ty, type_hint) = (None, None);
-            match f(cx.text(i)) {
-                LiteralValue::Integer(value, radix) => {
-                    Expression::IntegerLiteral(IntegerLiteral { source, ty, type_hint, value, radix, reference: None, number_value: None })
-                }
-                LiteralValue::Coord(value) => Expression::CoordLiteral(Literal { source, ty, type_hint, value, reference: None }),
-                LiteralValue::Boolean(value) => Expression::BooleanLiteral(Literal { source, ty, type_hint, value, reference: None }),
-                LiteralValue::Char(value) => Expression::CharacterLiteral(Literal { source, ty, type_hint, value, reference: None }),
-                LiteralValue::Null => Expression::NullLiteral(Literal { source, ty, type_hint, value: -1, reference: None }),
-            }
-        })
-    };
-    let string_literal = kw(K::QUOTE_OPEN)
-        .ignore_then(tok(&[K::STRING_TEXT]).repeated().collect::<Vec<_>>())
-        .then_ignore(kw(K::QUOTE_CLOSE))
-        .map_with(move |parts, e| {
-            let raw: String = parts.iter().map(|&i| cx.text(i)).collect();
-            Expression::StringLiteral(StringLiteral {
+    let expression = recursive(|expression| {
+        let expr: P<'a, Expression> = expression.boxed();
+        let (expression_list, args, parenthesis, local_variable) = pieces(expr.clone());
+
+        let arithmetic = recursive(|arithmetic| {
+            paren(arithmetic.boxed())
+                .map_with(move |x, e| Expression::Parenthesized(wrapped(x, e.span())))
+                .or(expr.clone())
+                .pratt((
+                    infix(left(4), tok(&[K::MUL, K::DIV, K::MOD]), binary(Expression::Arithmetic)),
+                    infix(left(3), tok(&[K::PLUS, K::MINUS]), binary(Expression::Arithmetic)),
+                    infix(left(2), tok(&[K::AND]), binary(Expression::Arithmetic)),
+                    infix(left(1), tok(&[K::OR]), binary(Expression::Arithmetic)),
+                ))
+        });
+
+        let calc = kw(K::CALC)
+            .ignore_then(paren(arithmetic.boxed()))
+            .map_with(move |x, e| Expression::Calc(wrapped(x, e.span())));
+
+        // Deliberate: only the groups that are present are collected, so in
+        // `name*()(a)` the second group lands in `arguments`.
+        let star_group = expression_list.clone().or_not().delimited_by(kw(K::LPAREN), kw(K::RPAREN)).boxed();
+        let command_call = identifier
+            .clone()
+            .then_ignore(kw(K::MUL))
+            .then(star_group.clone())
+            .then(star_group)
+            .map(|((name, a), b)| {
+                let mut present = a.into_iter().chain(b);
+                (name, present.next().unwrap_or_default(), Some(present.next().unwrap_or_default()))
+            })
+            .or(identifier.clone().then(args.clone()).map(|(name, a)| (name, a, None)))
+            .map_with(move |(name, arguments, arguments2), e| {
+                Expression::CommandCall(CommandCallExpression { source: cx.loc(e.span()), ty: None, type_hint: None, name, arguments, arguments2, symbol: None })
+            });
+        let (call_identifier, call_args) = (identifier.clone(), args.clone());
+        let call = move |sigil: K, make: fn(CallExpression) -> Expression| {
+            kw(sigil).ignore_then(call_identifier.clone()).then(call_args.clone().or_not()).map_with(move |(name, arguments), e| {
+                make(CallExpression { source: cx.loc(e.span()), ty: None, type_hint: None, name, arguments: arguments.unwrap_or_default(), symbol: None })
+            })
+        };
+
+        let constant_variable = kw(K::CARET).ignore_then(advanced_identifier.clone()).map_with(move |name, e| {
+            Expression::ConstantVariable(ConstantVariableExpression {
                 source: cx.loc(e.span()),
                 ty: None,
                 type_hint: None,
-                value: unescape(&raw),
+                name,
                 sub_expression: None,
                 reference: None,
             })
         });
-    let string_part = choice((
-        tok(&[K::STRING_TEXT]).map(move |i| StringPart::Basic { source: cx.range(i, i), value: unescape(cx.text(i)) }),
-        tok(&[K::STRING_TAG, K::STRING_CLOSE_TAG, K::STRING_PARTIAL_TAG])
-            .map(move |i| StringPart::Basic { source: cx.range(i, i), value: cx.text(i).to_owned() }),
-        tok(&[K::STRING_P_TAG]).map(move |i| StringPart::PTag { source: cx.range(i, i), value: cx.text(i).to_owned() }),
-        expr.clone()
-            .delimited_by(kw(K::STRING_EXPR_START), kw(K::STRING_EXPR_END))
-            .map_with(move |expression, e| StringPart::Expression { source: cx.loc(e.span()), expression }),
-    ));
-    let joined_string = kw(K::QUOTE_OPEN)
-        .ignore_then(string_part.repeated().collect::<Vec<_>>())
-        .then_ignore(kw(K::QUOTE_CLOSE))
-        .map_with(move |parts, e| {
-            Expression::JoinedString(JoinedStringExpression { source: cx.loc(e.span()), ty: None, type_hint: None, parts })
-        });
 
-    expression.define(choice((
-        parenthesis.clone().map_with(move |x, e| Expression::Parenthesized(wrapped(x, e.span()))),
-        calc,
-        command_call,
-        call(K::TILDE, Expression::ProcCall),
-        call(K::AT, Expression::JumpCall),
-        local_variable.clone(),
-        game_variable.clone(),
-        constant_variable,
+        let literal = move |kinds: &'static [K], f: fn(&str) -> LiteralValue| {
+            tok(kinds).map(move |i| {
+                let source = cx.range(i, i);
+                let (ty, type_hint) = (None, None);
+                match f(cx.text(i)) {
+                    LiteralValue::Integer(value, radix) => {
+                        Expression::IntegerLiteral(IntegerLiteral { source, ty, type_hint, value, radix, reference: None, number_value: None })
+                    }
+                    LiteralValue::Coord(value) => Expression::CoordLiteral(Literal { source, ty, type_hint, value, reference: None }),
+                    LiteralValue::Boolean(value) => Expression::BooleanLiteral(Literal { source, ty, type_hint, value, reference: None }),
+                    LiteralValue::Char(value) => Expression::CharacterLiteral(Literal { source, ty, type_hint, value, reference: None }),
+                    LiteralValue::Null => Expression::NullLiteral(Literal { source, ty, type_hint, value: -1, reference: None }),
+                }
+            })
+        };
+        let string_literal = kw(K::QUOTE_OPEN)
+            .ignore_then(tok(&[K::STRING_TEXT]).repeated().collect::<Vec<_>>())
+            .then_ignore(kw(K::QUOTE_CLOSE))
+            .map_with(move |parts, e| {
+                let raw: String = parts.iter().map(|&i| cx.text(i)).collect();
+                Expression::StringLiteral(StringLiteral {
+                    source: cx.loc(e.span()),
+                    ty: None,
+                    type_hint: None,
+                    value: unescape(&raw),
+                    sub_expression: None,
+                    reference: None,
+                })
+            });
+        let string_part = choice((
+            tok(&[K::STRING_TEXT]).map(move |i| StringPart::Basic { source: cx.range(i, i), value: unescape(cx.text(i)) }),
+            tok(&[K::STRING_TAG, K::STRING_CLOSE_TAG, K::STRING_PARTIAL_TAG])
+                .map(move |i| StringPart::Basic { source: cx.range(i, i), value: cx.text(i).to_owned() }),
+            tok(&[K::STRING_P_TAG]).map(move |i| StringPart::PTag { source: cx.range(i, i), value: cx.text(i).to_owned() }),
+            expr.clone()
+                .delimited_by(kw(K::STRING_EXPR_START), kw(K::STRING_EXPR_END))
+                .map_with(move |expression, e| StringPart::Expression { source: cx.loc(e.span()), expression }),
+        ));
+        let joined_string = kw(K::QUOTE_OPEN)
+            .ignore_then(string_part.repeated().collect::<Vec<_>>())
+            .then_ignore(kw(K::QUOTE_CLOSE))
+            .map_with(move |parts, e| {
+                Expression::JoinedString(JoinedStringExpression { source: cx.loc(e.span()), ty: None, type_hint: None, parts })
+            });
+
         choice((
-            literal(&[K::INTEGER_LITERAL], |t| LiteralValue::Integer(t.to_owned(), 10)),
-            literal(&[K::HEX_LITERAL], |t| LiteralValue::Integer(t[2..].to_owned(), 16)),
-            literal(&[K::BIN_LITERAL], |t| LiteralValue::Integer(t[2..].to_owned(), 2)),
-            literal(&[K::COORD_LITERAL], |t| LiteralValue::Coord(pack_coord(t))),
-            literal(&[K::BOOLEAN_LITERAL], |t| LiteralValue::Boolean(t == "true")),
-            // Validity (one UTF-16 unit) is checked after a successful parse.
-            literal(&[K::CHAR_LITERAL], |t| LiteralValue::Char(unescape(&t[1..t.len() - 1]).chars().next().unwrap_or('\0'))),
-            literal(&[K::NULL_LITERAL], |_| LiteralValue::Null),
-            string_literal,
-        )),
-        joined_string,
-        identifier.clone().map(Expression::Identifier),
-    )).labelled("expression"));
-
-    let mut statement = Recursive::<chumsky::recursive::Indirect<In<'a>, Statement, Ex<'a>>>::declare();
-    let stmt = statement.clone().boxed();
-    let statements = stmt.clone().repeated().collect::<Vec<_>>().boxed();
-
-    let block = statements
-        .clone()
-        .delimited_by(kw(K::LBRACE), kw(K::RBRACE))
-        .map_with(move |statements, e| Statement::Block { source: cx.loc(e.span()), statements });
-    let return_ = kw(K::RETURN)
-        .ignore_then(args.clone().or_not())
-        .then_ignore(kw(K::SEMICOLON))
-        .map_with(move |a, e| Statement::Return { source: cx.loc(e.span()), expressions: a.unwrap_or_default() });
-    let paren_condition = paren(condition);
-    let if_ = kw(K::IF)
-        .ignore_then(paren_condition.clone())
-        .then(stmt.clone())
-        .then(kw(K::ELSE).ignore_then(stmt.clone()).or_not())
-        .map_with(move |((condition, then_statement), else_statement), e| Statement::If {
-            source: cx.loc(e.span()),
-            condition,
-            then_statement: Box::new(then_statement),
-            else_statement: else_statement.map(Box::new),
-        });
-    let while_ = kw(K::WHILE).ignore_then(paren_condition).then(stmt.clone()).map_with(move |(condition, then_statement), e| {
-        Statement::While { source: cx.loc(e.span()), condition, then_statement: Box::new(then_statement) }
+            parenthesis.map_with(move |x, e| Expression::Parenthesized(wrapped(x, e.span()))),
+            calc,
+            command_call,
+            call(K::TILDE, Expression::ProcCall),
+            call(K::AT, Expression::JumpCall),
+            local_variable,
+            game_variable.clone(),
+            constant_variable,
+            choice((
+                literal(&[K::INTEGER_LITERAL], |t| LiteralValue::Integer(t.to_owned(), 10)),
+                literal(&[K::HEX_LITERAL], |t| LiteralValue::Integer(t[2..].to_owned(), 16)),
+                literal(&[K::BIN_LITERAL], |t| LiteralValue::Integer(t[2..].to_owned(), 2)),
+                literal(&[K::COORD_LITERAL], |t| LiteralValue::Coord(pack_coord(t))),
+                literal(&[K::BOOLEAN_LITERAL], |t| LiteralValue::Boolean(t == "true")),
+                // Validity (one UTF-16 unit) is checked after a successful parse.
+                literal(&[K::CHAR_LITERAL], |t| LiteralValue::Char(unescape(&t[1..t.len() - 1]).chars().next().unwrap_or('\0'))),
+                literal(&[K::NULL_LITERAL], |_| LiteralValue::Null),
+                string_literal,
+            )),
+            joined_string,
+            identifier.clone().map(Expression::Identifier),
+        ))
+        .labelled("expression")
     });
-    let switch_case = kw(K::CASE)
-        .ignore_then(kw(K::DEFAULT).then(kw(K::COLON)).to(Vec::new()).or(expression_list.clone().then_ignore(kw(K::COLON))))
-        .then(statements.clone())
-        .map_with(move |(keys, statements), e| SwitchCase { source: cx.loc(e.span()), keys, statements });
-    let switch = tok(&[K::SWITCH_TYPE])
-        .then(parenthesis.clone())
-        .then(switch_case.repeated().collect::<Vec<_>>().delimited_by(kw(K::LBRACE), kw(K::RBRACE)))
-        .map_with(move |((t, condition), cases), e| Statement::Switch {
-            source: cx.loc(e.span()),
-            type_token: cx.token(t),
-            condition,
-            cases,
-            ty: None,
-            default_case: None,
-        });
-    let def_head = tok(&[K::DEF_TYPE]).then_ignore(kw(K::DOLLAR)).then(advanced_identifier.clone()).boxed();
-    let declaration = def_head
-        .clone()
-        .then(kw(K::EQ).ignore_then(expr.clone()).or_not())
-        .then_ignore(kw(K::SEMICOLON))
-        .map_with(move |((t, name), initializer), e| Statement::Declaration {
-            source: cx.loc(e.span()),
-            type_token: cx.token(t),
-            name,
-            initializer,
-            symbol: None,
-        });
-    let array_declaration = def_head
-        .then(parenthesis.clone())
-        .then_ignore(kw(K::SEMICOLON))
-        .map_with(move |((t, name), initializer), e| Statement::ArrayDeclaration {
-            source: cx.loc(e.span()),
-            type_token: cx.token(t),
-            name,
-            initializer,
-            symbol: None,
-        });
-    let assignment = local_variable
-        .or(game_variable)
-        .separated_by(kw(K::COMMA))
-        .at_least(1)
-        .collect::<Vec<_>>()
-        .then_ignore(kw(K::EQ))
-        .then(expression_list.clone())
-        .then_ignore(kw(K::SEMICOLON))
-        .map_with(move |(vars, expressions), e| Statement::Assignment { source: cx.loc(e.span()), vars, expressions });
-    let expression_statement = expr
-        .clone()
-        .then_ignore(kw(K::SEMICOLON))
-        .map_with(move |expression, e| Statement::Expression { source: cx.loc(e.span()), expression });
-    let empty = kw(K::SEMICOLON).map_with(move |_, e| Statement::Empty { source: cx.loc(e.span()) });
+    let expr: P<'a, Expression> = expression.boxed();
+    let (expression_list, args, parenthesis, local_variable) = pieces(expr.clone());
 
-    statement.define(choice((
-        block,
-        return_,
-        if_,
-        while_,
-        switch,
-        declaration,
-        array_declaration,
-        assignment,
-        expression_statement,
-        empty,
-    )).labelled("statement"));
+    let condition = recursive(|condition| {
+        paren(condition.boxed())
+            .map_with(move |x, e| Expression::Parenthesized(wrapped(x, e.span())))
+            .or(expr.clone())
+            .pratt((
+                infix(left(4), tok(&[K::LT, K::GT, K::LTE, K::GTE]), binary(Expression::Condition)),
+                infix(left(3), tok(&[K::EQ, K::EXCL]), binary(Expression::Condition)),
+                infix(left(2), tok(&[K::AND]), binary(Expression::Condition)),
+                infix(left(1), tok(&[K::OR]), binary(Expression::Condition)),
+            ))
+    })
+    .boxed();
+
+    let statement = recursive(|statement| {
+        let stmt = statement.boxed();
+        let statements = stmt.clone().repeated().collect::<Vec<_>>().boxed();
+
+        let block = statements
+            .clone()
+            .delimited_by(kw(K::LBRACE), kw(K::RBRACE))
+            .map_with(move |statements, e| Statement::Block { source: cx.loc(e.span()), statements });
+        let return_ = kw(K::RETURN)
+            .ignore_then(args.clone().or_not())
+            .then_ignore(kw(K::SEMICOLON))
+            .map_with(move |a, e| Statement::Return { source: cx.loc(e.span()), expressions: a.unwrap_or_default() });
+        let paren_condition = paren(condition);
+        let if_ = kw(K::IF)
+            .ignore_then(paren_condition.clone())
+            .then(stmt.clone())
+            .then(kw(K::ELSE).ignore_then(stmt.clone()).or_not())
+            .map_with(move |((condition, then_statement), else_statement), e| Statement::If {
+                source: cx.loc(e.span()),
+                condition,
+                then_statement: Box::new(then_statement),
+                else_statement: else_statement.map(Box::new),
+            });
+        let while_ = kw(K::WHILE).ignore_then(paren_condition).then(stmt.clone()).map_with(move |(condition, then_statement), e| {
+            Statement::While { source: cx.loc(e.span()), condition, then_statement: Box::new(then_statement) }
+        });
+        let switch_case = kw(K::CASE)
+            .ignore_then(kw(K::DEFAULT).then(kw(K::COLON)).to(Vec::new()).or(expression_list.clone().then_ignore(kw(K::COLON))))
+            .then(statements)
+            .map_with(move |(keys, statements), e| SwitchCase { source: cx.loc(e.span()), keys, statements });
+        let switch = tok(&[K::SWITCH_TYPE])
+            .then(parenthesis.clone())
+            .then(switch_case.repeated().collect::<Vec<_>>().delimited_by(kw(K::LBRACE), kw(K::RBRACE)))
+            .map_with(move |((t, condition), cases), e| Statement::Switch {
+                source: cx.loc(e.span()),
+                type_token: cx.token(t),
+                condition,
+                cases,
+                ty: None,
+                default_case: None,
+            });
+        let def_head = tok(&[K::DEF_TYPE]).then_ignore(kw(K::DOLLAR)).then(advanced_identifier.clone()).boxed();
+        let declaration = def_head
+            .clone()
+            .then(kw(K::EQ).ignore_then(expr.clone()).or_not())
+            .then_ignore(kw(K::SEMICOLON))
+            .map_with(move |((t, name), initializer), e| Statement::Declaration {
+                source: cx.loc(e.span()),
+                type_token: cx.token(t),
+                name,
+                initializer,
+                symbol: None,
+            });
+        let array_declaration = def_head
+            .then(parenthesis)
+            .then_ignore(kw(K::SEMICOLON))
+            .map_with(move |((t, name), initializer), e| Statement::ArrayDeclaration {
+                source: cx.loc(e.span()),
+                type_token: cx.token(t),
+                name,
+                initializer,
+                symbol: None,
+            });
+        let assignment = local_variable
+            .or(game_variable)
+            .separated_by(kw(K::COMMA))
+            .at_least(1)
+            .collect::<Vec<_>>()
+            .then_ignore(kw(K::EQ))
+            .then(expression_list)
+            .then_ignore(kw(K::SEMICOLON))
+            .map_with(move |(vars, expressions), e| Statement::Assignment { source: cx.loc(e.span()), vars, expressions });
+        let expression_statement = expr
+            .clone()
+            .then_ignore(kw(K::SEMICOLON))
+            .map_with(move |expression, e| Statement::Expression { source: cx.loc(e.span()), expression });
+        let empty = kw(K::SEMICOLON).map_with(move |_, e| Statement::Empty { source: cx.loc(e.span()) });
+
+        choice((
+            block,
+            return_,
+            if_,
+            while_,
+            switch,
+            declaration,
+            array_declaration,
+            assignment,
+            expression_statement,
+            empty,
+        ))
+        .labelled("statement")
+    });
+    let statements = statement.boxed().repeated().collect::<Vec<_>>().boxed();
 
     let script_name = identifier.clone().repeated().at_least(1).collect::<Vec<_>>().map_with(move |mut ids, e| {
         if ids.len() == 1 {

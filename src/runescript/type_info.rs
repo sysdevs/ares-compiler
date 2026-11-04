@@ -6,7 +6,7 @@ use serde::Deserialize;
 
 use crate::FatalError;
 
-#[derive(Clone, Debug, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Deserialize)]
 pub struct CompilerTypeInfo {
     pub max: i32,
     pub map: IndexMap<String, String>,
