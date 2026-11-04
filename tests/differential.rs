@@ -2,7 +2,8 @@
 //! goldens, which are frozen ares-compiler output.
 //!
 //! Layout:
-//!   tests/fixtures/<case>/scripts/*.rs2   input (also `.macro`)
+//!   tests/fixtures/<case>/scripts/*.rs2   input (also `.macro`); a case with
+//!                                         any `.cs2` is a client-dialect case
 //!   tests/fixtures/<case>/symbols.json    CompilerTypeInfo tables
 //!   tests/golden/<case>/...               per-stage snapshots of that case
 //!   tests/<corpus>/inputs.json            edge-case corpora (written by tools/make_*_corpus.py)
@@ -58,7 +59,16 @@ fn walk(case: &str) -> Vec<String> {
     v
 }
 
-/// Every `.rs2` of a fixture after macro expansion: (file, text, spans).
+/// A case holding any `.cs2` file compiles as the client dialect.
+fn case_dialect(case: &str) -> ares_compiler::Dialect {
+    if walk(case).iter().any(|f| f.ends_with(".cs2")) {
+        ares_compiler::Dialect::Client
+    } else {
+        ares_compiler::Dialect::Server
+    }
+}
+
+/// Every script (`.rs2`, or `.cs2` in a client case) of a fixture after macro expansion: (file, text, spans).
 fn expand_case(case: &str) -> Vec<(String, String, Vec<ares_compiler::preprocess::MacroExpansionSpan>)> {
     use ares_compiler::preprocess::{expand_source_with_map, parse_macro_file, MacroRegistry};
     let walk = walk(case);
@@ -68,7 +78,7 @@ fn expand_case(case: &str) -> Vec<(String, String, Vec<ares_compiler::preprocess
         parse_macro_file(f, &read(f), &mut registry, &mut diags);
     }
     walk.iter()
-        .filter(|f| f.ends_with(".rs2"))
+        .filter(|f| f.ends_with(&format!(".{}", case_dialect(case).extension())))
         .map(|f| {
             let (text, spans) = expand_source_with_map(&read(f), &registry, &mut diags, f);
             (f.clone(), text, spans)
@@ -341,7 +351,7 @@ fn register_fixture(
         serde_json::from_str(&fs::read_to_string(root().join("tests/fixtures").join(case).join("symbols.json")).unwrap()).unwrap();
     let mut mapper = Default::default();
     let pointers = load_special_symbols(&symbols["command"], &symbols["runescript"], &mut mapper, true).unwrap();
-    let mut c = ServerScriptCompiler::new(symbols, mapper, pointers, Default::default()).unwrap();
+    let mut c = ServerScriptCompiler::new(symbols, mapper, pointers, Default::default(), case_dialect(case)).unwrap();
     c.load_symbols().unwrap();
     let mut files = Vec::new();
     for (f, text, _) in expand_case(case) {
@@ -537,6 +547,7 @@ fn bytecode_matches() {
             source_paths: vec![root().join("tests/fixtures").join(&case).join("scripts")],
             symbols,
             source_names: SourceNames::Relative,
+            dialect: case_dialect(&case),
             ..Default::default()
         };
         let output = ares_compiler::compile(&config).unwrap();
@@ -576,6 +587,27 @@ fn exclude_matches_real_paths() {
     let all = compile(vec![]);
     assert!(all > 0);
     assert_eq!(compile(vec![dir.join("scripts/procs.rs2")]), 0);
+}
+
+/// The walk compiles only the dialect's extension: a client run over a
+/// server fixture compiles nothing, a server run compiles every script.
+#[test]
+fn dialect_filters_extension() {
+    use indexmap::IndexMap;
+    use ares_compiler::compiler::SourceNames;
+    use ares_compiler::runescript::type_info::CompilerTypeInfo;
+    use ares_compiler::Dialect;
+    let dir = root().join("tests/fixtures/06-procs-labels");
+    let symbols: IndexMap<String, CompilerTypeInfo> = serde_json::from_str(&fs::read_to_string(dir.join("symbols.json")).unwrap()).unwrap();
+    let compile = |dialect| {
+        let config = ares_compiler::Config { source_paths: vec![dir.join("scripts")], symbols: symbols.clone(), source_names: SourceNames::Relative, dialect, ..Default::default() };
+        ares_compiler::compile(&config).unwrap()
+    };
+    let client = compile(Dialect::Client);
+    assert_eq!(client.scripts_written, 0);
+    assert!(client.diagnostics.iter().all(|(_, d)| d.list.is_empty()));
+    let bins = fs::read_dir(golden("06-procs-labels", "bin")).unwrap().count();
+    assert_eq!(compile(Dialect::Server).packs.unwrap().bin.len(), bins);
 }
 
 /// Real-content gate, skipped unless `RS2_CORPUS` (a LostCity Content
@@ -636,7 +668,7 @@ fn symbols_match() {
 
     let path = root().join("tests/symbols/expected.json");
     let mut expected = read_json(&path);
-    let mut files: Vec<String> = cases().iter().map(|c| format!("tests/fixtures/{c}/symbols.json")).collect();
+    let mut files: Vec<(String, ares_compiler::Dialect)> = cases().iter().map(|c| (format!("tests/fixtures/{c}/symbols.json"), case_dialect(c))).collect();
     let mut edge: Vec<String> = fs::read_dir(root().join("tests/symbols"))
         .unwrap()
         .map(|e| e.unwrap().file_name().to_string_lossy().into_owned())
@@ -644,11 +676,11 @@ fn symbols_match() {
         .map(|f| format!("tests/symbols/{f}"))
         .collect();
     edge.sort();
-    files.extend(edge);
+    files.extend(edge.into_iter().map(|f| (f, ares_compiler::Dialect::Server)));
     let mut actual = serde_json::Map::new();
-    for file in files {
+    for (file, dialect) in files {
         let symbols: IndexMap<String, CompilerTypeInfo> = serde_json::from_str(&fs::read_to_string(root().join(&file)).unwrap()).unwrap();
-        let built = ServerScriptCompiler::new(symbols, Default::default(), Default::default(), Default::default())
+        let built = ServerScriptCompiler::new(symbols, Default::default(), Default::default(), Default::default(), dialect)
             .and_then(|mut c| c.load_symbols().map(|_| c));
         let result = match built {
             Err(e) => json!({ "fatal": e.0 }),
@@ -764,7 +796,7 @@ fn registration_corpus_matches() {
             let mut mapper = Default::default();
             let pointers = load_special_symbols(&symbols["command"], &symbols["runescript"], &mut mapper, true).unwrap();
             let features = serde_json::from_value(input["features"].clone()).unwrap();
-            let mut c = ServerScriptCompiler::new(symbols, mapper, pointers, features).unwrap();
+            let mut c = ServerScriptCompiler::new(symbols, mapper, pointers, features, Default::default()).unwrap();
             c.load_symbols().unwrap();
             let (mut files, mut parsed) = (Vec::new(), Vec::new());
             for f in input["files"].as_array().unwrap() {
@@ -845,7 +877,7 @@ fn typecheck_corpus_matches() {
             let mut mapper = Default::default();
             let pointers = load_special_symbols(&symbols["command"], &symbols["runescript"], &mut mapper, true).unwrap();
             let features = serde_json::from_value(input["features"].clone()).unwrap();
-            let mut c = ServerScriptCompiler::new(symbols, mapper, pointers, features).unwrap();
+            let mut c = ServerScriptCompiler::new(symbols, mapper, pointers, features, Default::default()).unwrap();
             c.load_symbols().unwrap();
             let mut files = Vec::new();
             for f in input["files"].as_array().unwrap() {
@@ -891,7 +923,8 @@ fn pipeline_case(i: usize, input: &Value) -> Value {
     let mut mapper = Default::default();
     let pointers = load_special_symbols(&symbols["command"], &symbols["runescript"], &mut mapper, true).unwrap();
     let features = serde_json::from_value(input["features"].clone()).unwrap();
-    let mut c = ServerScriptCompiler::new(symbols, mapper, pointers, features).unwrap();
+    let dialect = if input["dialect"] == "client" { ares_compiler::Dialect::Client } else { ares_compiler::Dialect::Server };
+    let mut c = ServerScriptCompiler::new(symbols, mapper, pointers, features, dialect).unwrap();
     c.load_symbols().unwrap();
     let mut files = Vec::new();
     for f in input["files"].as_array().unwrap() {

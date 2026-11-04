@@ -565,6 +565,14 @@ impl<'g, 'a> CodeGeneratorContext<'g, 'a> {
         es.iter().try_for_each(|e| self.generator.expr(e))
     }
 
+    /// A hook setter's checked hook string (`None` for `null`).
+    pub fn hook(&self) -> Option<&'g crate::ast::expr::Hook> {
+        match self.expression {
+            Expression::CommandCall(c) => c.hook.as_deref(),
+            _ => None,
+        }
+    }
+
     /// `command()`: the call's `Command` instruction, with the expression's source.
     pub fn command(&mut self) -> R {
         let symbol = match self.expression {

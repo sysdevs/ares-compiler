@@ -105,13 +105,14 @@ impl Dump<'_> {
             Expression::Condition(b) => self.binary("ConditionExpression", b),
             Expression::Calc(w) => self.wrapped("CalcExpression", w),
             Expression::Parenthesized(w) => self.wrapped("ParenthesizedExpression", w),
-            Expression::CommandCall(c) => with(
-                self.expr_node("CommandCallExpression", &c.source, c.ty, c.type_hint),
-                self.call_symbol(
-                    json!({ "name": self.identifier(&c.name), "arguments": list(&c.arguments, |x| self.expression(x)), "arguments2": opt_list(&c.arguments2, |x| self.expression(x)) }),
-                    c.symbol,
-                ),
-            ),
+            Expression::CommandCall(c) => {
+                let mut fields = json!({ "name": self.identifier(&c.name), "arguments": list(&c.arguments, |x| self.expression(x)), "arguments2": opt_list(&c.arguments2, |x| self.expression(x)) });
+                if let Some(h) = &c.hook {
+                    let triggers: Vec<Value> = h.triggers.iter().map(|(n, s)| json!([n, s.is_some()])).collect();
+                    fields["hook"] = json!({ "call": self.expression(&h.call), "triggers": triggers });
+                }
+                with(self.expr_node("CommandCallExpression", &c.source, c.ty, c.type_hint), self.call_symbol(fields, c.symbol))
+            }
             Expression::ProcCall(c) => self.call("ProcCallExpression", c),
             Expression::JumpCall(c) => self.call("JumpCallExpression", c),
             Expression::Identifier(i) => self.identifier(i),

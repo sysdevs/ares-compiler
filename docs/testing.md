@@ -37,7 +37,13 @@ it covers once and check that the gate fails.
 
 `tests/fixtures/<case>/scripts/` and `symbols.json` are written by
 `python -I tools/make_fixtures.py` from its `CASES` table (file names stay
-ASCII-lowercase). `tests/golden/<case>/` holds:
+ASCII-lowercase), and the client-dialect cases from `CLIENT_CASES`
+(`11-client`: client commands, varc, `event_*`, hooks, `cc_*` with the `.`
+form; `12-client-errors`: hook errors). A case holding any `.cs2` file runs as
+the client dialect (`case_dialect` in `tests/differential.rs`). A new case
+needs empty seed goldens (`[]` for `ast.json`, `ast-typed.json`, `ir.json`,
+`diagnostics.json`; `{}` for `tokens.json`, `spans.json`; no `ir.json` when it
+stops at type checking) before the first bless. `tests/golden/<case>/` holds:
 
 | file | gate |
 |---|---|
@@ -63,7 +69,7 @@ afterwards.
 | `registration` | `make_register_corpus.py` | `expected.json` | `registration_corpus_matches` |
 | `typecheck` | `make_typecheck_corpus.py` | `expected.json` | `typecheck_corpus_matches` (`TYPECHECK_SHOW=<i>`) |
 | `pipeline` | `make_pipeline_corpus.py` | `expected.json` (IR and byte hashes per stage) | `pipeline_corpus_matches` (`PIPELINE_SHOW=<i>`) |
-| `pointers` | `make_pointer_corpus.py` | `expected.json` | `pointer_corpus_matches` |
+| `pointers` | `make_pointer_corpus.py` (the last three inputs are client-dialect `active_component` cases, `"dialect": "client"`) | `expected.json` | `pointer_corpus_matches` |
 | `symbols` | hand-written `*.json` plus every fixture's `symbols.json` | `expected.json` | `symbols_match` |
 
 Run generators from `ares-compiler/`, e.g. `python -I tools/make_parser_corpus.py`.

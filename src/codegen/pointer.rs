@@ -31,7 +31,7 @@ type NodeId = usize;
 /// (block index, instruction index) — instruction identity.
 type InstrRef = (usize, usize);
 
-const POINTERS: usize = 24;
+const POINTERS: usize = 26;
 
 fn fatal<T>(m: &str) -> R<T> {
     Err(FatalError(m.into()))
@@ -395,7 +395,8 @@ impl PointerChecker<'_> {
                 (op @ (Opcode::PushVar | Opcode::PopVar | Opcode::PushVar2 | Opcode::PopVar2), Operand::Symbol(sym)) => {
                     let Symbol::Basic { ty, is_protected, .. } = self.c.tables[*sym] else { continue };
                     let kind = &self.types()[ty].kind;
-                    let player = matches!(kind, TypeKind::VarPlayer { .. } | TypeKind::VarBit { .. });
+                    // Client varps and varbits are the local player's: no pointer.
+                    let player = self.c.dialect == crate::compiler::Dialect::Server && matches!(kind, TypeKind::VarPlayer { .. } | TypeKind::VarBit { .. });
                     let npc = matches!(kind, TypeKind::VarNpc { .. });
                     let obj = matches!(kind, TypeKind::VarObj { .. });
                     let p = match (op, player, npc) {

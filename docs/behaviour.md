@@ -113,6 +113,35 @@ compile and nothing is written. An empty command pointer table stops it
 compared loosely by the snapshot gates (count per type and file), so wording
 may change without a re-bless of the byte snapshots.
 
+**B.15 Client dialect.** `Config.dialect = Dialect::Client` compiles `.cs2`
+files only (`compiler.rs`, by `Dialect::extension`; a server run compiles only
+`.rs2`). Rules that reach the client script bytes:
+- Triggers (`trigger.rs` `by_name`, `runescript/client_triggers.rs`): `command`,
+  `proc` and `clientscript` (id 10, name mode, so lookup key `-1`); every other
+  trigger is invalid in a client file, and `clientscript` is invalid in a server file.
+- Commands are the caller's `symbols["command"]` table (Jagex client opcodes from
+  `ares_shared::client_opcode`). Opcodes below 100 carry a 4-byte operand
+  (`ares_shared::opcode::large_operand`), so `cc_create` (100) is a command with
+  the one-byte operand; `1` selects the `.` form as on the server.
+- `%name` takes the first game var named so in root-table order: `varp`, then
+  `varbit`, then `varc` (the loader order). A varc is `varc<type>`; it reads and
+  writes with `GET_VARC_INT`/`SET_VARC_INT` (42/43) or, for a string varc,
+  `GET_VARC_STRING`/`SET_VARC_STRING` (49/50), operand = the varc id. `.%varc`
+  is an error. Client varps and varbits need no pointer (`codegen/pointer.rs`).
+- `event_*` (`runescript/loaders.rs` `EVENTS`) are constants `i32::MIN + n`:
+  mousex 1, mousey 2, com 3, op 4, comsubid 5, com2 6, comsubid2 7, keycode 8,
+  keychar 9; `event_opbase` is the string `"event_opbase"`.
+- Hook setters (`cc_seton*`, `if_seton*` and their `.` forms; `runescript/commands.rs`
+  `CommandHandler::Hook`) take `"script(args){triggers}"` or `null` as the first
+  argument (`hook.rs`); anything else (a variable, a string with `<...>`) is an
+  error. The script must be a `[clientscript]`. Pushed in order:
+  the script id, each argument, then for a trigger list each trigger id and the
+  count, then a descriptor string (each argument's type code, then `Y` when a
+  trigger list was pushed), then the command's other arguments. `null` pushes
+  `-1` and `""`. Trigger ids: varp id, varbit `id | 0x10000`, varc `id | 0x20000`
+  (ares tags), inv id, stat id. Only `vartransmit` (vars), `invtransmit` (invs)
+  and `stattransmit` (stats) take a list.
+
 ## C. Deliberate quirks that reach output
 
 Kept on purpose; changing any of them moves output bytes.

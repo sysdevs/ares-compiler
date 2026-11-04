@@ -1,6 +1,7 @@
 //! Prints the word lists the VS Code extension's grammar needs, as JSON:
 //! `cargo run --release --example dump_syntax > ../vscode-runescript/data/syntax.json`.
 
+use ares_compiler::runescript::client_triggers::CLIENT_TRIGGERS;
 use ares_compiler::runescript::triggers::SERVER_TRIGGERS;
 use serde_json::json;
 
@@ -8,12 +9,15 @@ use serde_json::json;
 /// (not in `ares_shared::var_type`). Keep in step with that function.
 const SETUP_TYPES: &[&str] = &[
     "type", "proc", "label", "walktrigger", "queue", "timer", "softtimer", "param", "intparam", "varp",
-    "varbit", "dbcolumn",
+    "varbit", "dbcolumn", "varc",
 ];
 
 fn main() {
     let triggers: Vec<&str> =
-        std::iter::once("command").chain(SERVER_TRIGGERS.iter().map(|t| t.identifier)).collect();
+        std::iter::once("command")
+            .chain(SERVER_TRIGGERS.iter().map(|t| t.identifier))
+            .chain(CLIENT_TRIGGERS.iter().map(|t| t.identifier))
+            .collect();
     let types: Vec<&str> = ares_shared::var_type::PRIMITIVE
         .iter()
         .chain(ares_shared::var_type::SCRIPT)

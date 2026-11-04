@@ -5974,5 +5974,1161 @@
  },
  "tests/symbols/fatal-bad-id.json": {
   "fatal": "Invalid symbol id \"12abc\" for imp."
+ },
+ "tests/fixtures/11-client/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "iftype_text",
+      {
+       "name": "iftype_text",
+       "value": "4"
+      },
+      "none"
+     ],
+     [
+      "setpos_abs_left",
+      {
+       "name": "setpos_abs_left",
+       "value": "0"
+      },
+      "none"
+     ],
+     [
+      "setsize_abs",
+      {
+       "name": "setsize_abs",
+       "value": "0"
+      },
+      "none"
+     ],
+     [
+      "event_opbase",
+      {
+       "name": "event_opbase",
+       "value": "event_opbase"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "component",
+    "entries": [
+     [
+      "wornitemstats:stats",
+      {
+       "name": "wornitemstats:stats",
+       "type": "component",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "wornitemstats:stabsatt",
+      {
+       "name": "wornitemstats:stabsatt",
+       "type": "component",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "event_com",
+      {
+       "name": "event_com",
+       "type": "component",
+       "isProtected": false
+      },
+      -2147483645
+     ],
+     [
+      "event_com2",
+      {
+       "name": "event_com2",
+       "type": "component",
+       "isProtected": false
+      },
+      -2147483642
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "interface",
+    "entries": [
+     [
+      "wornitemstats",
+      {
+       "name": "wornitemstats",
+       "type": "interface",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "worn",
+      {
+       "name": "worn",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "param<int>",
+    "entries": [
+     [
+      "stabattack",
+      {
+       "name": "stabattack",
+       "type": "param<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "stat",
+    "entries": [
+     [
+      "attack",
+      {
+       "name": "attack",
+       "type": "stat",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "shared_name",
+      {
+       "name": "shared_name",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varc<int>",
+    "entries": [
+     [
+      "tooltip_time",
+      {
+       "name": "tooltip_time",
+       "type": "varc<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varc<string>",
+    "entries": [
+     [
+      "search_text",
+      {
+       "name": "search_text",
+       "type": "varc<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varc<string>",
+    "entries": [
+     [
+      "shared_name",
+      {
+       "name": "shared_name",
+       "type": "varc<string>",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "int",
+    "entries": [
+     [
+      "event_mousex",
+      {
+       "name": "event_mousex",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483647
+     ],
+     [
+      "event_mousey",
+      {
+       "name": "event_mousey",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483646
+     ],
+     [
+      "event_op",
+      {
+       "name": "event_op",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483644
+     ],
+     [
+      "event_comsubid",
+      {
+       "name": "event_comsubid",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483643
+     ],
+     [
+      "event_comsubid2",
+      {
+       "name": "event_comsubid2",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483641
+     ],
+     [
+      "event_keycode",
+      {
+       "name": "event_keycode",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483640
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "char",
+    "entries": [
+     [
+      "event_keychar",
+      {
+       "name": "event_keychar",
+       "type": "char",
+       "isProtected": false
+      },
+      -2147483639
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varc",
+    "varc<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
+ },
+ "tests/fixtures/12-client-errors/symbols.json": {
+  "table": [
+   {
+    "kind": "Constant",
+    "type": null,
+    "entries": [
+     [
+      "iftype_text",
+      {
+       "name": "iftype_text",
+       "value": "4"
+      },
+      "none"
+     ],
+     [
+      "setpos_abs_left",
+      {
+       "name": "setpos_abs_left",
+       "value": "0"
+      },
+      "none"
+     ],
+     [
+      "setsize_abs",
+      {
+       "name": "setsize_abs",
+       "value": "0"
+      },
+      "none"
+     ],
+     [
+      "event_opbase",
+      {
+       "name": "event_opbase",
+       "value": "event_opbase"
+      },
+      "none"
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "namedobj",
+    "entries": [
+     [
+      "bronze_sword",
+      {
+       "name": "bronze_sword",
+       "type": "namedobj",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "component",
+    "entries": [
+     [
+      "wornitemstats:stats",
+      {
+       "name": "wornitemstats:stats",
+       "type": "component",
+       "isProtected": false
+      },
+      0
+     ],
+     [
+      "wornitemstats:stabsatt",
+      {
+       "name": "wornitemstats:stabsatt",
+       "type": "component",
+       "isProtected": false
+      },
+      1
+     ],
+     [
+      "event_com",
+      {
+       "name": "event_com",
+       "type": "component",
+       "isProtected": false
+      },
+      -2147483645
+     ],
+     [
+      "event_com2",
+      {
+       "name": "event_com2",
+       "type": "component",
+       "isProtected": false
+      },
+      -2147483642
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "interface",
+    "entries": [
+     [
+      "wornitemstats",
+      {
+       "name": "wornitemstats",
+       "type": "interface",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "inv",
+    "entries": [
+     [
+      "worn",
+      {
+       "name": "worn",
+       "type": "inv",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "param<int>",
+    "entries": [
+     [
+      "stabattack",
+      {
+       "name": "stabattack",
+       "type": "param<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varp<int>",
+    "entries": [
+     [
+      "playtime",
+      {
+       "name": "playtime",
+       "type": "varp<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "stat",
+    "entries": [
+     [
+      "attack",
+      {
+       "name": "attack",
+       "type": "stat",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "flag_bit",
+      {
+       "name": "flag_bit",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varbit<int>",
+    "entries": [
+     [
+      "shared_name",
+      {
+       "name": "shared_name",
+       "type": "varbit<int>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varc<int>",
+    "entries": [
+     [
+      "tooltip_time",
+      {
+       "name": "tooltip_time",
+       "type": "varc<int>",
+       "isProtected": false
+      },
+      0
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varc<string>",
+    "entries": [
+     [
+      "search_text",
+      {
+       "name": "search_text",
+       "type": "varc<string>",
+       "isProtected": false
+      },
+      1
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "varc<string>",
+    "entries": [
+     [
+      "shared_name",
+      {
+       "name": "shared_name",
+       "type": "varc<string>",
+       "isProtected": false
+      },
+      2
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "int",
+    "entries": [
+     [
+      "event_mousex",
+      {
+       "name": "event_mousex",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483647
+     ],
+     [
+      "event_mousey",
+      {
+       "name": "event_mousey",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483646
+     ],
+     [
+      "event_op",
+      {
+       "name": "event_op",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483644
+     ],
+     [
+      "event_comsubid",
+      {
+       "name": "event_comsubid",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483643
+     ],
+     [
+      "event_comsubid2",
+      {
+       "name": "event_comsubid2",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483641
+     ],
+     [
+      "event_keycode",
+      {
+       "name": "event_keycode",
+       "type": "int",
+       "isProtected": false
+      },
+      -2147483640
+     ]
+    ]
+   },
+   {
+    "kind": "Basic",
+    "type": "char",
+    "entries": [
+     [
+      "event_keychar",
+      {
+       "name": "event_keychar",
+       "type": "char",
+       "isProtected": false
+      },
+      -2147483639
+     ]
+    ]
+   }
+  ],
+  "types": [
+   [
+    "any",
+    "any"
+   ],
+   [
+    "area",
+    "area"
+   ],
+   [
+    "boolean",
+    "boolean"
+   ],
+   [
+    "category",
+    "category"
+   ],
+   [
+    "char",
+    "char"
+   ],
+   [
+    "component",
+    "component"
+   ],
+   [
+    "coord",
+    "coord"
+   ],
+   [
+    "dbcolumn",
+    "dbcolumn<any>"
+   ],
+   [
+    "dbrow",
+    "dbrow"
+   ],
+   [
+    "dbtable",
+    "dbtable"
+   ],
+   [
+    "entityoverlay",
+    "entityoverlay"
+   ],
+   [
+    "enum",
+    "enum"
+   ],
+   [
+    "fontmetrics",
+    "fontmetrics"
+   ],
+   [
+    "graphic",
+    "graphic"
+   ],
+   [
+    "hitmark",
+    "hitmark"
+   ],
+   [
+    "hitsplat",
+    "hitsplat"
+   ],
+   [
+    "hunt",
+    "hunt"
+   ],
+   [
+    "idkit",
+    "idkit"
+   ],
+   [
+    "int",
+    "int"
+   ],
+   [
+    "interface",
+    "interface"
+   ],
+   [
+    "intparam",
+    "param<int>"
+   ],
+   [
+    "inv",
+    "inv"
+   ],
+   [
+    "jingle",
+    "jingle"
+   ],
+   [
+    "label",
+    "label"
+   ],
+   [
+    "loc",
+    "loc"
+   ],
+   [
+    "locshape",
+    "locshape"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "mapelement",
+    "mapelement"
+   ],
+   [
+    "mapzone",
+    "mapzone"
+   ],
+   [
+    "mesanim",
+    "mesanim"
+   ],
+   [
+    "midi",
+    "midi"
+   ],
+   [
+    "model",
+    "model"
+   ],
+   [
+    "movespeed",
+    "movespeed"
+   ],
+   [
+    "namedobj",
+    "namedobj"
+   ],
+   [
+    "npc",
+    "npc"
+   ],
+   [
+    "npc_mode",
+    "npc_mode"
+   ],
+   [
+    "npc_stat",
+    "npc_stat"
+   ],
+   [
+    "npc_uid",
+    "npc_uid"
+   ],
+   [
+    "obj",
+    "obj"
+   ],
+   [
+    "overlayinterface",
+    "overlayinterface"
+   ],
+   [
+    "param",
+    "param"
+   ],
+   [
+    "player_uid",
+    "player_uid"
+   ],
+   [
+    "proc",
+    "proc"
+   ],
+   [
+    "queue",
+    "queue"
+   ],
+   [
+    "seq",
+    "seq"
+   ],
+   [
+    "softtimer",
+    "softtimer"
+   ],
+   [
+    "spotanim",
+    "spotanim"
+   ],
+   [
+    "stat",
+    "stat"
+   ],
+   [
+    "string",
+    "string"
+   ],
+   [
+    "stringvector",
+    "stringvector"
+   ],
+   [
+    "struct",
+    "struct"
+   ],
+   [
+    "synth",
+    "synth"
+   ],
+   [
+    "texture",
+    "texture"
+   ],
+   [
+    "timer",
+    "timer"
+   ],
+   [
+    "toplevelinterface",
+    "toplevelinterface"
+   ],
+   [
+    "type",
+    "any"
+   ],
+   [
+    "varbit",
+    "varbit<any>"
+   ],
+   [
+    "varc",
+    "varc<any>"
+   ],
+   [
+    "varp",
+    "varp<any>"
+   ],
+   [
+    "verifyobj",
+    "verifyobj"
+   ],
+   [
+    "walktrigger",
+    "walktrigger"
+   ],
+   [
+    "wma",
+    "wma"
+   ],
+   [
+    "writeinv",
+    "writeinv"
+   ]
+  ]
  }
 }

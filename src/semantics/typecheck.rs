@@ -336,6 +336,11 @@ impl Checker<'_> {
                             d.help(format!("a game variable with a similar name exists: `%{c}`"));
                         }
                     }
+                    Some((s, ty)) if g.dot && matches!(self.c.types[ty].kind, TypeKind::VarClient { .. }) => {
+                        g.reference = Some(s);
+                        g.ty = Some(ERROR);
+                        self.error(&g.source, "varc has no secondary form", vec![]);
+                    }
                     Some((s, ty)) => {
                         g.reference = Some(s);
                         g.ty = self.c.types[ty].kind.inner();
@@ -1091,6 +1096,77 @@ impl TypeCheckingContext<'_, '_> {
     pub fn report_error(&mut self, message: &str, a: Vec<String>) {
         let src = self.expression.source().clone();
         self.checker.error(&src, message, a);
+    }
+
+    /// A client hook setter: checks the call against the command's declaration,
+    /// then the hook string in argument 0 (`null` clears the hook): the named
+    /// `[clientscript]` and its arguments, and the trigger names against `kind`.
+    /// The checked hook is kept on the call for codegen.
+    pub fn check_hook(&mut self, kind: crate::runescript::commands::HookTriggers) -> R {
+        use crate::runescript::client_triggers::CLIENTSCRIPT;
+        use crate::runescript::commands::HookTriggers;
+        let TypeCheckingContext { checker, expression } = self;
+        let Expression::CommandCall(c) = &mut **expression else { return Ok(()) };
+        let (name, src) = (c.name.text.clone(), c.source.clone());
+        (c.symbol, c.ty) = checker.check_call(COMMAND, msg::COMMAND_REFERENCE_UNRESOLVED, msg::COMMAND_NOARGS_EXPECTED, &src, &name, &mut c.arguments)?;
+        // Only a literal can be checked (and encoded); anything else would
+        // compile as `null` and silently clear the hook.
+        let literal = match c.arguments.first() {
+            Some(Expression::StringLiteral(literal)) => literal,
+            Some(Expression::NullLiteral(_)) | None => return Ok(()),
+            Some(other) => {
+                let at = other.source().clone();
+                checker.error(&at, msg::HOOK_NOT_LITERAL, vec![]);
+                return Ok(());
+            }
+        };
+        let (text, at) = (literal.value.clone(), literal.source.clone());
+        let (call, names) = match crate::hook::split(&text) {
+            Ok(split) => split,
+            Err(e) => {
+                checker.error(&at, &e, vec![]);
+                return Ok(());
+            }
+        };
+        let parsed = parse_single_expression(&call, &at.name, at.line - 1, at.column)?.node;
+        let (script, source, mut arguments) = match parsed {
+            Some(Expression::CommandCall(cc)) if cc.arguments2.is_none() => (cc.name, cc.source, cc.arguments),
+            Some(Expression::Identifier(i)) => (i.clone(), i.source, Vec::new()),
+            _ => {
+                checker.error(&at, msg::HOOK_INVALID_CALL, vec![]);
+                return Ok(());
+            }
+        };
+        let (symbol, ty) = checker.check_call(CLIENTSCRIPT, msg::HOOK_REFERENCE_UNRESOLVED, msg::HOOK_NOARGS_EXPECTED, &source, &script.text, &mut arguments)?;
+        let what = match kind {
+            HookTriggers::None => "",
+            HookTriggers::Var => "var",
+            HookTriggers::Inv => "inv",
+            HookTriggers::Stat => "stat",
+        };
+        if kind == HookTriggers::None && !names.is_empty() {
+            checker.error(&at, msg::HOOK_NO_TRIGGERS, vec![]);
+        }
+        let mut triggers = Vec::new();
+        for n in names {
+            let (tables, types) = (&checker.c.tables, &checker.c.types);
+            let found = tables.find_all(SymbolTables::ROOT, &n).into_iter().find(|&s| match &tables[s] {
+                Symbol::Basic { ty, .. } => match kind {
+                    HookTriggers::Var => matches!(types[*ty].kind, TypeKind::VarPlayer { .. } | TypeKind::VarBit { .. } | TypeKind::VarClient { .. }),
+                    HookTriggers::Inv => *ty == sv::INV,
+                    HookTriggers::Stat => *ty == sv::STAT,
+                    HookTriggers::None => false,
+                },
+                _ => false,
+            });
+            if found.is_none() && kind != HookTriggers::None {
+                checker.error(&at, msg::HOOK_TRIGGER_INVALID, args(&[&n, what]));
+            }
+            triggers.push((n, found));
+        }
+        let call = Expression::CommandCall(CommandCallExpression { source, ty, type_hint: None, name: script, arguments, arguments2: None, symbol, hook: None });
+        c.hook = Some(Box::new(Hook { call, triggers }));
+        Ok(())
     }
 
     /// Reports an error on argument `index` of the first argument list.

@@ -96598,5 +96598,236 @@
 "text": "[proc,p0] \n[label,l0] ~takes_label(l0);\n[proc,takes_label](label $l) p_delay(1); jump($l);\n[inv_button1,overlay:x] while (npc_findnext = false | npc_find(0_50_50_0_0, man, 5) = true) { .%vp = 3; if (npc_findnext = false | npc_huntnext = true) {  } else { ~takes_label(l0); .%vp_prot = 4; huntall; } ~takes_label(l0); }"
 }
 ]
+},
+{
+"symbols": {
+"command": {
+"max": 100,
+"map": {
+"100": "cc_create",
+"200": "cc_find",
+"1112": "cc_settext"
+},
+"vartype": {},
+"protect": {},
+"require": {
+"1112": "active_component"
+},
+"require2": {
+"1112": "active_component2"
+},
+"conditional": {
+"200": true
+},
+"set": {
+"100": "active_component",
+"200": "active_component"
+},
+"set2": {
+"100": "active_component2",
+"200": "active_component2"
+},
+"corrupt": {},
+"corrupt2": {}
+},
+"runescript": {
+"max": 100,
+"map": {
+"0": "[clientscript,ok]",
+"1": "[clientscript,bad]",
+"2": "[clientscript,dot]"
+},
+"vartype": {},
+"protect": {},
+"require": {},
+"require2": {},
+"conditional": {},
+"set": {},
+"set2": {},
+"corrupt": {},
+"corrupt2": {}
+},
+"component": {
+"max": 100,
+"map": {
+"0": "bank:close"
+},
+"vartype": {},
+"protect": {},
+"require": {},
+"require2": {},
+"conditional": {},
+"set": {},
+"set2": {},
+"corrupt": {},
+"corrupt2": {}
+}
+},
+"features": {},
+"dialect": "client",
+"files": [
+{
+"name": "aa_prelude.cs2",
+"text": "[command,cc_create](component $layer, int $type, int $sub)\n[command,cc_find](component $layer, int $sub)(boolean)\n[command,cc_settext](string $text)\n"
+},
+{
+"name": "case.cs2",
+"text": "[clientscript,ok] cc_create(bank:close, 4, 0); cc_settext(\"x\");"
+}
+]
+},
+{
+"symbols": {
+"command": {
+"max": 100,
+"map": {
+"100": "cc_create",
+"200": "cc_find",
+"1112": "cc_settext"
+},
+"vartype": {},
+"protect": {},
+"require": {
+"1112": "active_component"
+},
+"require2": {
+"1112": "active_component2"
+},
+"conditional": {
+"200": true
+},
+"set": {
+"100": "active_component",
+"200": "active_component"
+},
+"set2": {
+"100": "active_component2",
+"200": "active_component2"
+},
+"corrupt": {},
+"corrupt2": {}
+},
+"runescript": {
+"max": 100,
+"map": {
+"0": "[clientscript,ok]",
+"1": "[clientscript,bad]",
+"2": "[clientscript,dot]"
+},
+"vartype": {},
+"protect": {},
+"require": {},
+"require2": {},
+"conditional": {},
+"set": {},
+"set2": {},
+"corrupt": {},
+"corrupt2": {}
+},
+"component": {
+"max": 100,
+"map": {
+"0": "bank:close"
+},
+"vartype": {},
+"protect": {},
+"require": {},
+"require2": {},
+"conditional": {},
+"set": {},
+"set2": {},
+"corrupt": {},
+"corrupt2": {}
+}
+},
+"features": {},
+"dialect": "client",
+"files": [
+{
+"name": "aa_prelude.cs2",
+"text": "[command,cc_create](component $layer, int $type, int $sub)\n[command,cc_find](component $layer, int $sub)(boolean)\n[command,cc_settext](string $text)\n"
+},
+{
+"name": "case.cs2",
+"text": "[clientscript,bad] cc_settext(\"x\");"
+}
+]
+},
+{
+"symbols": {
+"command": {
+"max": 100,
+"map": {
+"100": "cc_create",
+"200": "cc_find",
+"1112": "cc_settext"
+},
+"vartype": {},
+"protect": {},
+"require": {
+"1112": "active_component"
+},
+"require2": {
+"1112": "active_component2"
+},
+"conditional": {
+"200": true
+},
+"set": {
+"100": "active_component",
+"200": "active_component"
+},
+"set2": {
+"100": "active_component2",
+"200": "active_component2"
+},
+"corrupt": {},
+"corrupt2": {}
+},
+"runescript": {
+"max": 100,
+"map": {
+"0": "[clientscript,ok]",
+"1": "[clientscript,bad]",
+"2": "[clientscript,dot]"
+},
+"vartype": {},
+"protect": {},
+"require": {},
+"require2": {},
+"conditional": {},
+"set": {},
+"set2": {},
+"corrupt": {},
+"corrupt2": {}
+},
+"component": {
+"max": 100,
+"map": {
+"0": "bank:close"
+},
+"vartype": {},
+"protect": {},
+"require": {},
+"require2": {},
+"conditional": {},
+"set": {},
+"set2": {},
+"corrupt": {},
+"corrupt2": {}
+}
+},
+"features": {},
+"dialect": "client",
+"files": [
+{
+"name": "aa_prelude.cs2",
+"text": "[command,cc_create](component $layer, int $type, int $sub)\n[command,cc_find](component $layer, int $sub)(boolean)\n[command,cc_settext](string $text)\n"
+},
+{
+"name": "case.cs2",
+"text": "[clientscript,dot] .cc_create(bank:close, 4, 1); .cc_settext(\"x\"); cc_settext(\"y\");"
+}
+]
 }
 ]

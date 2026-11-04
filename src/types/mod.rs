@@ -74,6 +74,7 @@ pub enum TypeKind {
     VarNpc { inner: TypeId },
     VarObj { inner: TypeId },
     VarShared { inner: TypeId },
+    VarClient { inner: TypeId },
     Param { inner: TypeId },
     DbColumn { inner: TypeId },
 }
@@ -89,6 +90,7 @@ impl TypeKind {
             | TypeKind::VarNpc { inner }
             | TypeKind::VarObj { inner }
             | TypeKind::VarShared { inner }
+            | TypeKind::VarClient { inner }
             | TypeKind::Param { inner }
             | TypeKind::DbColumn { inner } => Some(inner),
             _ => None,
@@ -102,7 +104,7 @@ impl TypeKind {
     pub fn is_game_var(&self) -> bool {
         matches!(
             self,
-            TypeKind::VarPlayer { .. } | TypeKind::VarBit { .. } | TypeKind::VarNpc { .. } | TypeKind::VarObj { .. } | TypeKind::VarShared { .. }
+            TypeKind::VarPlayer { .. } | TypeKind::VarBit { .. } | TypeKind::VarNpc { .. } | TypeKind::VarObj { .. } | TypeKind::VarShared { .. } | TypeKind::VarClient { .. }
         )
     }
 }
@@ -218,6 +220,15 @@ fn builtins() -> Vec<TypeData> {
 mod tests {
     use super::*;
     use crate::runescript::types as sv;
+
+    #[test]
+    fn varc_is_game_var() {
+        assert!(TypeKind::VarClient { inner: INT }.is_game_var());
+        assert_eq!(TypeKind::VarClient { inner: INT }.inner(), Some(INT));
+        let mut t = TypeManager::new();
+        let v = t.var_client(STRING);
+        assert_eq!(t[v].representation, "varc<string>");
+    }
 
     #[test]
     fn builtin_codes_and_representations() {

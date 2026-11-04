@@ -398,5 +398,8 @@
 {"ir":["4ccedd7eb6dfaddf","640d02f667c88367","4649d6ecdc365639"],"codegenDiagnostics":[],"pointerDiagnostics":[],"bytes":{"dat":"a8c80d32281a5d74","idx":"4d25767f9dce13f5","js5":"d3e71e6e04b8ff94","bin":{"-1":"c24fc476dd90da24"}}},
 {"stopped":"analyze","analyzeDiagnostics":[["WARNING","case.rs2",4,186,"unused value: this expression has no effect"],["ERROR","case.rs2",4,315,"cannot jump to a label from inside a proc"],["WARNING","case.rs2",5,12,"unused value: this expression has no effect"]]},
 {"ir":["ef63095b20b4153a","4becca9b1d1e82aa","f61295ab2ae95eb1","96796b80281e8d04","c8c99ec2f3c6df5a","ba32f02240f9f233","42a7da1ff65b3b44"],"codegenDiagnostics":[],"pointerDiagnostics":[["ERROR","case.rs2",7,77]],"stopped":"pointers"},
-{"stopped":"pointers","ir":["4ccedd7eb6dfaddf","7251755d5ba45de3","aa72fd17e02957b8","a5eb8f1fb59cd41e"],"codegenDiagnostics":[],"pointerDiagnostics":[["ERROR","case.rs2",4,95],["ERROR","case.rs2",4,209],["ERROR","case.rs2",4,183]]}
+{"stopped":"pointers","ir":["4ccedd7eb6dfaddf","7251755d5ba45de3","aa72fd17e02957b8","a5eb8f1fb59cd41e"],"codegenDiagnostics":[],"pointerDiagnostics":[["ERROR","case.rs2",4,95],["ERROR","case.rs2",4,209],["ERROR","case.rs2",4,183]]},
+{"ir":["974bddd58235c038"],"codegenDiagnostics":[],"pointerDiagnostics":[],"bytes":{"dat":"17bd3cd624a4f0f9","idx":"9c194d07aacb2e8a","js5":"9ab2b15adf60f77e","bin":{"0":"2245fe1d23b40f47"}}},
+{"ir":["e5f682a7f178c080"],"codegenDiagnostics":[],"pointerDiagnostics":[["ERROR","case.cs2",1,20]],"stopped":"pointers"},
+{"ir":["ec9c70082ed495c4"],"codegenDiagnostics":[],"pointerDiagnostics":[["ERROR","case.cs2",1,68]],"stopped":"pointers"}
 ]

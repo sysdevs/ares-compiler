@@ -142,6 +142,11 @@ impl TypeManager {
         self.alloc(rep, TypeKind::VarObj { inner })
     }
 
+    pub fn var_client(&mut self, inner: TypeId) -> TypeId {
+        let rep = format!("varc<{}>", self.rep(inner));
+        self.alloc(rep, TypeKind::VarClient { inner })
+    }
+
     pub fn var_shared(&mut self, inner: TypeId) -> TypeId {
         let rep = format!("vars<{}>", self.rep(inner));
         self.alloc(rep, TypeKind::VarShared { inner })

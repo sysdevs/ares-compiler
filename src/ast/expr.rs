@@ -46,6 +46,17 @@ pub struct CommandCallExpression {
     pub arguments: Vec<Expression>,
     pub arguments2: Option<Vec<Expression>>,
     pub symbol: Option<SymbolId>,
+    /// A client hook setter's checked hook string (see [`crate::hook`]).
+    pub hook: Option<Box<Hook>>,
+}
+
+/// A typed client hook string: the `[clientscript]` call it names (a
+/// [`CommandCallExpression`] whose symbol is the script) and its trigger names
+/// with the var/inv/stat symbol each resolved to.
+#[derive(Clone, PartialEq, Debug)]
+pub struct Hook {
+    pub call: Expression,
+    pub triggers: Vec<(String, Option<SymbolId>)>,
 }
 
 /// `ProcCallExpression` / `JumpCallExpression`.

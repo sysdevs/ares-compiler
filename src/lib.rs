@@ -13,10 +13,11 @@
 //! | `semantics::{registration,typecheck}` | script registration and type checking |
 //! | `codegen` (+ `codegen::pointer`) | instruction generation and pointer checking |
 //! | `writer` | binary script and pack writers |
-//! | `compiler` | source discovery and the stage pipeline |
-//! | `runescript::*` | server compiler setup, symbol loaders, command handlers, triggers |
+//! | `compiler` | source discovery, the stage pipeline and the [`Dialect`] (server `.rs2` / client `.cs2`) |
+//! | `hook` | client hook strings (`script(args){triggers}`) |
+//! | `runescript::*` | compiler setup, symbol loaders, command handlers, server and client triggers |
 
-pub use compiler::{analyze_parsed, recheck_file, same_headers};
+pub use compiler::{analyze_parsed, recheck_file, same_headers, Dialect};
 pub use runescript::compiler::{analyze, compile, compile_server_script, Config, WriterConfig};
 
 pub mod ast;
@@ -24,6 +25,7 @@ pub mod codegen;
 pub mod compiler;
 pub mod diagnostics;
 pub mod features;
+pub mod hook;
 pub mod lexer;
 pub mod parser;
 pub mod pointer;

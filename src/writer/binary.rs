@@ -237,6 +237,13 @@ impl Writer<'_> {
                     (TypeKind::VarNpc { .. }, false) => op::POP_VARN,
                     (TypeKind::VarObj { .. }, false) => op::POP_VARO,
                     (TypeKind::VarShared { .. }, false) => op::POP_VARS,
+                    // A varc reads and writes by its value's stack.
+                    (TypeKind::VarClient { inner }, push) => match (types[*inner].base_type, push) {
+                        (Some(BaseVarType::String), true) => op::GET_VARC_STRING,
+                        (Some(BaseVarType::String), false) => op::SET_VARC_STRING,
+                        (_, true) => op::GET_VARC_INT,
+                        (_, false) => op::SET_VARC_INT,
+                    },
                     _ => return Err(FatalError("Unsupported variable type.".into())),
                 };
                 let dot = matches!(opcode, Opcode::PushVar2 | Opcode::PopVar2);

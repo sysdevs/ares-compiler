@@ -58,7 +58,7 @@ impl Registration<'_> {
 
     /// `reuse`: the symbol this script already has (`Some(None)`: it was a redeclaration).
     fn script(&mut self, script: &mut Script, scope: ScopeId, reuse: Option<Option<SymbolId>>) {
-        let trigger = crate::trigger::by_name(&script.trigger.text);
+        let trigger = crate::trigger::by_name(&script.trigger.text, self.c.dialect);
         match trigger {
             None => self.diagnostics.error(&script.trigger.source, msg::SCRIPT_TRIGGER_INVALID, args(&[&script.trigger.text])),
             Some(t) => {

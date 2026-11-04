@@ -83,6 +83,24 @@ pub enum SourceNames {
     Prefixed(&'static str),
 }
 
+/// Which script language a compile accepts: server `.rs2` or client `.cs2`.
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Default)]
+pub enum Dialect {
+    #[default]
+    Server,
+    Client,
+}
+
+impl Dialect {
+    /// The source file extension, without the dot.
+    pub fn extension(self) -> &'static str {
+        match self {
+            Dialect::Server => "rs2",
+            Dialect::Client => "cs2",
+        }
+    }
+}
+
 /// The pipeline stage that stopped compilation.
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
 pub enum Stage {
@@ -103,7 +121,7 @@ pub struct Output {
     /// pointer table is empty.
     pub packs: Option<pack::Packs>,
     pub scripts_written: usize,
-    /// The `.rs2` sources as read, for rendering diagnostics.
+    /// The script sources (`.rs2`/`.cs2`) as read, for rendering diagnostics.
     pub sources: Vec<SourceFile>,
 }
 
@@ -213,8 +231,9 @@ fn parse_sources(c: &ServerScriptCompiler, sources: &[(String, String)], parse: 
         }
     }
     let mut files = Vec::new();
+    let ext = format!(".{}", c.dialect.extension());
     for (name, raw) in sources {
-        if !name.ends_with(".rs2") {
+        if !name.ends_with(&ext) {
             continue;
         }
         let expanded;
@@ -344,7 +363,7 @@ pub fn run(
     };
     let mut sources = Vec::new();
     for (path, name) in files_by_source.iter().flatten() {
-        if name.ends_with(".rs2") || (c.features.macros && name.ends_with(".macro")) {
+        if name.ends_with(&format!(".{}", c.dialect.extension())) || (c.features.macros && name.ends_with(".macro")) {
             sources.push((name.clone(), read(path)?));
         }
     }
@@ -353,7 +372,7 @@ pub fn run(
     let mut files = parse_sources(c, &sources, &mut parse, &mut expansions)?;
     output.sources = sources
         .into_iter()
-        .filter(|(name, _)| name.ends_with(".rs2"))
+        .filter(|(name, _)| name.ends_with(&format!(".{}", c.dialect.extension())))
         .map(|(name, text)| SourceFile { expansions: expansions.remove(&name).unwrap_or_default(), name, text })
         .collect();
     if stop(&mut output, Stage::Parse, parse) {

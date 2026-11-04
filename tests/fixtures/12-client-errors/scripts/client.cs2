@@ -1,0 +1,8 @@
+[clientscript,wornitemstats_init](component $stats)
+mes("init");
+
+[proc,wornitemstats_draw](component $stats)
+mes("draw");
+
+[clientscript,events]
+mes("events");

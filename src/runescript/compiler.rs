@@ -2,6 +2,7 @@
 //! handlers) plus symbol loading. Registration order is load order, and load order
 //! is the root table's `SymbolType` order, which decides `find_all` resolution.
 
+use crate::compiler::Dialect;
 use std::collections::HashMap;
 
 use indexmap::IndexMap;
@@ -9,7 +10,7 @@ use indexmap::IndexMap;
 use crate::FatalError;
 use crate::features::StrictFeatureLevel;
 use crate::pointer::{PointerHolder, PointerType};
-use crate::runescript::commands::CommandHandler;
+use crate::runescript::commands::{CommandHandler, HookTriggers};
 use crate::runescript::loaders::{SymbolLoader, TypeSupplier};
 use crate::runescript::symbol_mapper::SymbolMapper;
 use crate::runescript::triggers;
@@ -24,6 +25,7 @@ pub struct ServerScriptCompiler {
     pub tables: SymbolTables,
     pub mapper: SymbolMapper,
     pub features: StrictFeatureLevel,
+    pub dialect: Dialect,
     /// Command name (`.name` for the secondary form) → pointer requirements.
     pub command_pointers: IndexMap<String, PointerHolder>,
     /// Command name → handler.
@@ -39,12 +41,14 @@ impl ServerScriptCompiler {
         mapper: SymbolMapper,
         command_pointers: IndexMap<String, PointerHolder>,
         features: StrictFeatureLevel,
+        dialect: Dialect,
     ) -> Result<Self, FatalError> {
         let mut c = Self {
             types: TypeManager::new(),
             tables: SymbolTables::default(),
             mapper,
             features,
+            dialect,
             command_pointers,
             dynamic_commands: HashMap::new(),
             symbols,
@@ -203,6 +207,24 @@ impl ServerScriptCompiler {
         let varbit = self.types.var_bit(ANY);
         self.types.register_as("varbit", varbit)?;
         self.loader("varbit", TypeSupplier::VarBit, true);
+        // After varp and varbit: `%name` takes the first game var in load order.
+        if self.dialect == Dialect::Client {
+            let varc = self.types.var_client(ANY);
+            self.types.register_as("varc", varc)?;
+            self.loader("varc", TypeSupplier::VarClient, false);
+            self.loaders.push(SymbolLoader::Event);
+            for (event, kind) in [
+                ("click", HookTriggers::None), ("hold", HookTriggers::None), ("release", HookTriggers::None),
+                ("mouseover", HookTriggers::None), ("mouseleave", HookTriggers::None), ("drag", HookTriggers::None),
+                ("vartransmit", HookTriggers::Var), ("timer", HookTriggers::None), ("op", HookTriggers::None),
+                ("dragcomplete", HookTriggers::None), ("mouserepeat", HookTriggers::None), ("invtransmit", HookTriggers::Inv),
+                ("stattransmit", HookTriggers::Stat), ("scrollwheel", HookTriggers::None), ("key", HookTriggers::None),
+            ] {
+                for prefix in ["cc", ".cc", "if", ".if"] {
+                    self.handlers(&[(&format!("{prefix}_seton{event}"), CommandHandler::Hook(kind))])?;
+                }
+            }
+        }
         self.handlers(&[
             ("weakqueue", CommandHandler::Queue(queue)),
             (".weakqueue", CommandHandler::Queue(queue)),
@@ -406,6 +428,8 @@ pub struct Config {
     pub symbols: IndexMap<String, CompilerTypeInfo>,
     pub check_pointers: bool,
     pub features: StrictFeatureLevel,
+    /// Server `.rs2` (default) or client `.cs2` scripts.
+    pub dialect: Dialect,
     pub writer: WriterConfig,
     pub source_names: crate::compiler::SourceNames,
 }
@@ -418,6 +442,7 @@ impl Default for Config {
             symbols: IndexMap::new(),
             check_pointers: true,
             features: StrictFeatureLevel::default(),
+            dialect: Dialect::Server,
             writer: WriterConfig::Jag {
                 output: "./data/pack/server".into(),
             },
@@ -440,7 +465,7 @@ pub fn new_compiler(config: &Config) -> Result<ServerScriptCompiler, FatalError>
     };
     let mut mapper = SymbolMapper::default();
     let pointers = load_special_symbols(command, runescript, &mut mapper, config.check_pointers)?;
-    ServerScriptCompiler::new(config.symbols.clone(), mapper, pointers, config.features)
+    ServerScriptCompiler::new(config.symbols.clone(), mapper, pointers, config.features, config.dialect)
 }
 
 /// Compiles in memory ([`compile_server_script`] without the file writes).

@@ -1,0 +1,270 @@
+{
+ "command": {
+  "max": 20000,
+  "map": {
+   "100": "cc_create",
+   "101": "cc_delete",
+   "102": "cc_deleteall",
+   "200": "cc_find",
+   "1000": "cc_setposition",
+   "1001": "cc_setsize",
+   "1003": "cc_sethide",
+   "1101": "cc_setcolour",
+   "1112": "cc_settext",
+   "1407": "cc_setonvartransmit",
+   "1408": "cc_setontimer",
+   "1702": "cc_getid",
+   "2003": "if_sethide",
+   "2112": "if_settext",
+   "2407": "if_setonvartransmit",
+   "2408": "if_setontimer",
+   "2409": "if_setonop",
+   "2414": "if_setoninvtransmit",
+   "2415": "if_setonstattransmit",
+   "3100": "mes",
+   "3300": "clientclock",
+   "3301": "inv_getobj",
+   "3304": "inv_size",
+   "3305": "stat",
+   "4106": "tostring",
+   "4200": "oc_name",
+   "6512": "oc_param"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {
+   "101": "active_component",
+   "1000": "active_component",
+   "1001": "active_component",
+   "1003": "active_component",
+   "1101": "active_component",
+   "1112": "active_component",
+   "1407": "active_component",
+   "1408": "active_component",
+   "1702": "active_component"
+  },
+  "require2": {
+   "101": "active_component2",
+   "1000": "active_component2",
+   "1001": "active_component2",
+   "1003": "active_component2",
+   "1101": "active_component2",
+   "1112": "active_component2",
+   "1407": "active_component2",
+   "1408": "active_component2",
+   "1702": "active_component2"
+  },
+  "conditional": {
+   "200": true
+  },
+  "set": {
+   "100": "active_component",
+   "200": "active_component"
+  },
+  "set2": {
+   "100": "active_component2",
+   "200": "active_component2"
+  },
+  "corrupt": {
+   "101": "active_component"
+  },
+  "corrupt2": {
+   "101": "active_component2"
+  }
+ },
+ "runescript": {
+  "max": 100,
+  "map": {
+   "0": "[clientscript,wornitemstats_init]",
+   "1": "[proc,wornitemstats_draw]",
+   "2": "[clientscript,varc_ops]",
+   "3": "[clientscript,events]",
+   "4": "[clientscript,hooks]",
+   "5": "[clientscript,dyn]",
+   "6": "[clientscript,wornitemstats_redraw]",
+   "7": "[clientscript,hook_errors]",
+   "8": "[clientscript,hook_args]"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "constant": {
+  "max": 0,
+  "map": {
+   "iftype_text": "4",
+   "setpos_abs_left": "0",
+   "setsize_abs": "0"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "component": {
+  "max": 2,
+  "map": {
+   "0": "wornitemstats:stats",
+   "1": "wornitemstats:stabsatt"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "interface": {
+  "max": 1,
+  "map": {
+   "0": "wornitemstats"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "inv": {
+  "max": 1,
+  "map": {
+   "0": "worn"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "obj": {
+  "max": 1,
+  "map": {
+   "0": "bronze_sword"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "param": {
+  "max": 1,
+  "map": {
+   "0": "stabattack"
+  },
+  "vartype": {
+   "0": "int"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "stat": {
+  "max": 1,
+  "map": {
+   "0": "attack"
+  },
+  "vartype": {},
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varp": {
+  "max": 1,
+  "map": {
+   "0": "playtime"
+  },
+  "vartype": {
+   "0": "int"
+  },
+  "protect": {
+   "0": false
+  },
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varbit": {
+  "max": 2,
+  "map": {
+   "0": "flag_bit",
+   "1": "shared_name"
+  },
+  "vartype": {
+   "0": "int",
+   "1": "int"
+  },
+  "protect": {
+   "0": false,
+   "1": false
+  },
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ },
+ "varc": {
+  "max": 3,
+  "map": {
+   "0": "tooltip_time",
+   "1": "search_text",
+   "2": "shared_name"
+  },
+  "vartype": {
+   "0": "int",
+   "1": "string",
+   "2": "string"
+  },
+  "protect": {},
+  "require": {},
+  "require2": {},
+  "conditional": {},
+  "set": {},
+  "set2": {},
+  "corrupt": {},
+  "corrupt2": {}
+ }
+}

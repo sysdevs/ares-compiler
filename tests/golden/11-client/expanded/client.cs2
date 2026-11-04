@@ -1,0 +1,62 @@
+[clientscript,wornitemstats_init](component $stats)
+~wornitemstats_draw($stats);
+if_setoninvtransmit("wornitemstats_redraw($stats){worn}", $stats);
+
+[clientscript,wornitemstats_redraw](component $stats)
+~wornitemstats_draw($stats);
+
+[proc,wornitemstats_draw](component $stats)
+def_int $i = 0;
+def_int $total = 0;
+def_int $size = inv_size(worn);
+while ($i < $size) {
+    def_obj $obj = inv_getobj(worn, $i);
+    if ($obj ! null) {
+        $total = calc($total + oc_param($obj, stabattack));
+    }
+    $i = calc($i + 1);
+}
+if_settext("Stab: +<tostring($total)>", wornitemstats:stabsatt);
+
+[clientscript,varc_ops]
+%tooltip_time = clientclock;
+%search_text = "abc";
+if (%tooltip_time > 5) {
+    mes(%search_text);
+}
+%playtime = 1;
+def_int $shared = %shared_name;
+
+[clientscript,events]
+if_sethide(true, event_com);
+mes(tostring(event_op));
+mes(tostring(event_comsubid));
+mes(tostring(event_mousex));
+mes(tostring(event_keycode));
+
+[clientscript,hooks]
+if_setonvartransmit("varc_ops{playtime, flag_bit, tooltip_time}", wornitemstats:stats);
+if_setonstattransmit("events{attack}", wornitemstats:stats);
+if_setontimer("events", wornitemstats:stats);
+if_setonop("wornitemstats_init(event_com)", wornitemstats:stats);
+if_setonop(null, wornitemstats:stats);
+
+[clientscript,dyn]
+cc_deleteall(wornitemstats:stats);
+cc_create(wornitemstats:stats, ^iftype_text, 0);
+cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_left);
+cc_setsize(10, 10, ^setsize_abs, ^setsize_abs);
+cc_settext("hi");
+cc_setontimer("dyn");
+if (cc_find(wornitemstats:stats, 0) = true) {
+    cc_setcolour(0xff981f);
+    cc_sethide(false);
+}
+.cc_create(wornitemstats:stats, ^iftype_text, 1);
+.cc_settext("two");
+cc_setonvartransmit("varc_ops{tooltip_time}");
+def_string $text = "t";
+cc_setontimer("hook_args(cc_getid, .cc_getid, event_opbase, $text)");
+
+[clientscript,hook_args](int $a, int $b, string $s, string $t)
+mes($s);

@@ -55,6 +55,12 @@ pub const BINOP_TUPLE_TYPE: &str = "%s side of a binary expression must be a sin
 // Call expression specific
 pub const COMMAND_REFERENCE_UNRESOLVED: &str = "cannot find command `%s`";
 pub const COMMAND_NOARGS_EXPECTED: &str = "command `%s` takes no arguments, found `%s`";
+pub const HOOK_REFERENCE_UNRESOLVED: &str = "cannot find clientscript `%s`";
+pub const HOOK_NOARGS_EXPECTED: &str = "clientscript `%s` takes no arguments, found `%s`";
+pub const HOOK_INVALID_CALL: &str = "a hook names a clientscript: `script` or `script(args)`";
+pub const HOOK_NOT_LITERAL: &str = "a hook must be a string literal (without `<...>` interpolation) or `null`";
+pub const HOOK_NO_TRIGGERS: &str = "this hook takes no trigger list";
+pub const HOOK_TRIGGER_INVALID: &str = "`%s` is not a %s";
 pub const PROC_REFERENCE_UNRESOLVED: &str = "cannot find proc `~%s`";
 pub const PROC_NOARGS_EXPECTED: &str = "proc `~%s` takes no arguments, found `%s`";
 pub const JUMP_REFERENCE_UNRESOLVED: &str = "cannot find label `@%s`";

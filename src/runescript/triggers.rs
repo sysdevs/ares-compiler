@@ -1,6 +1,6 @@
 //! The 156 server triggers in declaration order. `identifier` is the lowercased
 //! constant name. Numeric ids are not unique (`INV_BUTTON1` and `IF_BUTTON1` are
-//! both 149), so identity is [`TriggerId`], never `id`. PROC/LABEL allow all 24
+//! both 149), so identity is [`TriggerId`], never `id`. PROC/LABEL allow all 26
 //! pointers.
 
 use crate::pointer::PointerType;

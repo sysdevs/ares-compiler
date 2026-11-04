@@ -120,11 +120,37 @@ def case():
     return "\n".join(scripts)
 
 
+# Client dialect: cc_create/cc_find set active_component, cc_settext requires it.
+CLIENT_CMDS = {"cc_create": "100", "cc_find": "200", "cc_settext": "1112"}
+CLIENT_SYMBOLS = {
+    "command": info({v: k for k, v in CLIENT_CMDS.items()},
+                    set={"100": "active_component", "200": "active_component"},
+                    set2={"100": "active_component2", "200": "active_component2"},
+                    conditional={"200": True},
+                    require={"1112": "active_component"},
+                    require2={"1112": "active_component2"}),
+    "runescript": info({"0": "[clientscript,ok]", "1": "[clientscript,bad]", "2": "[clientscript,dot]"}),
+    "component": info({"0": "bank:close"}),
+}
+CLIENT_PRELUDE = """[command,cc_create](component $layer, int $type, int $sub)
+[command,cc_find](component $layer, int $sub)(boolean)
+[command,cc_settext](string $text)
+"""
+CLIENT_CASES = [
+    "[clientscript,ok] cc_create(bank:close, 4, 0); cc_settext(\"x\");",
+    "[clientscript,bad] cc_settext(\"x\");",
+    "[clientscript,dot] .cc_create(bank:close, 4, 1); .cc_settext(\"x\"); cc_settext(\"y\");",
+]
+
+
 def main():
     inputs = []
     for i in range(400):
         features = {} if i % 4 else {"pointerInversion": False}
         inputs.append({"symbols": SYMBOLS, "features": features, "files": [{"name": "aa_prelude.rs2", "text": PRELUDE}, {"name": "case.rs2", "text": case()}]})
+    for text in CLIENT_CASES:
+        inputs.append({"symbols": CLIENT_SYMBOLS, "features": {}, "dialect": "client",
+                       "files": [{"name": "aa_prelude.cs2", "text": CLIENT_PRELUDE}, {"name": "case.cs2", "text": text}]})
     out = Path("tests/pointers/inputs.json")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(inputs, ensure_ascii=False, indent=0) + "\n", encoding="utf-8")

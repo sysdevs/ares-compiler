@@ -295,6 +295,168 @@ mes("unterminated
 }
 
 
+# The client dialect (`.cs2`): its own command table (Jagex client opcodes from
+# ares_shared::client_opcode) and tables. `cc_*` pointer rules: cc_create and
+# cc_find set active_component, cc_deleteall has none, the rest require it.
+CLIENT_COMMAND_IDS = {
+    "cc_create": 100, "cc_delete": 101, "cc_deleteall": 102, "cc_find": 200,
+    "cc_setposition": 1000, "cc_setsize": 1001, "cc_sethide": 1003, "cc_setcolour": 1101, "cc_settext": 1112,
+    "cc_setonvartransmit": 1407, "cc_setontimer": 1408, "cc_getid": 1702,
+    "if_sethide": 2003, "if_settext": 2112, "if_setonvartransmit": 2407, "if_setontimer": 2408, "if_setonop": 2409,
+    "if_setoninvtransmit": 2414, "if_setonstattransmit": 2415,
+    "mes": 3100, "clientclock": 3300, "inv_getobj": 3301, "inv_size": 3304, "stat": 3305,
+    "tostring": 4106, "oc_name": 4200, "oc_param": 6512,
+}
+_cc = {str(i): n for n, i in CLIENT_COMMAND_IDS.items()}
+_set = {str(i): "active_component" for n, i in CLIENT_COMMAND_IDS.items() if n in ("cc_create", "cc_find")}
+_set2 = {k: "active_component2" for k in _set}
+_req = {str(i): "active_component" for n, i in CLIENT_COMMAND_IDS.items() if n.startswith("cc_") and n not in ("cc_create", "cc_find", "cc_deleteall")}
+_req2 = {k: "active_component2" for k in _req}
+# cc_delete removes the active component.
+_corrupt = {str(CLIENT_COMMAND_IDS["cc_delete"]): "active_component"}
+_corrupt2 = {str(CLIENT_COMMAND_IDS["cc_delete"]): "active_component2"}
+
+CLIENT_SYMBOLS = {
+    "command": info(20000, _cc, set=_set, set2=_set2, require=_req, require2=_req2, corrupt=_corrupt, corrupt2=_corrupt2, conditional={str(CLIENT_COMMAND_IDS["cc_find"]): True}),
+    "runescript": info(
+        100,
+        {
+            "0": "[clientscript,wornitemstats_init]", "1": "[proc,wornitemstats_draw]", "2": "[clientscript,varc_ops]",
+            "3": "[clientscript,events]", "4": "[clientscript,hooks]", "5": "[clientscript,dyn]",
+            "6": "[clientscript,wornitemstats_redraw]", "7": "[clientscript,hook_errors]", "8": "[clientscript,hook_args]",
+        },
+    ),
+    "constant": info(0, {"iftype_text": "4", "setpos_abs_left": "0", "setsize_abs": "0"}),
+    "component": info(2, {"0": "wornitemstats:stats", "1": "wornitemstats:stabsatt"}),
+    "interface": info(1, {"0": "wornitemstats"}),
+    "inv": info(1, {"0": "worn"}),
+    "obj": info(1, {"0": "bronze_sword"}),
+    "param": info(1, {"0": "stabattack"}, vartype={"0": "int"}),
+    "stat": info(1, {"0": "attack"}),
+    "varp": info(1, {"0": "playtime"}, vartype={"0": "int"}, protect={"0": False}),
+    "varbit": info(2, {"0": "flag_bit", "1": "shared_name"}, vartype={"0": "int", "1": "int"}, protect={"0": False, "1": False}),
+    # `shared_name` is both a varbit and a varc: `%shared_name` is the varbit (varp, varbit, varc order).
+    "varc": info(3, {"0": "tooltip_time", "1": "search_text", "2": "shared_name"}, vartype={"0": "int", "1": "string", "2": "string"}),
+}
+
+CLIENT_COMMANDS = """[command,cc_create](component $layer, int $type, int $sub)
+[command,cc_delete]
+[command,cc_deleteall](component $layer)
+[command,cc_find](component $layer, int $sub)(boolean)
+[command,cc_settext](string $text)
+[command,cc_sethide](boolean $hide)
+[command,cc_setposition](int $x, int $y, int $xmode, int $ymode)
+[command,cc_setsize](int $w, int $h, int $wmode, int $hmode)
+[command,cc_setcolour](int $colour)
+[command,cc_getid]()(int)
+[command,cc_setontimer](string $hook)
+[command,cc_setonvartransmit](string $hook)
+[command,if_settext](string $text, component $com)
+[command,if_sethide](boolean $hide, component $com)
+[command,if_setoninvtransmit](string $hook, component $com)
+[command,if_setonvartransmit](string $hook, component $com)
+[command,if_setonstattransmit](string $hook, component $com)
+[command,if_setontimer](string $hook, component $com)
+[command,if_setonop](string $hook, component $com)
+[command,inv_getobj](inv $inv, int $slot)(obj)
+[command,inv_size](inv $inv)(int)
+[command,oc_param](obj $obj, param $param)(any)
+[command,oc_name](obj $obj)(string)
+[command,stat](stat $stat)(int)
+[command,clientclock]()(int)
+[command,tostring](int $value)(string)
+[command,mes](string $text)
+"""
+
+CLIENT_CASES: dict[str, dict[str, str | bytes]] = {
+    "11-client": {
+        "client.cs2": """[clientscript,wornitemstats_init](component $stats)
+~wornitemstats_draw($stats);
+if_setoninvtransmit("wornitemstats_redraw($stats){worn}", $stats);
+
+[clientscript,wornitemstats_redraw](component $stats)
+~wornitemstats_draw($stats);
+
+[proc,wornitemstats_draw](component $stats)
+def_int $i = 0;
+def_int $total = 0;
+def_int $size = inv_size(worn);
+while ($i < $size) {
+    def_obj $obj = inv_getobj(worn, $i);
+    if ($obj ! null) {
+        $total = calc($total + oc_param($obj, stabattack));
+    }
+    $i = calc($i + 1);
+}
+if_settext("Stab: +<tostring($total)>", wornitemstats:stabsatt);
+
+[clientscript,varc_ops]
+%tooltip_time = clientclock;
+%search_text = "abc";
+if (%tooltip_time > 5) {
+    mes(%search_text);
+}
+%playtime = 1;
+def_int $shared = %shared_name;
+
+[clientscript,events]
+if_sethide(true, event_com);
+mes(tostring(event_op));
+mes(tostring(event_comsubid));
+mes(tostring(event_mousex));
+mes(tostring(event_keycode));
+
+[clientscript,hooks]
+if_setonvartransmit("varc_ops{playtime, flag_bit, tooltip_time}", wornitemstats:stats);
+if_setonstattransmit("events{attack}", wornitemstats:stats);
+if_setontimer("events", wornitemstats:stats);
+if_setonop("wornitemstats_init(event_com)", wornitemstats:stats);
+if_setonop(null, wornitemstats:stats);
+
+[clientscript,dyn]
+cc_deleteall(wornitemstats:stats);
+cc_create(wornitemstats:stats, ^iftype_text, 0);
+cc_setposition(0, 0, ^setpos_abs_left, ^setpos_abs_left);
+cc_setsize(10, 10, ^setsize_abs, ^setsize_abs);
+cc_settext("hi");
+cc_setontimer("dyn");
+if (cc_find(wornitemstats:stats, 0) = true) {
+    cc_setcolour(0xff981f);
+    cc_sethide(false);
+}
+.cc_create(wornitemstats:stats, ^iftype_text, 1);
+.cc_settext("two");
+cc_setonvartransmit("varc_ops{tooltip_time}");
+def_string $text = "t";
+cc_setontimer("hook_args(cc_getid, .cc_getid, event_opbase, $text)");
+
+[clientscript,hook_args](int $a, int $b, string $s, string $t)
+mes($s);
+""",
+    },
+    "12-client-errors": {
+        "client.cs2": """[clientscript,wornitemstats_init](component $stats)
+mes("init");
+
+[proc,wornitemstats_draw](component $stats)
+mes("draw");
+
+[clientscript,events]
+mes("events");
+""",
+        "errors.cs2": """[clientscript,hook_errors]
+if_setontimer("wornitemstats_draw(wornitemstats:stats)", wornitemstats:stats);
+if_setontimer("wornitemstats_init(5)", wornitemstats:stats);
+if_setontimer("events{attack}", wornitemstats:stats);
+if_setonvartransmit("events{bronze_sword}", wornitemstats:stats);
+def_string $hook = "events";
+if_setontimer($hook, wornitemstats:stats);
+if_setontimer("~wornitemstats_draw(wornitemstats:stats)", wornitemstats:stats);
+""",
+    },
+}
+
+
 def main() -> None:
     for case, files in CASES.items():
         d = ROOT / case / "scripts"
@@ -307,7 +469,14 @@ def main() -> None:
                 p.write_bytes(body)
             else:
                 p.write_text(body, encoding="utf-8", newline="\n")
-    print(f"wrote {len(CASES)} cases under {ROOT}")
+    for case, files in CLIENT_CASES.items():
+        d = ROOT / case / "scripts"
+        d.mkdir(parents=True, exist_ok=True)
+        (ROOT / case / "symbols.json").write_text(json.dumps(CLIENT_SYMBOLS, indent=1) + "\n", encoding="utf-8")
+        (d / "aa_commands.cs2").write_text(CLIENT_COMMANDS, encoding="utf-8", newline="\n")
+        for name, body in files.items():
+            (d / name).write_text(body, encoding="utf-8", newline="\n")
+    print(f"wrote {len(CASES) + len(CLIENT_CASES)} cases under {ROOT}")
 
 
 if __name__ == "__main__":

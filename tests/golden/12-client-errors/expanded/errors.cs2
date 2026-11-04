@@ -1,0 +1,8 @@
+[clientscript,hook_errors]
+if_setontimer("wornitemstats_draw(wornitemstats:stats)", wornitemstats:stats);
+if_setontimer("wornitemstats_init(5)", wornitemstats:stats);
+if_setontimer("events{attack}", wornitemstats:stats);
+if_setonvartransmit("events{bronze_sword}", wornitemstats:stats);
+def_string $hook = "events";
+if_setontimer($hook, wornitemstats:stats);
+if_setontimer("~wornitemstats_draw(wornitemstats:stats)", wornitemstats:stats);

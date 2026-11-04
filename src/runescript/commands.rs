@@ -24,6 +24,17 @@ pub enum CommandHandler {
     DbGetField,
     Dump,
     Script,
+    /// A client `*_seton*` setter; the first argument is a hook string.
+    Hook(HookTriggers),
+}
+
+/// What a hook's `{...}` trigger list names.
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
+pub enum HookTriggers {
+    None,
+    Var,
+    Inv,
+    Stat,
 }
 
 type R<T = ()> = Result<T, FatalError>;
@@ -152,6 +163,7 @@ impl CommandHandler {
                 ctx.set_type(Some(STRING));
                 Ok(())
             }
+            CommandHandler::Hook(kind) => ctx.check_hook(kind),
             CommandHandler::Script => {
                 ctx.check_argument_types(UNIT, true, false)?;
                 ctx.set_type(Some(STRING));
@@ -265,6 +277,48 @@ impl CommandHandler {
                 let (trigger, name) = ctx.script_header().clone();
                 ctx.instruction(Opcode::PushConstantString, Operand::String(format!("[{trigger}, {name}]")));
                 Ok(())
+            }
+            CommandHandler::Hook(_) => {
+                // The client layout: script id, its arguments, the trigger ids and
+                // their count, then a descriptor (one type code per argument,
+                // `Y` when triggers follow); `null` is `-1` and `""`.
+                let args = ctx.arguments();
+                match ctx.hook() {
+                    None => {
+                        ctx.instruction(Opcode::PushConstantInt, Operand::Int(-1));
+                        ctx.instruction(Opcode::PushConstantString, Operand::String(String::new()));
+                    }
+                    Some(hook) => {
+                        let Expression::CommandCall(call) = &hook.call else { return Err(FatalError("Hook call is not a call.".into())) };
+                        // An unresolved script or trigger was reported by the
+                        // checker (the compile stops there); still generate.
+                        match call.symbol {
+                            Some(script) => ctx.instruction(Opcode::PushConstantSymbol, Operand::Symbol(script)),
+                            None => ctx.instruction(Opcode::PushConstantInt, Operand::Int(-1)),
+                        }
+                        ctx.visit_all(&call.arguments)?;
+                        let mut codes = type_codes(ctx, &call.arguments)?;
+                        if !hook.triggers.is_empty() {
+                            for s in hook.triggers.iter().filter_map(|(_, s)| *s) {
+                                let compiler = ctx.compiler();
+                                let id = compiler.mapper.get(&compiler.tables, s)?;
+                                let crate::symbol::Symbol::Basic { ty, .. } = compiler.tables[s] else { unreachable!("trigger symbols are basic") };
+                                // ares: varbit and varc trigger ids are tagged so the client can tell them from varps.
+                                let tag = match compiler.types[ty].kind {
+                                    TypeKind::VarBit { .. } => 0x10000,
+                                    TypeKind::VarClient { .. } => 0x20000,
+                                    _ => 0,
+                                };
+                                ctx.instruction(Opcode::PushConstantInt, Operand::Int(id | tag));
+                            }
+                            ctx.instruction(Opcode::PushConstantInt, Operand::Int(hook.triggers.len() as i32));
+                            codes.push('Y');
+                        }
+                        ctx.instruction(Opcode::PushConstantString, Operand::String(codes));
+                    }
+                }
+                ctx.visit_all(&args[1..])?;
+                ctx.command()
             }
             CommandHandler::Queue(_) | CommandHandler::LongQueue(_) | CommandHandler::Param { .. } | CommandHandler::Enum | CommandHandler::DbGetField => {
                 ctx.visit_all(ctx.arguments())?;

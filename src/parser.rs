@@ -433,7 +433,7 @@ fn grammar<'a>(cx: &'a Cx<'a>) -> Grammar<'a> {
             })
             .or(identifier.clone().then(args.clone()).map(|(name, a)| (name, a, None)))
             .map_with(move |(name, arguments, arguments2), e| {
-                Expression::CommandCall(CommandCallExpression { source: cx.loc(e.span()), ty: None, type_hint: None, name, arguments, arguments2, symbol: None })
+                Expression::CommandCall(CommandCallExpression { source: cx.loc(e.span()), ty: None, type_hint: None, name, arguments, arguments2, symbol: None, hook: None })
             });
         let (call_identifier, call_args) = (identifier.clone(), args.clone());
         let call = move |sigil: K, make: fn(CallExpression) -> Expression| {
